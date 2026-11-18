@@ -6,9 +6,11 @@
 
 ## 下载与启动
 
-在 [Releases](https://github.com/Meng-sound/E7GearAdvisor/releases) 下载 **E7GearAdvisor-Windows.zip**，完整解压到可写目录，双击 `装备强化计算器.exe` 或 `start.bat`。无需另外安装 Python。EXE 是启动器，请保留整个文件夹。
+在 [Releases](https://github.com/Meng-sound/E7GearAdvisor/releases) 下载 **E7GearAdvisor.exe**，双击启动，无需安装 Python或手动解压。首次运行自动展开内置环境，后续复用缓存。Windows x64，需要 .NET Framework 4.7.2 或更高版本。详情见 [SINGLE-FILE.md](SINGLE-FILE.md)。
 
-Windows x64；游戏不要最小化。普通方式启动即可；仅当游戏以管理员权限运行、导致后台输入权限不一致时，使用 `Start-Admin.cmd`。个人设置保存在程序目录 `userdata/`，发布包不含维护者的设置、密钥、账号或操作记录。
+也兼容原 ZIP 便携版：完整解压后运行其中的启动器，保留整个文件夹。
+
+Windows x64；游戏不要最小化。普通方式启动即可；仅当游戏以管理员权限运行、导致后台输入权限不一致时，使用 `Start-Admin.cmd`。单 EXE 版个人设置保存在 `%LOCALAPPDATA%/E7GearAdvisor/userdata/`；ZIP 版保存在程序目录 `userdata/`，发布包不含维护者的设置、密钥、账号或操作记录。
 
 ## 功能
 
