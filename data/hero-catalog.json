@@ -1,0 +1,9177 @@
+{
+  "schema": 1,
+  "retrieved": "2026-11-15",
+  "source": "https://github.com/fribbels/Fribbels-Epic-7-Optimizer",
+  "commit": "cd69229c7c60547e85cb12f3135a724f01516aa0",
+  "commit_date": "2026-11-07T22:10:07Z",
+  "stats_field": "calculatedStatus.lv60SixStarFullyAwakened",
+  "state": "6星60级满觉醒；数据库基础值，不含装备／神器／阵型。被动和转职特例可手动校正。",
+  "name_source": "data/locales/zh/translation.json",
+  "portrait_source": "data/cachedimages/*_s.png",
+  "heroes": [
+    {
+      "id": "c1138",
+      "name": "ae-GISELLE",
+      "name_en": "ae-GISELLE",
+      "base": {
+        "atk": 1286,
+        "hp": 4733,
+        "def": 652,
+        "spd": 103,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1138.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "吉赛儿",
+        "giselle"
+      ]
+    },
+    {
+      "id": "c1137",
+      "name": "ae-KARINA",
+      "name_en": "ae-KARINA",
+      "base": {
+        "atk": 821,
+        "hp": 6751,
+        "def": 648,
+        "spd": 110,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1137.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "卡丽娜",
+        "karina"
+      ]
+    },
+    {
+      "id": "c1140",
+      "name": "ae-NINGNING",
+      "name_en": "ae-NINGNING",
+      "base": {
+        "atk": 785,
+        "hp": 5077,
+        "def": 634,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1140.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "宁宁",
+        "ningning"
+      ]
+    },
+    {
+      "id": "c1139",
+      "name": "ae-WINTER",
+      "name_en": "ae-WINTER",
+      "base": {
+        "atk": 1057,
+        "hp": 5542,
+        "def": 532,
+        "spd": 118,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1139.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "冬宝",
+        "winter"
+      ]
+    },
+    {
+      "id": "c2071",
+      "name": "一轮孤月维尔萝娜",
+      "name_en": "Lone Crescent Bellona",
+      "base": {
+        "atk": 1208,
+        "hp": 6488,
+        "def": 616,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2071.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "一輪孤月維爾蘿娜",
+        "暗扇"
+      ]
+    },
+    {
+      "id": "c2036",
+      "name": "不法之徒克罗泽",
+      "name_en": "Troublemaker Crozet",
+      "base": {
+        "atk": 776,
+        "hp": 6021,
+        "def": 718,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2036.png",
+      "element": "dark",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "不法之徒克羅澤",
+        "暗光头"
+      ]
+    },
+    {
+      "id": "c1161",
+      "name": "不灭神机悟空",
+      "name_en": "Immortal Wukong",
+      "base": {
+        "atk": 1208,
+        "hp": 6488,
+        "def": 616,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1161.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "不滅神機悟空",
+        "猴哥",
+        "悟空",
+        "大圣"
+      ]
+    },
+    {
+      "id": "c5149",
+      "name": "丽希",
+      "name_en": "Lethe",
+      "base": {
+        "atk": 885,
+        "hp": 6149,
+        "def": 613,
+        "spd": 121,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5149.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "麗希"
+      ]
+    },
+    {
+      "id": "c1046",
+      "name": "丽迪卡",
+      "name_en": "Lidica",
+      "base": {
+        "atk": 1283,
+        "hp": 4976,
+        "def": 536,
+        "spd": 124,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1046.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "麗迪卡",
+        "火弓"
+      ]
+    },
+    {
+      "id": "c4013",
+      "name": "义贼鲁兹德",
+      "name_en": "Righteous Thief Roozid",
+      "base": {
+        "atk": 1081,
+        "hp": 5402,
+        "def": 494,
+        "spd": 120,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4013.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "義賊魯茲德"
+      ]
+    },
+    {
+      "id": "c1179",
+      "name": "亚奇",
+      "name_en": "Aki",
+      "base": {
+        "atk": 966,
+        "hp": 5663,
+        "def": 668,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1179.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "亞奇"
+      ]
+    },
+    {
+      "id": "c1008",
+      "name": "亚敏",
+      "name_en": "Armin",
+      "base": {
+        "atk": 721,
+        "hp": 6189,
+        "def": 785,
+        "spd": 91,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1008.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "亞敏",
+        "木亚敏",
+        "木猫"
+      ]
+    },
+    {
+      "id": "c3031",
+      "name": "亚洁理亚",
+      "name_en": "Azalea",
+      "base": {
+        "atk": 1019,
+        "hp": 5738,
+        "def": 571,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3031.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "亞潔理亞"
+      ]
+    },
+    {
+      "id": "c5175",
+      "name": "亚澜",
+      "name_en": "Aram",
+      "base": {
+        "atk": 785,
+        "hp": 5077,
+        "def": 634,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5175.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "亞瀾"
+      ]
+    },
+    {
+      "id": "c3043",
+      "name": "亚迪赖",
+      "name_en": "Adlay",
+      "base": {
+        "atk": 1039,
+        "hp": 3925,
+        "def": 606,
+        "spd": 114,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3043.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "亞迪賴"
+      ]
+    },
+    {
+      "id": "c1124",
+      "name": "亚露嘉",
+      "name_en": "Arunka",
+      "base": {
+        "atk": 1208,
+        "hp": 6488,
+        "def": 616,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1124.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "亞露嘉"
+      ]
+    },
+    {
+      "id": "c2043",
+      "name": "仁慈的洛曼",
+      "name_en": "Benevolent Romann",
+      "base": {
+        "atk": 957,
+        "hp": 5016,
+        "def": 645,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2043.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c2049",
+      "name": "仆人克萝爱",
+      "name_en": "Maid Chloe",
+      "base": {
+        "atk": 649,
+        "hp": 5254,
+        "def": 694,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2049.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "僕人克蘿愛",
+        "光锤",
+        "女仆"
+      ]
+    },
+    {
+      "id": "c1182",
+      "name": "伊凡娜",
+      "name_en": "Ivana",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1182.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c3025",
+      "name": "伊利欧斯教斧兵",
+      "name_en": "Church of Ilryos Axe",
+      "base": {
+        "atk": 1144,
+        "hp": 4895,
+        "def": 543,
+        "spd": 101,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3025.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "伊利歐斯教斧兵"
+      ]
+    },
+    {
+      "id": "c3102",
+      "name": "伊安",
+      "name_en": "Ian",
+      "base": {
+        "atk": 1081,
+        "hp": 4450,
+        "def": 504,
+        "spd": 118,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3102.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1113",
+      "name": "伊莉娜芙",
+      "name_en": "Ilynav",
+      "base": {
+        "atk": 957,
+        "hp": 6148,
+        "def": 634,
+        "spd": 109,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1113.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "黑皮"
+      ]
+    },
+    {
+      "id": "c1024",
+      "name": "伊赛丽亚",
+      "name_en": "Iseria",
+      "base": {
+        "atk": 1158,
+        "hp": 6002,
+        "def": 553,
+        "spd": 112,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1024.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "伊賽麗亞",
+        "木飞剑",
+        "木飞"
+      ]
+    },
+    {
+      "id": "c3094",
+      "name": "伊顿",
+      "name_en": "Eaton",
+      "base": {
+        "atk": 685,
+        "hp": 6403,
+        "def": 703,
+        "spd": 91,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3094.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "伊頓"
+      ]
+    },
+    {
+      "id": "c1174",
+      "name": "休塔尔克",
+      "name_en": "Stark",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1174.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "修塔爾克",
+        "修塔尔克"
+      ]
+    },
+    {
+      "id": "c1016",
+      "name": "优芬妮",
+      "name_en": "Yufine",
+      "base": {
+        "atk": 1228,
+        "hp": 5784,
+        "def": 553,
+        "spd": 109,
+        "crit": 23,
+        "cdmg": 165,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1016.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "優芬妮",
+        "木龙"
+      ]
+    },
+    {
+      "id": "c4158",
+      "name": "传承雅蜜琪",
+      "name_en": "Inheritor Amiki",
+      "base": {
+        "atk": 1179,
+        "hp": 5738,
+        "def": 571,
+        "spd": 107,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4158.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "傳承雅蜜琪"
+      ]
+    },
+    {
+      "id": "c4071",
+      "name": "传道者卡麦萝兹",
+      "name_en": "Zealot Carmainerose",
+      "base": {
+        "atk": 1168,
+        "hp": 4367,
+        "def": 732,
+        "spd": 101,
+        "crit": 15,
+        "cdmg": 160,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4071.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "傳道者卡麥蘿茲"
+      ]
+    },
+    {
+      "id": "c3162",
+      "name": "伯纳德",
+      "name_en": "Bernard",
+      "base": {
+        "atk": 594,
+        "hp": 4329,
+        "def": 603,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3162.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "伯納德"
+      ]
+    },
+    {
+      "id": "c1117",
+      "name": "伯里安",
+      "name_en": "Belian",
+      "base": {
+        "atk": 821,
+        "hp": 6751,
+        "def": 648,
+        "spd": 110,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1117.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "bla"
+      ]
+    },
+    {
+      "id": "c1112",
+      "name": "佛里蒂丝",
+      "name_en": "Politis",
+      "base": {
+        "atk": 1197,
+        "hp": 4572,
+        "def": 683,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1112.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "佛里蒂絲",
+        "三色政治姐",
+        "火政治姐",
+        "火波利"
+      ]
+    },
+    {
+      "id": "c1158",
+      "name": "佩里斯",
+      "name_en": "Fenris",
+      "base": {
+        "atk": 1327,
+        "hp": 5138,
+        "def": 582,
+        "spd": 109,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1158.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "m0063",
+      "name": "侦查兵玛伊堤",
+      "name_en": "Mighty Scout",
+      "base": {
+        "atk": 919,
+        "hp": 5237,
+        "def": 525,
+        "spd": 116,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/m0063.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 2,
+      "aliases": [
+        "偵查兵瑪伊堤"
+      ]
+    },
+    {
+      "id": "c2131",
+      "name": "保健室老师律荷",
+      "name_en": "School Nurse Yulha",
+      "base": {
+        "atk": 1054,
+        "hp": 6606,
+        "def": 518,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2131.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "保健室老師律荷"
+      ]
+    },
+    {
+      "id": "c1060",
+      "name": "修尼尔",
+      "name_en": "Schniel",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1060.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "修尼爾"
+      ]
+    },
+    {
+      "id": "c3055",
+      "name": "修拉杜",
+      "name_en": "Hurado",
+      "base": {
+        "atk": 930,
+        "hp": 5121,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3055.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1020",
+      "name": "修里",
+      "name_en": "Schuri",
+      "base": {
+        "atk": 1068,
+        "hp": 5650,
+        "def": 536,
+        "spd": 110,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1020.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c4034",
+      "name": "先锋队长里科黎司",
+      "name_en": "Captain Rikoris",
+      "base": {
+        "atk": 1061,
+        "hp": 5517,
+        "def": 583,
+        "spd": 104,
+        "crit": 25,
+        "cdmg": 150,
+        "eff": 10,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4034.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "先鋒隊長里科黎司"
+      ]
+    },
+    {
+      "id": "c6062",
+      "name": "光之天使安洁莉卡",
+      "name_en": "Angel of Light Angelica",
+      "base": {
+        "atk": 957,
+        "hp": 5016,
+        "def": 645,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6062.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "光之天使安潔莉卡",
+        "光水奶",
+        "光呆",
+        "光安洁"
+      ]
+    },
+    {
+      "id": "c1022",
+      "name": "光之瑞儿",
+      "name_en": "Ruele of Light",
+      "base": {
+        "atk": 621,
+        "hp": 5474,
+        "def": 802,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1022.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "光之瑞兒",
+        "光奶"
+      ]
+    },
+    {
+      "id": "c1070",
+      "name": "克劳乌",
+      "name_en": "Krau",
+      "base": {
+        "atk": 839,
+        "hp": 6405,
+        "def": 752,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1070.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "克勞烏",
+        "宝马",
+        "水马",
+        "水宝马"
+      ]
+    },
+    {
+      "id": "c3156",
+      "name": "克劳蒂亚",
+      "name_en": "Claudia",
+      "base": {
+        "atk": 703,
+        "hp": 5914,
+        "def": 596,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 48,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3156.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "克勞蒂亞"
+      ]
+    },
+    {
+      "id": "c1036",
+      "name": "克罗泽",
+      "name_en": "Crozet",
+      "base": {
+        "atk": 739,
+        "hp": 6868,
+        "def": 733,
+        "spd": 93,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1036.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "克羅澤",
+        "水光头"
+      ]
+    },
+    {
+      "id": "c3123",
+      "name": "克莉丝媞",
+      "name_en": "Christy",
+      "base": {
+        "atk": 667,
+        "hp": 5784,
+        "def": 749,
+        "spd": 90,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3123.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "克莉絲媞",
+        "小木盾"
+      ]
+    },
+    {
+      "id": "c1028",
+      "name": "克莱莉莎",
+      "name_en": "Clarissa",
+      "base": {
+        "atk": 1252,
+        "hp": 5219,
+        "def": 564,
+        "spd": 103,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1028.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "克萊莉莎"
+      ]
+    },
+    {
+      "id": "c1049",
+      "name": "克萝爱",
+      "name_en": "Chloe",
+      "base": {
+        "atk": 1177,
+        "hp": 5542,
+        "def": 553,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1049.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "克蘿愛",
+        "水锤"
+      ]
+    },
+    {
+      "id": "c2187",
+      "name": "兔女郎名侦探茉萝",
+      "name_en": "Bunny Girl Great Detective Moro",
+      "base": {
+        "atk": 1075,
+        "hp": 5562,
+        "def": 487,
+        "spd": 128,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2187.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "兔女郎名偵探茉蘿"
+      ]
+    },
+    {
+      "id": "c7016",
+      "name": "兔女郎黑手党优芬妮",
+      "name_en": "Bunny Girl Mafia Yufine",
+      "base": {
+        "atk": 894,
+        "hp": 6840,
+        "def": 694,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c7016.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "兔女郎黑手黨優芬妮"
+      ]
+    },
+    {
+      "id": "c1171",
+      "name": "兔菈玫",
+      "name_en": "Tori",
+      "base": {
+        "atk": 1283,
+        "hp": 5138,
+        "def": 522,
+        "spd": 116,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1171.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1109",
+      "name": "兰蒂",
+      "name_en": "Landy",
+      "base": {
+        "atk": 1158,
+        "hp": 6002,
+        "def": 553,
+        "spd": 112,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1109.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "蘭蒂",
+        "兰蒂",
+        "木兰蒂",
+        "高达"
+      ]
+    },
+    {
+      "id": "c5001",
+      "name": "冒险家拉斯",
+      "name_en": "Adventurer Ras",
+      "base": {
+        "atk": 758,
+        "hp": 6818,
+        "def": 672,
+        "spd": 101,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 25,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5001.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "冒險家拉斯",
+        "转职拉斯"
+      ]
+    },
+    {
+      "id": "c1023",
+      "name": "凯隆",
+      "name_en": "Kayron",
+      "base": {
+        "atk": 1119,
+        "hp": 5340,
+        "def": 483,
+        "spd": 129,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1023.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "凱隆"
+      ]
+    },
+    {
+      "id": "c1121",
+      "name": "利姆鲁",
+      "name_en": "Rimuru",
+      "base": {
+        "atk": 1119,
+        "hp": 6266,
+        "def": 627,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1121.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "利姆路",
+        "萌王",
+        "利姆鲁"
+      ]
+    },
+    {
+      "id": "c1168",
+      "name": "利纳柯",
+      "name_en": "Rinak",
+      "base": {
+        "atk": 1112,
+        "hp": 5623,
+        "def": 480,
+        "spd": 129,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1168.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "利納柯"
+      ]
+    },
+    {
+      "id": "c4073",
+      "name": "制偶师波萝莱珍",
+      "name_en": "Doll Maker Pearlhorizon",
+      "base": {
+        "atk": 921,
+        "hp": 5742,
+        "def": 631,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 33,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4073.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "製偶師波蘿萊珍"
+      ]
+    },
+    {
+      "id": "c5110",
+      "name": "午时戏水芙兰",
+      "name_en": "Afternoon Soak Flan",
+      "base": {
+        "atk": 1182,
+        "hp": 5299,
+        "def": 571,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5110.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "午時戲水芙蘭"
+      ]
+    },
+    {
+      "id": "c2073",
+      "name": "协调者卡威利",
+      "name_en": "Mediator Kawerik",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2073.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "協調者卡威利",
+        "暗卡",
+        "手哥"
+      ]
+    },
+    {
+      "id": "c5024",
+      "name": "南国的伊赛丽亚",
+      "name_en": "Summertime Iseria",
+      "base": {
+        "atk": 1003,
+        "hp": 5704,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5024.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "南國的伊賽麗亞",
+        "火飞剑",
+        "火飞"
+      ]
+    },
+    {
+      "id": "c1073",
+      "name": "卡威利",
+      "name_en": "Kawerik",
+      "base": {
+        "atk": 1306,
+        "hp": 4248,
+        "def": 652,
+        "spd": 121,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1073.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "火卡",
+        "卡子"
+      ]
+    },
+    {
+      "id": "c1013",
+      "name": "卡尔图哈",
+      "name_en": "Cartuja",
+      "base": {
+        "atk": 903,
+        "hp": 6635,
+        "def": 630,
+        "spd": 103,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1013.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "卡爾圖哈"
+      ]
+    },
+    {
+      "id": "c1011",
+      "name": "卡琳",
+      "name_en": "Karin",
+      "base": {
+        "atk": 1188,
+        "hp": 4855,
+        "def": 508,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1011.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "水卡琳"
+      ]
+    },
+    {
+      "id": "c1086",
+      "name": "卡瓦娜",
+      "name_en": "Khawana",
+      "base": {
+        "atk": 957,
+        "hp": 4653,
+        "def": 515,
+        "spd": 123,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1086.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c1085",
+      "name": "卡瓦朱",
+      "name_en": "Khawazu",
+      "base": {
+        "atk": 1119,
+        "hp": 6091,
+        "def": 594,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1085.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c3051",
+      "name": "卡萝",
+      "name_en": "Carrot",
+      "base": {
+        "atk": 1039,
+        "hp": 3925,
+        "def": 606,
+        "spd": 114,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3051.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "卡蘿",
+        "小萝卜"
+      ]
+    },
+    {
+      "id": "c3124",
+      "name": "卡蜜拉",
+      "name_en": "Camilla",
+      "base": {
+        "atk": 885,
+        "hp": 4733,
+        "def": 571,
+        "spd": 110,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3124.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3071",
+      "name": "卡麦萝兹",
+      "name_en": "Carmainerose",
+      "base": {
+        "atk": 1168,
+        "hp": 3877,
+        "def": 666,
+        "spd": 101,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3071.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "卡麥蘿茲"
+      ]
+    },
+    {
+      "id": "c1033",
+      "name": "可丽",
+      "name_en": "Coli",
+      "base": {
+        "atk": 1138,
+        "hp": 5871,
+        "def": 462,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1033.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "可麗"
+      ]
+    },
+    {
+      "id": "c3003",
+      "name": "可露莉",
+      "name_en": "Kluri",
+      "base": {
+        "atk": 703,
+        "hp": 5914,
+        "def": 596,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3003.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3015",
+      "name": "史宾",
+      "name_en": "Sven",
+      "base": {
+        "atk": 1039,
+        "hp": 5517,
+        "def": 452,
+        "spd": 108,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3015.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "史賓"
+      ]
+    },
+    {
+      "id": "c1034",
+      "name": "史瑞杰思",
+      "name_en": "Straze",
+      "base": {
+        "atk": 1228,
+        "hp": 5784,
+        "def": 553,
+        "spd": 109,
+        "crit": 23,
+        "cdmg": 165,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1034.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "史哥"
+      ]
+    },
+    {
+      "id": "c2080",
+      "name": "司令官帕贝尔",
+      "name_en": "Commander Pavel",
+      "base": {
+        "atk": 1327,
+        "hp": 5138,
+        "def": 582,
+        "spd": 109,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2080.png",
+      "element": "light",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "司令官帕貝爾",
+        "光狼枪"
+      ]
+    },
+    {
+      "id": "c4041",
+      "name": "吉祥物海兹",
+      "name_en": "Mascot Hazel",
+      "base": {
+        "atk": 849,
+        "hp": 5256,
+        "def": 662,
+        "spd": 111,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4041.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "吉祥物海茲",
+        "偶像海兹"
+      ]
+    },
+    {
+      "id": "c1128",
+      "name": "和英",
+      "name_en": "Hwayoung",
+      "base": {
+        "atk": 1119,
+        "hp": 6266,
+        "def": 627,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1128.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "火腿",
+        "火英"
+      ]
+    },
+    {
+      "id": "c3091",
+      "name": "哈坦",
+      "name_en": "Hataan",
+      "base": {
+        "atk": 1081,
+        "hp": 4572,
+        "def": 494,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3091.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c4141",
+      "name": "圣炎的艾庭",
+      "name_en": "Holy Flame Adin",
+      "base": {
+        "atk": 1199,
+        "hp": 5194,
+        "def": 494,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 25,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4141.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "聖炎的艾庭"
+      ]
+    },
+    {
+      "id": "c6008",
+      "name": "坏坏猫亚敏",
+      "name_en": "Bad Cat Armin",
+      "base": {
+        "atk": 912,
+        "hp": 5871,
+        "def": 614,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6008.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "壞壞貓亞敏"
+      ]
+    },
+    {
+      "id": "c3024",
+      "name": "坤特",
+      "name_en": "Gunther",
+      "base": {
+        "atk": 951,
+        "hp": 5517,
+        "def": 583,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3024.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1018",
+      "name": "埃德勒",
+      "name_en": "Aither",
+      "base": {
+        "atk": 712,
+        "hp": 4592,
+        "def": 672,
+        "spd": 103,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1018.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3165",
+      "name": "培妮拉",
+      "name_en": "Pernilla",
+      "base": {
+        "atk": 1144,
+        "hp": 4895,
+        "def": 543,
+        "spd": 101,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3165.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c2002",
+      "name": "堕落的赛西莉亚",
+      "name_en": "Fallen Cecilia",
+      "base": {
+        "atk": 894,
+        "hp": 6840,
+        "def": 694,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2002.png",
+      "element": "dark",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "墮落的賽西莉亞",
+        "暗龙",
+        "暗龙盾"
+      ]
+    },
+    {
+      "id": "c3002",
+      "name": "塔拉诺尔王宫士兵",
+      "name_en": "Taranor Royal Guard",
+      "base": {
+        "atk": 842,
+        "hp": 6463,
+        "def": 617,
+        "spd": 90,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3002.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "塔拉諾爾王宮士兵"
+      ]
+    },
+    {
+      "id": "c3032",
+      "name": "塔拉诺尔禁卫队员",
+      "name_en": "Taranor Guard",
+      "base": {
+        "atk": 951,
+        "hp": 5517,
+        "def": 583,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3032.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "塔拉諾爾禁衛隊員"
+      ]
+    },
+    {
+      "id": "c1067",
+      "name": "塔玛林尔",
+      "name_en": "Tamarinne",
+      "base": {
+        "atk": 957,
+        "hp": 4370,
+        "def": 652,
+        "spd": 111,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1067.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "塔瑪林爾",
+        "偶像",
+        "爱豆"
+      ]
+    },
+    {
+      "id": "c1040",
+      "name": "塞丽拉",
+      "name_en": "Serila",
+      "base": {
+        "atk": 1218,
+        "hp": 4521,
+        "def": 683,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1040.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "塞麗拉"
+      ]
+    },
+    {
+      "id": "c1157",
+      "name": "夏提雅",
+      "name_en": "Shalltear",
+      "base": {
+        "atk": 1177,
+        "hp": 5542,
+        "def": 553,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1157.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "夏提雅"
+      ]
+    },
+    {
+      "id": "c4012",
+      "name": "夏日学生雅莉莎",
+      "name_en": "Summer's Disciple Alexa",
+      "base": {
+        "atk": 1159,
+        "hp": 5194,
+        "def": 494,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 155,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4012.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "夏天的學生雅莉莎"
+      ]
+    },
+    {
+      "id": "c3135",
+      "name": "夏率",
+      "name_en": "Hasol",
+      "base": {
+        "atk": 758,
+        "hp": 6002,
+        "def": 639,
+        "spd": 101,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3135.png",
+      "element": "dark",
+      "role": "knight",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1009",
+      "name": "夏绿蒂",
+      "name_en": "Charlotte",
+      "base": {
+        "atk": 1134,
+        "hp": 5825,
+        "def": 662,
+        "spd": 99,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1009.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "夏綠蒂",
+        "火呆",
+        "呆毛王"
+      ]
+    },
+    {
+      "id": "c2005",
+      "name": "外太空的玫勒赛德丝",
+      "name_en": "Celestial Mercedes",
+      "base": {
+        "atk": 1187,
+        "hp": 4491,
+        "def": 627,
+        "spd": 101,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2005.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "外太空的玫勒賽德絲",
+        "暗女主"
+      ]
+    },
+    {
+      "id": "c1037",
+      "name": "多米妮尔",
+      "name_en": "Dominiel",
+      "base": {
+        "atk": 957,
+        "hp": 5016,
+        "def": 645,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1037.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "多米妮爾"
+      ]
+    },
+    {
+      "id": "c5089",
+      "name": "夜宴莉莉亚斯",
+      "name_en": "Midnight Gala Lilias",
+      "base": {
+        "atk": 1208,
+        "hp": 5178,
+        "def": 508,
+        "spd": 121,
+        "crit": 15,
+        "cdmg": 165,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5089.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "夜宴莉莉亞斯"
+      ]
+    },
+    {
+      "id": "c2035",
+      "name": "大将法济斯",
+      "name_en": "General Purrgis",
+      "base": {
+        "atk": 903,
+        "hp": 6635,
+        "def": 630,
+        "spd": 103,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2035.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "大將法濟斯",
+        "光狗"
+      ]
+    },
+    {
+      "id": "c2086",
+      "name": "大族长卡瓦娜",
+      "name_en": "Great Chief Khawana",
+      "base": {
+        "atk": 1138,
+        "hp": 5421,
+        "def": 536,
+        "spd": 106,
+        "crit": 53,
+        "cdmg": 165,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2086.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "大族長卡瓦娜"
+      ]
+    },
+    {
+      "id": "c6005",
+      "name": "天秤之主",
+      "name_en": "Lady of the Scales",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6005.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1127",
+      "name": "太悟",
+      "name_en": "Taeyou",
+      "base": {
+        "atk": 1039,
+        "hp": 5340,
+        "def": 617,
+        "spd": 115,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1127.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c3063",
+      "name": "奇丽丝",
+      "name_en": "Kiris",
+      "base": {
+        "atk": 857,
+        "hp": 5057,
+        "def": 543,
+        "spd": 110,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3063.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "奇麗絲"
+      ]
+    },
+    {
+      "id": "c3084",
+      "name": "奇奇拉特V.2",
+      "name_en": "Kikirat v2",
+      "base": {
+        "atk": 667,
+        "hp": 5704,
+        "def": 749,
+        "spd": 90,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3084.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3133",
+      "name": "奥乐缇",
+      "name_en": "Orte",
+      "base": {
+        "atk": 857,
+        "hp": 4531,
+        "def": 483,
+        "spd": 125,
+        "crit": 35,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3133.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "奧樂緹"
+      ]
+    },
+    {
+      "id": "c3045",
+      "name": "奥缇莉尔",
+      "name_en": "Otillie",
+      "base": {
+        "atk": 885,
+        "hp": 4693,
+        "def": 617,
+        "spd": 110,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3045.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "奧緹莉爾"
+      ]
+    },
+    {
+      "id": "c5190",
+      "name": "奥芙",
+      "name_en": "Aube",
+      "base": {
+        "atk": 993,
+        "hp": 6002,
+        "def": 611,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5190.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "奧芙"
+      ]
+    },
+    {
+      "id": "c2125",
+      "name": "孤狼沛伊拉",
+      "name_en": "Lone Wolf Peira",
+      "base": {
+        "atk": 885,
+        "hp": 6149,
+        "def": 613,
+        "spd": 121,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2125.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c4042",
+      "name": "守护天使蒙茉朗西",
+      "name_en": "Angelic Montmorancy",
+      "base": {
+        "atk": 540,
+        "hp": 5928,
+        "def": 729,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 52,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4042.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "守護天使蒙茉朗西",
+        "转职水奶",
+        "包子奶"
+      ]
+    },
+    {
+      "id": "c1155",
+      "name": "安兹·乌尔·恭",
+      "name_en": "Ainz Ooal Gown",
+      "base": {
+        "atk": 1039,
+        "hp": 5299,
+        "def": 673,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1155.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "安茲‧烏爾‧恭",
+        "骨王",
+        "安兹"
+      ]
+    },
+    {
+      "id": "c1062",
+      "name": "安洁莉卡",
+      "name_en": "Angelica",
+      "base": {
+        "atk": 576,
+        "hp": 5700,
+        "def": 743,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1062.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "安潔莉卡",
+        "水奶"
+      ]
+    },
+    {
+      "id": "c6024",
+      "name": "宝剑君主伊赛丽亚",
+      "name_en": "Monarch of the Sword Iseria",
+      "base": {
+        "atk": 1112,
+        "hp": 6321,
+        "def": 645,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6024.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "寶劍君主伊賽麗亞",
+        "光飞剑",
+        "光飞",
+        "大宝剑"
+      ]
+    },
+    {
+      "id": "c2038",
+      "name": "实验体赛兹",
+      "name_en": "Specimen Sez",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2038.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "實驗體賽茲"
+      ]
+    },
+    {
+      "id": "c2006",
+      "name": "审判者绮世",
+      "name_en": "Judge Kise",
+      "base": {
+        "atk": 1177,
+        "hp": 5542,
+        "def": 553,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2006.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "審判者綺世"
+      ]
+    },
+    {
+      "id": "c6065",
+      "name": "封眼苏琳",
+      "name_en": "Sealed Eye Surin",
+      "base": {
+        "atk": 1218,
+        "hp": 4521,
+        "def": 683,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6065.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "封眼蘇琳"
+      ]
+    },
+    {
+      "id": "c1162",
+      "name": "小小赛娜",
+      "name_en": "Young Senya",
+      "base": {
+        "atk": 621,
+        "hp": 5474,
+        "def": 802,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1162.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "小小賽娜",
+        "小小赛娜",
+        "小赛娜"
+      ]
+    },
+    {
+      "id": "c2126",
+      "name": "小恶魔路雅",
+      "name_en": "Hellion Lua",
+      "base": {
+        "atk": 993,
+        "hp": 6002,
+        "def": 611,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2126.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "小惡魔路雅"
+      ]
+    },
+    {
+      "id": "c1192",
+      "name": "小春",
+      "name_en": "Haru",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1192.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1101",
+      "name": "小泡芙",
+      "name_en": "Choux",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1101.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1030",
+      "name": "尤娜",
+      "name_en": "Yuna",
+      "base": {
+        "atk": 1158,
+        "hp": 6002,
+        "def": 553,
+        "spd": 112,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1030.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1087",
+      "name": "尤贝乌斯",
+      "name_en": "Furious",
+      "base": {
+        "atk": 1068,
+        "hp": 5650,
+        "def": 536,
+        "spd": 110,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1087.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": [
+        "尤貝烏斯"
+      ]
+    },
+    {
+      "id": "c3134",
+      "name": "尹凌",
+      "name_en": "Yoonryoung",
+      "base": {
+        "atk": 703,
+        "hp": 5914,
+        "def": 596,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3134.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3061",
+      "name": "尼姆拉斯",
+      "name_en": "Nemunas",
+      "base": {
+        "atk": 920,
+        "hp": 4855,
+        "def": 525,
+        "spd": 110,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3061.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3001",
+      "name": "屠杀部队员",
+      "name_en": "Butcher Corps Inquisitor",
+      "base": {
+        "atk": 963,
+        "hp": 5138,
+        "def": 606,
+        "spd": 95,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3001.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "屠殺部隊員"
+      ]
+    },
+    {
+      "id": "c1118",
+      "name": "岚",
+      "name_en": "Ran",
+      "base": {
+        "atk": 1119,
+        "hp": 5380,
+        "def": 483,
+        "spd": 129,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1118.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "嵐"
+      ]
+    },
+    {
+      "id": "c1015",
+      "name": "巴尔＆塞尚",
+      "name_en": "Baal & Sezan",
+      "base": {
+        "atk": 1197,
+        "hp": 4572,
+        "def": 683,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1015.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "巴爾&塞尚"
+      ]
+    },
+    {
+      "id": "c3006",
+      "name": "巴思克",
+      "name_en": "Bask",
+      "base": {
+        "atk": 842,
+        "hp": 6463,
+        "def": 617,
+        "spd": 90,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3006.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3095",
+      "name": "巴托斯",
+      "name_en": "Batisse",
+      "base": {
+        "atk": 1039,
+        "hp": 5097,
+        "def": 518,
+        "spd": 104,
+        "crit": 23,
+        "cdmg": 165,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3095.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1053",
+      "name": "巴萨尔",
+      "name_en": "Basar",
+      "base": {
+        "atk": 1316,
+        "hp": 4777,
+        "def": 715,
+        "spd": 108,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1053.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "巴薩爾",
+        "埃及",
+        "木埃及"
+      ]
+    },
+    {
+      "id": "c1145",
+      "name": "布里克",
+      "name_en": "Brieg",
+      "base": {
+        "atk": 821,
+        "hp": 6751,
+        "def": 648,
+        "spd": 110,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1145.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "布里克",
+        "水盾"
+      ]
+    },
+    {
+      "id": "c1080",
+      "name": "帕贝尔",
+      "name_en": "Pavel",
+      "base": {
+        "atk": 1283,
+        "hp": 4976,
+        "def": 536,
+        "spd": 124,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1080.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "帕貝爾",
+        "木狼枪"
+      ]
+    },
+    {
+      "id": "c1004",
+      "name": "席可",
+      "name_en": "Silk",
+      "base": {
+        "atk": 1188,
+        "hp": 4693,
+        "def": 518,
+        "spd": 121,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1004.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c1014",
+      "name": "席德",
+      "name_en": "Cidd",
+      "base": {
+        "atk": 1029,
+        "hp": 5097,
+        "def": 473,
+        "spd": 126,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1014.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "猴子",
+        "木席德"
+      ]
+    },
+    {
+      "id": "c2087",
+      "name": "平衡的尤贝乌斯",
+      "name_en": "Peacemaker Furious",
+      "base": {
+        "atk": 970,
+        "hp": 5935,
+        "def": 557,
+        "spd": 106,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2087.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": [
+        "平衡的尤貝烏斯"
+      ]
+    },
+    {
+      "id": "c2009",
+      "name": "年轻的女王夏绿蒂",
+      "name_en": "Little Queen Charlotte",
+      "base": {
+        "atk": 1119,
+        "hp": 6266,
+        "def": 627,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2009.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "年輕的女王夏綠蒂",
+        "光呆毛",
+        "小女王"
+      ]
+    },
+    {
+      "id": "c2050",
+      "name": "幻影的泰妮布里雅",
+      "name_en": "Specter Tenebria",
+      "base": {
+        "atk": 1197,
+        "hp": 4572,
+        "def": 683,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2050.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "暗法",
+        "暗泰妮",
+        "幻影泰妮",
+        "stene"
+      ]
+    },
+    {
+      "id": "c5111",
+      "name": "庆典艾妲",
+      "name_en": "Festive Eda",
+      "base": {
+        "atk": 1102,
+        "hp": 5782,
+        "def": 634,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5111.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "慶典艾妲"
+      ]
+    },
+    {
+      "id": "c5016",
+      "name": "度假风优芬妮",
+      "name_en": "Holiday Yufine",
+      "base": {
+        "atk": 1119,
+        "hp": 6266,
+        "def": 627,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5016.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "度假風優芬妮",
+        "小火龙"
+      ]
+    },
+    {
+      "id": "c4052",
+      "name": "引导者捷娜",
+      "name_en": "Shepherd Jena",
+      "base": {
+        "atk": 1063,
+        "hp": 5305,
+        "def": 599,
+        "spd": 111,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4052.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "引導者捷娜"
+      ]
+    },
+    {
+      "id": "c1163",
+      "name": "弗莉达",
+      "name_en": "Frida",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1163.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "弗莉達",
+        "fld"
+      ]
+    },
+    {
+      "id": "c1131",
+      "name": "律荷",
+      "name_en": "Yulha",
+      "base": {
+        "atk": 894,
+        "hp": 6840,
+        "def": 694,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1131.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "大木盾",
+        "木盾",
+        "绿荷"
+      ]
+    },
+    {
+      "id": "c6003",
+      "name": "悲叹萝季",
+      "name_en": "Wretched Rose",
+      "base": {
+        "atk": 603,
+        "hp": 4945,
+        "def": 662,
+        "spd": 103,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6003.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "悲嘆蘿季"
+      ]
+    },
+    {
+      "id": "c2032",
+      "name": "战斗型玛雅",
+      "name_en": "Fighter Maya",
+      "base": {
+        "atk": 821,
+        "hp": 6266,
+        "def": 703,
+        "spd": 97,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2032.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "戰鬥型瑪雅"
+      ]
+    },
+    {
+      "id": "c5033",
+      "name": "战术型可丽",
+      "name_en": "Tactical Archetype Coli",
+      "base": {
+        "atk": 1057,
+        "hp": 5542,
+        "def": 532,
+        "spd": 118,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5033.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "戰術型可麗"
+      ]
+    },
+    {
+      "id": "c2022",
+      "name": "戴丝蒂娜",
+      "name_en": "Destina",
+      "base": {
+        "atk": 621,
+        "hp": 6034,
+        "def": 775,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2022.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "戴絲蒂娜",
+        "木奶"
+      ]
+    },
+    {
+      "id": "c3131",
+      "name": "扎努塔",
+      "name_en": "Januta",
+      "base": {
+        "atk": 1144,
+        "hp": 4895,
+        "def": 543,
+        "spd": 101,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3131.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c2007",
+      "name": "执行官维德瑞",
+      "name_en": "Arbiter Vildred",
+      "base": {
+        "atk": 1283,
+        "hp": 5138,
+        "def": 522,
+        "spd": 116,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2007.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "執行官維德瑞",
+        "暗25",
+        "暗帝",
+        "狗粮大队长"
+      ]
+    },
+    {
+      "id": "c2023",
+      "name": "扭曲亡灵凯隆",
+      "name_en": "Twisted Eidolon Kayron",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2023.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "扭曲的亡靈凱隆"
+      ]
+    },
+    {
+      "id": "c5070",
+      "name": "护卫队长克劳乌",
+      "name_en": "Guard Captain Krau",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5070.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "護衛隊長克勞烏"
+      ]
+    },
+    {
+      "id": "c1031",
+      "name": "拉兹",
+      "name_en": "Lots",
+      "base": {
+        "atk": 603,
+        "hp": 4945,
+        "def": 662,
+        "spd": 103,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1031.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "拉茲",
+        "木拉兹"
+      ]
+    },
+    {
+      "id": "c1115",
+      "name": "拉姆",
+      "name_en": "Ram",
+      "base": {
+        "atk": 1197,
+        "hp": 4572,
+        "def": 683,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1115.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "拉姆",
+        "粉毛女仆"
+      ]
+    },
+    {
+      "id": "c1001",
+      "name": "拉斯",
+      "name_en": "Ras",
+      "base": {
+        "atk": 758,
+        "hp": 5826,
+        "def": 672,
+        "spd": 95,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1001.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "男主",
+        "火拉斯"
+      ]
+    },
+    {
+      "id": "c1099",
+      "name": "指挥型莱伊卡",
+      "name_en": "Command Model Laika",
+      "base": {
+        "atk": 1182,
+        "hp": 5299,
+        "def": 571,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1099.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "指揮型萊伊卡",
+        "蜻蜓"
+      ]
+    },
+    {
+      "id": "c4035",
+      "name": "指挥官萝里娜",
+      "name_en": "Commander Lorina",
+      "base": {
+        "atk": 1313,
+        "hp": 4895,
+        "def": 543,
+        "spd": 101,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 50,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4035.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "指揮官蘿里娜",
+        "暗枪"
+      ]
+    },
+    {
+      "id": "c2037",
+      "name": "挑战者多米妮尔",
+      "name_en": "Challenger Dominiel",
+      "base": {
+        "atk": 1187,
+        "hp": 4491,
+        "def": 627,
+        "spd": 101,
+        "crit": 57,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2037.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "挑戰者多米妮爾",
+        "暗兔"
+      ]
+    },
+    {
+      "id": "c3052",
+      "name": "捷娜",
+      "name_en": "Jena",
+      "base": {
+        "atk": 1063,
+        "hp": 4491,
+        "def": 599,
+        "spd": 101,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3052.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c2072",
+      "name": "操作员赛珂兰特",
+      "name_en": "Operator Sigret",
+      "base": {
+        "atk": 1079,
+        "hp": 5502,
+        "def": 564,
+        "spd": 115,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2072.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "操作員賽珂蘭特"
+      ]
+    },
+    {
+      "id": "c2089",
+      "name": "支配者莉莉亚斯",
+      "name_en": "Conqueror Lilias",
+      "base": {
+        "atk": 885,
+        "hp": 6149,
+        "def": 613,
+        "spd": 121,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2089.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "支配者莉莉亞斯",
+        "光大姐",
+        "大姐",
+        "光llys"
+      ]
+    },
+    {
+      "id": "c4144",
+      "name": "救援者艾庭",
+      "name_en": "Savior Adin",
+      "base": {
+        "atk": 1199,
+        "hp": 4572,
+        "def": 494,
+        "spd": 116,
+        "crit": 33,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4144.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3101",
+      "name": "教母",
+      "name_en": "Godmother",
+      "base": {
+        "atk": 1005,
+        "hp": 4693,
+        "def": 532,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3101.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1170",
+      "name": "斐妮",
+      "name_en": "Fenne",
+      "base": {
+        "atk": 621,
+        "hp": 6034,
+        "def": 775,
+        "spd": 100,
+        "crit": 45,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1170.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "水蛇"
+      ]
+    },
+    {
+      "id": "c3155",
+      "name": "斯坦",
+      "name_en": "Suthan",
+      "base": {
+        "atk": 1119,
+        "hp": 4263,
+        "def": 652,
+        "spd": 103,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3155.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c2054",
+      "name": "新月舞姬铃儿",
+      "name_en": "Crescent Moon Rin",
+      "base": {
+        "atk": 1027,
+        "hp": 5299,
+        "def": 469,
+        "spd": 126,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2054.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "新月舞姬鈴兒"
+      ]
+    },
+    {
+      "id": "c2066",
+      "name": "新月露娜",
+      "name_en": "New Moon Luna",
+      "base": {
+        "atk": 1039,
+        "hp": 6034,
+        "def": 613,
+        "spd": 124,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2066.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "光露娜",
+        "新月",
+        "光龙"
+      ]
+    },
+    {
+      "id": "c4143",
+      "name": "新绿的艾庭",
+      "name_en": "Verdant Adin",
+      "base": {
+        "atk": 1081,
+        "hp": 4572,
+        "def": 494,
+        "spd": 116,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 20,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4143.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "新綠的艾庭"
+      ]
+    },
+    {
+      "id": "c2128",
+      "name": "旁观者和英",
+      "name_en": "Bystander Hwayoung",
+      "base": {
+        "atk": 1208,
+        "hp": 6488,
+        "def": 616,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2128.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "旁觀者和英"
+      ]
+    },
+    {
+      "id": "c2046",
+      "name": "无神论者丽迪卡",
+      "name_en": "Faithless Lidica",
+      "base": {
+        "atk": 1182,
+        "hp": 5299,
+        "def": 571,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2046.png",
+      "element": "light",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "無神論者麗迪卡",
+        "光弓"
+      ]
+    },
+    {
+      "id": "c2091",
+      "name": "星辰神谕艾蕾娜",
+      "name_en": "Astromancer Elena",
+      "base": {
+        "atk": 1079,
+        "hp": 5502,
+        "def": 564,
+        "spd": 115,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2091.png",
+      "element": "light",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "星辰的神諭艾蕾娜",
+        "光水琴"
+      ]
+    },
+    {
+      "id": "c1133",
+      "name": "智武",
+      "name_en": "Zio",
+      "base": {
+        "atk": 1255,
+        "hp": 5016,
+        "def": 652,
+        "spd": 106,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1133.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c5009",
+      "name": "暑假夏绿蒂",
+      "name_en": "Summer Break Charlotte",
+      "base": {
+        "atk": 957,
+        "hp": 6148,
+        "def": 634,
+        "spd": 109,
+        "crit": 57,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5009.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "暑假夏綠蒂",
+        "水呆"
+      ]
+    },
+    {
+      "id": "c2003",
+      "name": "暗影萝季",
+      "name_en": "Shadow Rose",
+      "base": {
+        "atk": 889,
+        "hp": 5784,
+        "def": 610,
+        "spd": 107,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2003.png",
+      "element": "dark",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "暗影蘿季"
+      ]
+    },
+    {
+      "id": "c1097",
+      "name": "暴击型卡农",
+      "name_en": "Bomb Model Kanna",
+      "base": {
+        "atk": 1182,
+        "hp": 5299,
+        "def": 571,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1097.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "暴擊型卡農",
+        "飞机",
+        "炸弹姐"
+      ]
+    },
+    {
+      "id": "c6011",
+      "name": "最后的碎片卡琳",
+      "name_en": "Last Piece Karin",
+      "base": {
+        "atk": 1029,
+        "hp": 5097,
+        "def": 473,
+        "spd": 126,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6011.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "最後的碎片卡琳"
+      ]
+    },
+    {
+      "id": "c2070",
+      "name": "最后的骑士克劳乌",
+      "name_en": "Last Rider Krau",
+      "base": {
+        "atk": 839,
+        "hp": 6405,
+        "def": 752,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2070.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "最後的騎士克勞烏",
+        "光宝马",
+        "光马"
+      ]
+    },
+    {
+      "id": "c2082",
+      "name": "最强模特璐璐卡",
+      "name_en": "Top Model Luluca",
+      "base": {
+        "atk": 1228,
+        "hp": 4370,
+        "def": 662,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2082.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "最強模特兒璐璐卡",
+        "暗llk",
+        "暗露露卡"
+      ]
+    },
+    {
+      "id": "c6037",
+      "name": "月兔多米妮尔",
+      "name_en": "Moon Bunny Dominiel",
+      "base": {
+        "atk": 649,
+        "hp": 4572,
+        "def": 631,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6037.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "月兔多米妮爾",
+        "月兔",
+        "光兔"
+      ]
+    },
+    {
+      "id": "c3164",
+      "name": "朗巴特",
+      "name_en": "Ragnvald",
+      "base": {
+        "atk": 1081,
+        "hp": 4572,
+        "def": 494,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3164.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c6017",
+      "name": "未知可能性雅卡泰丝",
+      "name_en": "Infinite Horizon Achates",
+      "base": {
+        "atk": 576,
+        "hp": 5165,
+        "def": 767,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6017.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "未知的可能性雅卡泰絲"
+      ]
+    },
+    {
+      "id": "c5112",
+      "name": "未知开拓者佛里蒂丝",
+      "name_en": "Uncharted Pioneer Politis",
+      "base": {
+        "atk": 993,
+        "hp": 6002,
+        "def": 611,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5112.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "未知的開拓者佛里蒂絲"
+      ]
+    },
+    {
+      "id": "c2027",
+      "name": "末日指挥官查尔斯",
+      "name_en": "Closer Charles",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2027.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "末日指揮官查爾斯",
+        "暗老头",
+        "暗查尔斯"
+      ]
+    },
+    {
+      "id": "c2019",
+      "name": "末日萝菲",
+      "name_en": "Apocalypse Ravi",
+      "base": {
+        "atk": 975,
+        "hp": 7054,
+        "def": 652,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2019.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "末日蘿菲",
+        "暗罗",
+        "暗罗菲"
+      ]
+    },
+    {
+      "id": "c1119",
+      "name": "札哈克",
+      "name_en": "Zahhak",
+      "base": {
+        "atk": 1177,
+        "hp": 5542,
+        "def": 553,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1119.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "扎哥"
+      ]
+    },
+    {
+      "id": "c1123",
+      "name": "朱菜",
+      "name_en": "Shuna",
+      "base": {
+        "atk": 649,
+        "hp": 5254,
+        "def": 694,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1123.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "朱菜"
+      ]
+    },
+    {
+      "id": "c3044",
+      "name": "朵莉思",
+      "name_en": "Doris",
+      "base": {
+        "atk": 540,
+        "hp": 5319,
+        "def": 705,
+        "spd": 96,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3044.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "小光奶"
+      ]
+    },
+    {
+      "id": "c2013",
+      "name": "杀手卡尔图哈",
+      "name_en": "Assassin Cartuja",
+      "base": {
+        "atk": 1119,
+        "hp": 6091,
+        "def": 594,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2013.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "殺手卡爾圖哈",
+        "暗熊"
+      ]
+    },
+    {
+      "id": "c2033",
+      "name": "杀手可丽",
+      "name_en": "Assassin Coli",
+      "base": {
+        "atk": 1027,
+        "hp": 5299,
+        "def": 469,
+        "spd": 126,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2033.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "殺手可麗"
+      ]
+    },
+    {
+      "id": "c2014",
+      "name": "杀手席德",
+      "name_en": "Assassin Cidd",
+      "base": {
+        "atk": 930,
+        "hp": 4774,
+        "def": 497,
+        "spd": 128,
+        "crit": 35,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2014.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "殺手席德",
+        "暗席德"
+      ]
+    },
+    {
+      "id": "c3053",
+      "name": "杰克托",
+      "name_en": "Jecht",
+      "base": {
+        "atk": 812,
+        "hp": 3925,
+        "def": 599,
+        "spd": 107,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3053.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "傑克托"
+      ]
+    },
+    {
+      "id": "c1010",
+      "name": "杰拉图",
+      "name_en": "Zerato",
+      "base": {
+        "atk": 1159,
+        "hp": 4733,
+        "def": 627,
+        "spd": 104,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1010.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "杰拉圖"
+      ]
+    },
+    {
+      "id": "c1083",
+      "name": "杰诺",
+      "name_en": "Zeno",
+      "base": {
+        "atk": 1039,
+        "hp": 5299,
+        "def": 673,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1083.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "傑諾"
+      ]
+    },
+    {
+      "id": "c1027",
+      "name": "查尔斯",
+      "name_en": "Charles",
+      "base": {
+        "atk": 957,
+        "hp": 6148,
+        "def": 634,
+        "spd": 109,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1027.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "查爾斯",
+        "木老头",
+        "老头"
+      ]
+    },
+    {
+      "id": "c3103",
+      "name": "格伦",
+      "name_en": "Glenn",
+      "base": {
+        "atk": 920,
+        "hp": 4855,
+        "def": 525,
+        "spd": 110,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3103.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "格倫"
+      ]
+    },
+    {
+      "id": "c3074",
+      "name": "格鲁美兰",
+      "name_en": "Gloomyrain",
+      "base": {
+        "atk": 1199,
+        "hp": 4491,
+        "def": 613,
+        "spd": 107,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3074.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "格魯美蘭"
+      ]
+    },
+    {
+      "id": "c1096",
+      "name": "梅丽莎",
+      "name_en": "Melissa",
+      "base": {
+        "atk": 1412,
+        "hp": 4248,
+        "def": 645,
+        "spd": 112,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1096.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "梅麗莎"
+      ]
+    },
+    {
+      "id": "c1093",
+      "name": "梅喧",
+      "name_en": "Baiken",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1093.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1191",
+      "name": "梅铃",
+      "name_en": "Mei Lin",
+      "base": {
+        "atk": 1208,
+        "hp": 5178,
+        "def": 508,
+        "spd": 121,
+        "crit": 15,
+        "cdmg": 165,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1191.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "梅鈴"
+      ]
+    },
+    {
+      "id": "c2088",
+      "name": "森之贤者薇薇安",
+      "name_en": "Sylvan Sage Vivian",
+      "base": {
+        "atk": 1359,
+        "hp": 4895,
+        "def": 652,
+        "spd": 110,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2088.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "森之賢者薇薇安"
+      ]
+    },
+    {
+      "id": "c2047",
+      "name": "武斗家肯恩",
+      "name_en": "Martial Artist Ken",
+      "base": {
+        "atk": 1359,
+        "hp": 5542,
+        "def": 585,
+        "spd": 105,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2047.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "武鬥家肯恩",
+        "暗拳"
+      ]
+    },
+    {
+      "id": "c3132",
+      "name": "武蔚",
+      "name_en": "Muwi",
+      "base": {
+        "atk": 1039,
+        "hp": 5517,
+        "def": 452,
+        "spd": 108,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3132.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c2090",
+      "name": "死亡探究者雷伊",
+      "name_en": "Death Dealer Ray",
+      "base": {
+        "atk": 621,
+        "hp": 6034,
+        "def": 775,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2090.png",
+      "element": "dark",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "暗医生",
+        "ddr"
+      ]
+    },
+    {
+      "id": "c2074",
+      "name": "残影的菲奥雷托",
+      "name_en": "Remnant Violet",
+      "base": {
+        "atk": 1283,
+        "hp": 5138,
+        "def": 522,
+        "spd": 116,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2074.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "殘影的菲奧雷托",
+        "暗基佬",
+        "暗gay",
+        "暗紫罗兰"
+      ]
+    },
+    {
+      "id": "c2069",
+      "name": "永劫漂流者鲁特比",
+      "name_en": "Eternal Wanderer Ludwig",
+      "base": {
+        "atk": 1412,
+        "hp": 4248,
+        "def": 645,
+        "spd": 112,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2069.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "永劫漂流者魯特比",
+        "轮椅",
+        "暗鲁特比",
+        "漂流鲁特比"
+      ]
+    },
+    {
+      "id": "c3026",
+      "name": "永恒不变的黛莉亚",
+      "name_en": "Free Spirit Tieria",
+      "base": {
+        "atk": 957,
+        "hp": 5057,
+        "def": 592,
+        "spd": 112,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3026.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "永恆不變的黛莉亞"
+      ]
+    },
+    {
+      "id": "c1021",
+      "name": "汀果",
+      "name_en": "Dingo",
+      "base": {
+        "atk": 957,
+        "hp": 5057,
+        "def": 592,
+        "spd": 112,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1021.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c2018",
+      "name": "求道者埃德勒",
+      "name_en": "Guider Aither",
+      "base": {
+        "atk": 1252,
+        "hp": 4612,
+        "def": 627,
+        "spd": 107,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2018.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c3065",
+      "name": "汪达",
+      "name_en": "Wanda",
+      "base": {
+        "atk": 1005,
+        "hp": 4693,
+        "def": 532,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3065.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "汪達"
+      ]
+    },
+    {
+      "id": "c2053",
+      "name": "沙漠宝石巴萨尔",
+      "name_en": "Desert Jewel Basar",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2053.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "沙漠寶石巴薩爾",
+        "光埃及"
+      ]
+    },
+    {
+      "id": "c1125",
+      "name": "沛伊拉",
+      "name_en": "Peira",
+      "base": {
+        "atk": 1075,
+        "hp": 5562,
+        "def": 487,
+        "spd": 128,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1125.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "水狼"
+      ]
+    },
+    {
+      "id": "c1035",
+      "name": "法济斯",
+      "name_en": "Purrgis",
+      "base": {
+        "atk": 1119,
+        "hp": 6091,
+        "def": 594,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1035.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "法濟斯",
+        "大将",
+        "木狗"
+      ]
+    },
+    {
+      "id": "c2148",
+      "name": "波涛裂痕艾碧拉",
+      "name_en": "Tidal Rift Elvira",
+      "base": {
+        "atk": 1102,
+        "hp": 5782,
+        "def": 634,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2148.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "波濤的裂痕艾碧拉"
+      ]
+    },
+    {
+      "id": "c3073",
+      "name": "波萝莱珍",
+      "name_en": "Pearlhorizon",
+      "base": {
+        "atk": 921,
+        "hp": 4855,
+        "def": 631,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3073.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "波蘿萊珍"
+      ]
+    },
+    {
+      "id": "c2020",
+      "name": "注视者修里",
+      "name_en": "Watcher Schuri",
+      "base": {
+        "atk": 970,
+        "hp": 5935,
+        "def": 557,
+        "spd": 106,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2020.png",
+      "element": "light",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": [
+        "注視者修里"
+      ]
+    },
+    {
+      "id": "c1050",
+      "name": "泰妮布里雅",
+      "name_en": "Tenebria",
+      "base": {
+        "atk": 1359,
+        "hp": 4895,
+        "def": 652,
+        "spd": 110,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1050.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "火泰妮",
+        "坏女人"
+      ]
+    },
+    {
+      "id": "c1042",
+      "name": "泰温",
+      "name_en": "Tywin",
+      "base": {
+        "atk": 821,
+        "hp": 6751,
+        "def": 648,
+        "spd": 110,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1042.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "泰溫"
+      ]
+    },
+    {
+      "id": "c1130",
+      "name": "洁克‧欧",
+      "name_en": "Jack-O",
+      "base": {
+        "atk": 1228,
+        "hp": 5784,
+        "def": 553,
+        "spd": 109,
+        "crit": 23,
+        "cdmg": 165,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1130.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "潔克‧歐"
+      ]
+    },
+    {
+      "id": "c1079",
+      "name": "洁若米亚",
+      "name_en": "Cermia",
+      "base": {
+        "atk": 1359,
+        "hp": 5542,
+        "def": 585,
+        "spd": 105,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1079.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "潔若米亞",
+        "夏娜",
+        "火夏娜"
+      ]
+    },
+    {
+      "id": "c1043",
+      "name": "洛曼",
+      "name_en": "Romann",
+      "base": {
+        "atk": 1109,
+        "hp": 4329,
+        "def": 655,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1043.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c2017",
+      "name": "流星雅卡泰丝",
+      "name_en": "Shooting Star Achates",
+      "base": {
+        "atk": 576,
+        "hp": 5700,
+        "def": 743,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2017.png",
+      "element": "dark",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "流星雅卡泰絲"
+      ]
+    },
+    {
+      "id": "c2029",
+      "name": "流浪勇士雷欧",
+      "name_en": "Roaming Warrior Leo",
+      "base": {
+        "atk": 1088,
+        "hp": 5016,
+        "def": 553,
+        "spd": 111,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2029.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": [
+        "流浪勇士雷歐"
+      ]
+    },
+    {
+      "id": "c6014",
+      "name": "流浪王子席德",
+      "name_en": "Wandering Prince Cidd",
+      "base": {
+        "atk": 1021,
+        "hp": 5474,
+        "def": 610,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6014.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c2004",
+      "name": "流浪者席可",
+      "name_en": "Wanderer Silk",
+      "base": {
+        "atk": 930,
+        "hp": 5380,
+        "def": 564,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2004.png",
+      "element": "light",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c1055",
+      "name": "济纽亚",
+      "name_en": "Jenua",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1055.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "濟紐亞",
+        "野狗",
+        "狗团"
+      ]
+    },
+    {
+      "id": "c2112",
+      "name": "海上幽灵佛里蒂丝",
+      "name_en": "Sea Phantom Politis",
+      "base": {
+        "atk": 993,
+        "hp": 6002,
+        "def": 611,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2112.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "海上幽靈佛里蒂絲",
+        "暗政治姐",
+        "暗波利"
+      ]
+    },
+    {
+      "id": "c3122",
+      "name": "海伦",
+      "name_en": "Helen",
+      "base": {
+        "atk": 685,
+        "hp": 6403,
+        "def": 703,
+        "spd": 91,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3122.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "海倫"
+      ]
+    },
+    {
+      "id": "c3041",
+      "name": "海兹",
+      "name_en": "Hazel",
+      "base": {
+        "atk": 849,
+        "hp": 4450,
+        "def": 662,
+        "spd": 101,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3041.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "海茲"
+      ]
+    },
+    {
+      "id": "c2109",
+      "name": "海军上校兰蒂",
+      "name_en": "Navy Captain Landy",
+      "base": {
+        "atk": 1134,
+        "hp": 5825,
+        "def": 662,
+        "spd": 99,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2109.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "海軍上校蘭蒂",
+        "光兰蒂",
+        "海军兰蒂"
+      ]
+    },
+    {
+      "id": "c1039",
+      "name": "海斯特",
+      "name_en": "Haste",
+      "base": {
+        "atk": 1089,
+        "hp": 5380,
+        "def": 511,
+        "spd": 120,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1039.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "正太"
+      ]
+    },
+    {
+      "id": "c5082",
+      "name": "海洋香气璐璐卡",
+      "name_en": "Ocean Breeze Luluca",
+      "base": {
+        "atk": 649,
+        "hp": 5254,
+        "def": 694,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5082.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "海洋香氣璐璐卡",
+        "卡车",
+        "木璐璐卡",
+        "木露露卡",
+        "木露"
+      ]
+    },
+    {
+      "id": "c2110",
+      "name": "海盗船长芙兰",
+      "name_en": "Pirate Captain Flan",
+      "base": {
+        "atk": 1182,
+        "hp": 5299,
+        "def": 571,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2110.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "海盜船長芙蘭",
+        "暗芙兰",
+        "暗船长"
+      ]
+    },
+    {
+      "id": "c5071",
+      "name": "海边的维尔萝娜",
+      "name_en": "Seaside Bellona",
+      "base": {
+        "atk": 1182,
+        "hp": 5299,
+        "def": 571,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5071.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "海邊的維爾蘿娜",
+        "水扇",
+        "ssb"
+      ]
+    },
+    {
+      "id": "c5147",
+      "name": "深海之眼芙米尔",
+      "name_en": "Eye of the Abyss Fumyr",
+      "base": {
+        "atk": 1039,
+        "hp": 6034,
+        "def": 613,
+        "spd": 124,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5147.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "深海之眼芙米爾"
+      ]
+    },
+    {
+      "id": "c2016",
+      "name": "深渊优芬妮",
+      "name_en": "Abyssal Yufine",
+      "base": {
+        "atk": 830,
+        "hp": 6619,
+        "def": 713,
+        "spd": 106,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2016.png",
+      "element": "dark",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "深淵優芬妮",
+        "暗龙女",
+        "玉玉龙"
+      ]
+    },
+    {
+      "id": "c4001",
+      "name": "混沌教屠杀追击者",
+      "name_en": "Chaos Inquisitor",
+      "base": {
+        "atk": 963,
+        "hp": 5609,
+        "def": 606,
+        "spd": 95,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 25,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4001.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "混沌教屠殺追擊者"
+      ]
+    },
+    {
+      "id": "c4025",
+      "name": "混沌教巨斧大将军",
+      "name_en": "Chaos Sect Axe",
+      "base": {
+        "atk": 1144,
+        "hp": 6013,
+        "def": 624,
+        "spd": 101,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4025.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "混沌教巨斧大將軍"
+      ]
+    },
+    {
+      "id": "c4142",
+      "name": "清玄的艾庭",
+      "name_en": "Serene Purity Adin",
+      "base": {
+        "atk": 1081,
+        "hp": 5194,
+        "def": 494,
+        "spd": 116,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 20,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4142.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c6050",
+      "name": "湖畔魔女泰妮布里雅",
+      "name_en": "Witch of the Mere Tenebria",
+      "base": {
+        "atk": 1102,
+        "hp": 5782,
+        "def": 634,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6050.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c3125",
+      "name": "潘尼罗佩",
+      "name_en": "Penelope",
+      "base": {
+        "atk": 1039,
+        "hp": 5517,
+        "def": 452,
+        "spd": 108,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3125.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "潘尼羅佩"
+      ]
+    },
+    {
+      "id": "c2024",
+      "name": "灰光森林的伊赛丽亚",
+      "name_en": "Briar Witch Iseria",
+      "base": {
+        "atk": 1182,
+        "hp": 5299,
+        "def": 571,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2024.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "灰光森林的伊賽麗亞",
+        "暗飞剑",
+        "暗飞"
+      ]
+    },
+    {
+      "id": "c2103",
+      "name": "灵眼的瑟琳",
+      "name_en": "Spirit Eye Celine",
+      "base": {
+        "atk": 1158,
+        "hp": 5016,
+        "def": 532,
+        "spd": 122,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2103.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "靈眼的瑟琳",
+        "灵眼",
+        "光瑟琳"
+      ]
+    },
+    {
+      "id": "c2021",
+      "name": "烈火汀果",
+      "name_en": "Blaze Dingo",
+      "base": {
+        "atk": 885,
+        "hp": 4167,
+        "def": 627,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2021.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": []
+    },
+    {
+      "id": "c2085",
+      "name": "烈焰的卡瓦朱",
+      "name_en": "Inferno Khawazu",
+      "base": {
+        "atk": 1119,
+        "hp": 6091,
+        "def": 594,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2085.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "焦哥",
+        "暗卡瓦朱"
+      ]
+    },
+    {
+      "id": "c1105",
+      "name": "爱尔菲特",
+      "name_en": "Elphelt",
+      "base": {
+        "atk": 1003,
+        "hp": 5704,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1105.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "愛爾菲特",
+        "艾尔菲特",
+        "火枪"
+      ]
+    },
+    {
+      "id": "c1134",
+      "name": "爱德华·爱力克",
+      "name_en": "Edward Elric",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1134.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "愛德華‧愛力克",
+        "钢炼哥哥",
+        "钢炼",
+        "爱德华"
+      ]
+    },
+    {
+      "id": "c1116",
+      "name": "爱蜜莉雅",
+      "name_en": "Emilia",
+      "base": {
+        "atk": 649,
+        "hp": 5254,
+        "def": 694,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1116.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "愛蜜莉雅"
+      ]
+    },
+    {
+      "id": "c2079",
+      "name": "狮心王洁若米亚",
+      "name_en": "Lionheart Cermia",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2079.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "獅心王潔若米亞",
+        "光夏娜",
+        "狮心王",
+        "光洁若",
+        "光洁若米亚"
+      ]
+    },
+    {
+      "id": "c2028",
+      "name": "猫咪克莱莉莎",
+      "name_en": "Kitty Clarissa",
+      "base": {
+        "atk": 957,
+        "hp": 5057,
+        "def": 592,
+        "spd": 112,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2028.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "貓咪克萊莉莎",
+        "暗猫"
+      ]
+    },
+    {
+      "id": "c1032",
+      "name": "玛雅",
+      "name_en": "Maya",
+      "base": {
+        "atk": 821,
+        "hp": 6796,
+        "def": 648,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1032.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "瑪雅"
+      ]
+    },
+    {
+      "id": "c0002",
+      "name": "玫勒赛德丝",
+      "name_en": "Mercedes",
+      "base": {
+        "atk": 1187,
+        "hp": 4491,
+        "def": 627,
+        "spd": 101,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c0002.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "玫勒賽德絲",
+        "女主"
+      ]
+    },
+    {
+      "id": "c3121",
+      "name": "玫拉妮",
+      "name_en": "Melany",
+      "base": {
+        "atk": 951,
+        "hp": 5517,
+        "def": 583,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3121.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3151",
+      "name": "珠妮",
+      "name_en": "Juni",
+      "base": {
+        "atk": 1000,
+        "hp": 4895,
+        "def": 518,
+        "spd": 114,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3151.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1103",
+      "name": "瑟琳",
+      "name_en": "Celine",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1103.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "阿姨",
+        "木瑟琳"
+      ]
+    },
+    {
+      "id": "c1082",
+      "name": "璐璐卡",
+      "name_en": "Luluca",
+      "base": {
+        "atk": 1316,
+        "hp": 4777,
+        "def": 715,
+        "spd": 108,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1082.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "llk"
+      ]
+    },
+    {
+      "id": "c4065",
+      "name": "疑难杂症专家汪达",
+      "name_en": "All-Rounder Wanda",
+      "base": {
+        "atk": 1005,
+        "hp": 5333,
+        "def": 532,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4065.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "疑難雜症專家汪達"
+      ]
+    },
+    {
+      "id": "c5072",
+      "name": "疾速赛车手赛珂兰特",
+      "name_en": "Swift Flagbearer Sigret",
+      "base": {
+        "atk": 1057,
+        "hp": 5542,
+        "def": 532,
+        "spd": 118,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5072.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "疾速賽車手賽珂蘭特"
+      ]
+    },
+    {
+      "id": "c2048",
+      "name": "白银刀刃的雅拉敏塔",
+      "name_en": "Silver Blade Aramintha",
+      "base": {
+        "atk": 1197,
+        "hp": 4572,
+        "def": 683,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2048.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "白銀刀刃的雅拉敏塔",
+        "光响指"
+      ]
+    },
+    {
+      "id": "c4051",
+      "name": "研究者卡萝",
+      "name_en": "Researcher Carrot",
+      "base": {
+        "atk": 1161,
+        "hp": 4801,
+        "def": 666,
+        "spd": 114,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4051.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "研究者卡蘿",
+        "胡萝卜",
+        "萝卜",
+        "转职萝卜"
+      ]
+    },
+    {
+      "id": "c1160",
+      "name": "碧儿姬达",
+      "name_en": "Birgitta",
+      "base": {
+        "atk": 785,
+        "hp": 5077,
+        "def": 634,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1160.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "碧兒姬達"
+      ]
+    },
+    {
+      "id": "c1012",
+      "name": "科尔布思",
+      "name_en": "Corvus",
+      "base": {
+        "atk": 903,
+        "hp": 6635,
+        "def": 630,
+        "spd": 103,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1012.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 4,
+      "aliases": [
+        "科爾布思",
+        "火魔王"
+      ]
+    },
+    {
+      "id": "c3033",
+      "name": "穆卡察",
+      "name_en": "Mucacha",
+      "base": {
+        "atk": 1000,
+        "hp": 4895,
+        "def": 518,
+        "spd": 114,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3033.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c5050",
+      "name": "童话泰妮布里雅",
+      "name_en": "Fairytale Tenebria",
+      "base": {
+        "atk": 1039,
+        "hp": 5299,
+        "def": 673,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5050.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "童話泰妮布里雅",
+        "水泰妮",
+        "水泥"
+      ]
+    },
+    {
+      "id": "c2099",
+      "name": "策划者莱伊卡",
+      "name_en": "Architect Laika",
+      "base": {
+        "atk": 1306,
+        "hp": 4248,
+        "def": 652,
+        "spd": 121,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2099.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "策畫者萊伊卡",
+        "光蜻蜓"
+      ]
+    },
+    {
+      "id": "c3014",
+      "name": "米勒莎",
+      "name_en": "Mirsa",
+      "base": {
+        "atk": 885,
+        "hp": 4410,
+        "def": 501,
+        "spd": 120,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3014.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1122",
+      "name": "米莉姆",
+      "name_en": "Milim",
+      "base": {
+        "atk": 1359,
+        "hp": 4895,
+        "def": 652,
+        "spd": 110,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1122.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "蜜莉姆",
+        "米莉姆",
+        "魔王米莉姆"
+      ]
+    },
+    {
+      "id": "c1092",
+      "name": "索尔",
+      "name_en": "Sol",
+      "base": {
+        "atk": 1177,
+        "hp": 5542,
+        "def": 553,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1092.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "索爾",
+        "索尔"
+      ]
+    },
+    {
+      "id": "c1146",
+      "name": "红丸",
+      "name_en": "Benimaru",
+      "base": {
+        "atk": 1177,
+        "hp": 5542,
+        "def": 553,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1146.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "紅丸",
+        "红丸"
+      ]
+    },
+    {
+      "id": "c2008",
+      "name": "红焰亚敏",
+      "name_en": "Crimson Armin",
+      "base": {
+        "atk": 821,
+        "hp": 6266,
+        "def": 703,
+        "spd": 97,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2008.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "紅焰亞敏",
+        "光亚敏",
+        "光猫"
+      ]
+    },
+    {
+      "id": "c2124",
+      "name": "组长亚露嘉",
+      "name_en": "Boss Arunka",
+      "base": {
+        "atk": 776,
+        "hp": 6593,
+        "def": 822,
+        "spd": 93,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2124.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "組長亞露嘉"
+      ]
+    },
+    {
+      "id": "c2010",
+      "name": "终结者杰拉图",
+      "name_en": "Champion Zerato",
+      "base": {
+        "atk": 1159,
+        "hp": 4733,
+        "def": 627,
+        "spd": 104,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2010.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "終結者杰拉圖"
+      ]
+    },
+    {
+      "id": "c1107",
+      "name": "绊爱",
+      "name_en": "Kizuna AI",
+      "base": {
+        "atk": 576,
+        "hp": 5700,
+        "def": 743,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1107.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "絆愛"
+      ]
+    },
+    {
+      "id": "c2127",
+      "name": "继承人太悟",
+      "name_en": "Successor Taeyou",
+      "base": {
+        "atk": 1119,
+        "hp": 6266,
+        "def": 627,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2127.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "繼承人太悟"
+      ]
+    },
+    {
+      "id": "c1006",
+      "name": "绮世",
+      "name_en": "Kise",
+      "base": {
+        "atk": 1283,
+        "hp": 5138,
+        "def": 522,
+        "spd": 116,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1006.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "綺世",
+        "水绮世",
+        "水镰"
+      ]
+    },
+    {
+      "id": "c1166",
+      "name": "维多丽卡",
+      "name_en": "Victorika",
+      "base": {
+        "atk": 1049,
+        "hp": 5461,
+        "def": 634,
+        "spd": 97,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1166.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "維多麗卡"
+      ]
+    },
+    {
+      "id": "c1071",
+      "name": "维尔萝娜",
+      "name_en": "Bellona",
+      "base": {
+        "atk": 1003,
+        "hp": 5704,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1071.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "維爾蘿娜",
+        "木扇"
+      ]
+    },
+    {
+      "id": "c1007",
+      "name": "维德瑞",
+      "name_en": "Vildred",
+      "base": {
+        "atk": 1283,
+        "hp": 5138,
+        "def": 522,
+        "spd": 116,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1007.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "維德瑞",
+        "木25",
+        "木帝"
+      ]
+    },
+    {
+      "id": "c1154",
+      "name": "维波里丝",
+      "name_en": "Byblis",
+      "base": {
+        "atk": 993,
+        "hp": 6002,
+        "def": 611,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1154.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "維波里絲"
+      ]
+    },
+    {
+      "id": "c1044",
+      "name": "缪伊",
+      "name_en": "Mui",
+      "base": {
+        "atk": 1039,
+        "hp": 5340,
+        "def": 617,
+        "spd": 115,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1044.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "繆伊"
+      ]
+    },
+    {
+      "id": "c4062",
+      "name": "缪斯黎玛",
+      "name_en": "Muse Rima",
+      "base": {
+        "atk": 822,
+        "hp": 5120,
+        "def": 561,
+        "spd": 117,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 25,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4062.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "繆斯黎瑪"
+      ]
+    },
+    {
+      "id": "c1135",
+      "name": "罗伊·马斯坦古",
+      "name_en": "Roy Mustang",
+      "base": {
+        "atk": 1412,
+        "hp": 4248,
+        "def": 645,
+        "spd": 112,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1135.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "羅伊‧馬斯坦古",
+        "上校",
+        "罗伊"
+      ]
+    },
+    {
+      "id": "c1102",
+      "name": "罗安纳",
+      "name_en": "Roana",
+      "base": {
+        "atk": 621,
+        "hp": 5474,
+        "def": 802,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1102.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "羅安納",
+        "木瓜"
+      ]
+    },
+    {
+      "id": "c2062",
+      "name": "罪戾的安洁莉卡",
+      "name_en": "Sinful Angelica",
+      "base": {
+        "atk": 649,
+        "hp": 4572,
+        "def": 631,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2062.png",
+      "element": "dark",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "罪戾的安潔莉卡",
+        "暗水奶"
+      ]
+    },
+    {
+      "id": "c3072",
+      "name": "美丝缇彩",
+      "name_en": "Mistychain",
+      "base": {
+        "atk": 1252,
+        "hp": 3925,
+        "def": 606,
+        "spd": 109,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3072.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 3,
+      "aliases": [
+        "美絲緹彩"
+      ]
+    },
+    {
+      "id": "c1047",
+      "name": "肯恩",
+      "name_en": "Ken",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1047.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "火拳"
+      ]
+    },
+    {
+      "id": "c4103",
+      "name": "自卫队队长格伦",
+      "name_en": "Vigilante Leader Glenn",
+      "base": {
+        "atk": 1026,
+        "hp": 5298,
+        "def": 525,
+        "spd": 110,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4103.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "自衛隊隊長格倫"
+      ]
+    },
+    {
+      "id": "c4023",
+      "name": "自由自在的佣兵赫尔嘉",
+      "name_en": "Mercenary Helga",
+      "base": {
+        "atk": 1117,
+        "hp": 5790,
+        "def": 518,
+        "spd": 114,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 25,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4023.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "自由自在的傭兵赫爾嘉"
+      ]
+    },
+    {
+      "id": "c4004",
+      "name": "自由骑士雅洛薇",
+      "name_en": "Unbound Knight Arowell",
+      "base": {
+        "atk": 758,
+        "hp": 6818,
+        "def": 672,
+        "spd": 95,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 27,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4004.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "自由騎士雅洛薇",
+        "转职小光盾",
+        "转职光盾"
+      ]
+    },
+    {
+      "id": "c1183",
+      "name": "艾丝黛",
+      "name_en": "Estelle",
+      "base": {
+        "atk": 894,
+        "hp": 6840,
+        "def": 694,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1183.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "艾絲黛"
+      ]
+    },
+    {
+      "id": "c1142",
+      "name": "艾利戈斯",
+      "name_en": "Eligos",
+      "base": {
+        "atk": 1283,
+        "hp": 4976,
+        "def": 536,
+        "spd": 124,
+        "crit": 15,
+        "cdmg": 200,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1142.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "牢大"
+      ]
+    },
+    {
+      "id": "c3093",
+      "name": "艾因兹",
+      "name_en": "Ains",
+      "base": {
+        "atk": 951,
+        "hp": 5517,
+        "def": 583,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3093.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "艾因茲"
+      ]
+    },
+    {
+      "id": "c1111",
+      "name": "艾妲",
+      "name_en": "Eda",
+      "base": {
+        "atk": 1255,
+        "hp": 5016,
+        "def": 652,
+        "spd": 106,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1111.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1108",
+      "name": "艾尔巴伦",
+      "name_en": "Ervalen",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1108.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "艾爾巴倫"
+      ]
+    },
+    {
+      "id": "c3054",
+      "name": "艾尔森",
+      "name_en": "Elson",
+      "base": {
+        "atk": 540,
+        "hp": 4900,
+        "def": 729,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3054.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "艾爾森"
+      ]
+    },
+    {
+      "id": "c3143",
+      "name": "艾庭",
+      "name_en": "Adin",
+      "base": {
+        "atk": 1081,
+        "hp": 4572,
+        "def": 494,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3143.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "it"
+      ]
+    },
+    {
+      "id": "c1148",
+      "name": "艾碧拉",
+      "name_en": "Elvira",
+      "base": {
+        "atk": 1057,
+        "hp": 5542,
+        "def": 532,
+        "spd": 118,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 50,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1148.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c3157",
+      "name": "艾自拉",
+      "name_en": "Ezra",
+      "base": {
+        "atk": 921,
+        "hp": 4945,
+        "def": 462,
+        "spd": 122,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3157.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1129",
+      "name": "艾莉雅",
+      "name_en": "Aria",
+      "base": {
+        "atk": 1039,
+        "hp": 5299,
+        "def": 673,
+        "spd": 115,
+        "crit": 45,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1129.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "水大奶",
+        "大水奶"
+      ]
+    },
+    {
+      "id": "c1100",
+      "name": "艾莲西雅",
+      "name_en": "Alencia",
+      "base": {
+        "atk": 975,
+        "hp": 7054,
+        "def": 652,
+        "spd": 106,
+        "crit": 35,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1100.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "艾蓮西雅",
+        "姨妈龙"
+      ]
+    },
+    {
+      "id": "c1091",
+      "name": "艾蕾娜",
+      "name_en": "Elena",
+      "base": {
+        "atk": 649,
+        "hp": 5254,
+        "def": 694,
+        "spd": 105,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1091.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "水琴"
+      ]
+    },
+    {
+      "id": "c3105",
+      "name": "艾诺斯",
+      "name_en": "Ainos",
+      "base": {
+        "atk": 812,
+        "hp": 3925,
+        "def": 599,
+        "spd": 107,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3105.png",
+      "element": "dark",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "艾諾斯"
+      ]
+    },
+    {
+      "id": "c4105",
+      "name": "艾诺斯2.0",
+      "name_en": "Ainos 2.0",
+      "base": {
+        "atk": 812,
+        "hp": 4801,
+        "def": 688,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4105.png",
+      "element": "dark",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "艾諾斯2.0"
+      ]
+    },
+    {
+      "id": "c3022",
+      "name": "艾诺特",
+      "name_en": "Enott",
+      "base": {
+        "atk": 1019,
+        "hp": 5738,
+        "def": 571,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3022.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "艾諾特"
+      ]
+    },
+    {
+      "id": "c1110",
+      "name": "芙兰",
+      "name_en": "Flan",
+      "base": {
+        "atk": 1003,
+        "hp": 5704,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1110.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "芙蘭",
+        "芙兰"
+      ]
+    },
+    {
+      "id": "c1147",
+      "name": "芙米尔",
+      "name_en": "Fumyr",
+      "base": {
+        "atk": 1102,
+        "hp": 5782,
+        "def": 634,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1147.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "芙米爾",
+        "原神"
+      ]
+    },
+    {
+      "id": "c1172",
+      "name": "芙莉莲",
+      "name_en": "Frieren",
+      "base": {
+        "atk": 1412,
+        "hp": 4248,
+        "def": 645,
+        "spd": 112,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1172.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "芙莉蓮",
+        "芙莉莲",
+        "芙芙"
+      ]
+    },
+    {
+      "id": "c5046",
+      "name": "花园丽迪卡",
+      "name_en": "Blooming Lidica",
+      "base": {
+        "atk": 1057,
+        "hp": 5542,
+        "def": 532,
+        "spd": 118,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5046.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "花園麗迪卡"
+      ]
+    },
+    {
+      "id": "c2113",
+      "name": "苍穹伊莉娜芙",
+      "name_en": "Empyrean Ilynav",
+      "base": {
+        "atk": 794,
+        "hp": 7332,
+        "def": 767,
+        "spd": 95,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2113.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "蒼穹伊莉娜芙",
+        "光黑皮"
+      ]
+    },
+    {
+      "id": "c3104",
+      "name": "苏尼娅",
+      "name_en": "Sonia",
+      "base": {
+        "atk": 540,
+        "hp": 4900,
+        "def": 729,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3104.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "蘇尼婭"
+      ]
+    },
+    {
+      "id": "c1065",
+      "name": "苏琳",
+      "name_en": "Surin",
+      "base": {
+        "atk": 1010,
+        "hp": 5097,
+        "def": 497,
+        "spd": 117,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1065.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "蘇琳"
+      ]
+    },
+    {
+      "id": "c3011",
+      "name": "茱迪丝",
+      "name_en": "Judith",
+      "base": {
+        "atk": 848,
+        "hp": 4289,
+        "def": 494,
+        "spd": 117,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3011.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "茱迪絲"
+      ]
+    },
+    {
+      "id": "c3153",
+      "name": "莉珈",
+      "name_en": "Lilka",
+      "base": {
+        "atk": 1005,
+        "hp": 4693,
+        "def": 532,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3153.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1089",
+      "name": "莉莉亚斯",
+      "name_en": "Lilias",
+      "base": {
+        "atk": 821,
+        "hp": 6751,
+        "def": 648,
+        "spd": 110,
+        "crit": 65,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1089.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "莉莉亞斯",
+        "火llys",
+        "llys",
+        "火莉莉",
+        "火盾"
+      ]
+    },
+    {
+      "id": "c1095",
+      "name": "莉莉贝",
+      "name_en": "Lilibet",
+      "base": {
+        "atk": 1119,
+        "hp": 6266,
+        "def": 627,
+        "spd": 109,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1095.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "莉莉貝",
+        "剪刀",
+        "llb",
+        "木剪刀"
+      ]
+    },
+    {
+      "id": "c1136",
+      "name": "莉莎·霍克爱",
+      "name_en": "Riza Hawkeye",
+      "base": {
+        "atk": 1003,
+        "hp": 5704,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1136.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "莉莎‧霍克愛",
+        "霍克艾"
+      ]
+    },
+    {
+      "id": "c1132",
+      "name": "莎伦",
+      "name_en": "Sharun",
+      "base": {
+        "atk": 640,
+        "hp": 5340,
+        "def": 720,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1132.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "莎倫",
+        "毒奶",
+        "木沙伦"
+      ]
+    },
+    {
+      "id": "c1159",
+      "name": "莱娅",
+      "name_en": "Laia",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1159.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "萊婭"
+      ]
+    },
+    {
+      "id": "c1173",
+      "name": "菲伦",
+      "name_en": "Fern",
+      "base": {
+        "atk": 1286,
+        "hp": 4733,
+        "def": 652,
+        "spd": 103,
+        "crit": 27,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1173.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "費倫",
+        "菲伦"
+      ]
+    },
+    {
+      "id": "c1074",
+      "name": "菲奥雷托",
+      "name_en": "Violet",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1074.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "菲奧雷托",
+        "木基佬",
+        "木gay",
+        "紫罗兰"
+      ]
+    },
+    {
+      "id": "c1003",
+      "name": "萝季",
+      "name_en": "Rose",
+      "base": {
+        "atk": 821,
+        "hp": 6266,
+        "def": 703,
+        "spd": 97,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1003.png",
+      "element": "ice",
+      "role": "knight",
+      "stars": 4,
+      "aliases": [
+        "蘿季"
+      ]
+    },
+    {
+      "id": "c1019",
+      "name": "萝菲",
+      "name_en": "Ravi",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1019.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "蘿菲",
+        "火罗",
+        "火罗菲"
+      ]
+    },
+    {
+      "id": "c3035",
+      "name": "萝里娜",
+      "name_en": "Lorina",
+      "base": {
+        "atk": 1144,
+        "hp": 4895,
+        "def": 543,
+        "spd": 101,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 50,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3035.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "蘿里娜"
+      ]
+    },
+    {
+      "id": "c2184",
+      "name": "萨洛美",
+      "name_en": "Salome",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2184.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "薩洛美"
+      ]
+    },
+    {
+      "id": "c1177",
+      "name": "萨若米亚",
+      "name_en": "Saria",
+      "base": {
+        "atk": 1327,
+        "hp": 5138,
+        "def": 582,
+        "spd": 109,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1177.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "薩若米亞"
+      ]
+    },
+    {
+      "id": "c1151",
+      "name": "落月",
+      "name_en": "Nahkwol",
+      "base": {
+        "atk": 1003,
+        "hp": 5704,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1151.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "暗卤鸭"
+      ]
+    },
+    {
+      "id": "c1094",
+      "name": "蒂姬",
+      "name_en": "Dizzy",
+      "base": {
+        "atk": 1039,
+        "hp": 5299,
+        "def": 673,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1094.png",
+      "element": "ice",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "迪姬",
+        "dz"
+      ]
+    },
+    {
+      "id": "c3042",
+      "name": "蒙茉朗西",
+      "name_en": "Montmorancy",
+      "base": {
+        "atk": 540,
+        "hp": 4900,
+        "def": 729,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3042.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "小水奶",
+        "水包子"
+      ]
+    },
+    {
+      "id": "c3163",
+      "name": "蕾娅",
+      "name_en": "Leah",
+      "base": {
+        "atk": 1081,
+        "hp": 4450,
+        "def": 504,
+        "spd": 118,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3163.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "蕾婭"
+      ]
+    },
+    {
+      "id": "c3160",
+      "name": "蕾芙娜",
+      "name_en": "Revna",
+      "base": {
+        "atk": 1039,
+        "hp": 5517,
+        "def": 452,
+        "spd": 108,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3160.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1193",
+      "name": "蕾诺娅",
+      "name_en": "Renoa",
+      "base": {
+        "atk": 970,
+        "hp": 5299,
+        "def": 603,
+        "spd": 122,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1193.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "蕾歐娜"
+      ]
+    },
+    {
+      "id": "c1088",
+      "name": "薇薇安",
+      "name_en": "Vivian",
+      "base": {
+        "atk": 1228,
+        "hp": 4370,
+        "def": 662,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1088.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "vva"
+      ]
+    },
+    {
+      "id": "c2011",
+      "name": "血剑卡琳",
+      "name_en": "Blood Blade Karin",
+      "base": {
+        "atk": 1138,
+        "hp": 5871,
+        "def": 462,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2011.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "血劍卡琳",
+        "暗卡琳"
+      ]
+    },
+    {
+      "id": "c6020",
+      "name": "西风处刑者修里",
+      "name_en": "Westwind Executioner Schuri",
+      "base": {
+        "atk": 1088,
+        "hp": 5016,
+        "def": 553,
+        "spd": 111,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 48,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c6020.png",
+      "element": "dark",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": [
+        "西風處刑者修里"
+      ]
+    },
+    {
+      "id": "c2095",
+      "name": "设计师莉莉贝",
+      "name_en": "Designer Lilibet",
+      "base": {
+        "atk": 975,
+        "hp": 7054,
+        "def": 652,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2095.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "設計師莉莉貝",
+        "暗剪刀",
+        "裁缝"
+      ]
+    },
+    {
+      "id": "c1152",
+      "name": "该隐",
+      "name_en": "Kane",
+      "base": {
+        "atk": 1359,
+        "hp": 5542,
+        "def": 585,
+        "spd": 105,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1152.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "該隱"
+      ]
+    },
+    {
+      "id": "c2181",
+      "name": "诺托斯",
+      "name_en": "Notos",
+      "base": {
+        "atk": 794,
+        "hp": 7332,
+        "def": 767,
+        "spd": 95,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2181.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "諾托斯"
+      ]
+    },
+    {
+      "id": "c5154",
+      "name": "调香师维波里丝",
+      "name_en": "Perfumer Byblis",
+      "base": {
+        "atk": 640,
+        "hp": 5340,
+        "def": 720,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5154.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "調香師維波里絲"
+      ]
+    },
+    {
+      "id": "c1150",
+      "name": "贝洛妮卡",
+      "name_en": "Veronica",
+      "base": {
+        "atk": 1188,
+        "hp": 4693,
+        "def": 518,
+        "spd": 121,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1150.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": [
+        "貝洛妮卡",
+        "blnk"
+      ]
+    },
+    {
+      "id": "c2015",
+      "name": "贤者巴尔＆塞尚",
+      "name_en": "Sage Baal & Sezan",
+      "base": {
+        "atk": 1039,
+        "hp": 5299,
+        "def": 673,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2015.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "賢者巴爾&塞尚"
+      ]
+    },
+    {
+      "id": "c3005",
+      "name": "费莉丝",
+      "name_en": "Pyllis",
+      "base": {
+        "atk": 685,
+        "hp": 6403,
+        "def": 703,
+        "spd": 91,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3005.png",
+      "element": "dark",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "費莉絲",
+        "小暗盾"
+      ]
+    },
+    {
+      "id": "c1038",
+      "name": "赛兹",
+      "name_en": "Sez",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1038.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "賽茲"
+      ]
+    },
+    {
+      "id": "c1106",
+      "name": "赛娜",
+      "name_en": "Senya",
+      "base": {
+        "atk": 1112,
+        "hp": 6321,
+        "def": 645,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1106.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "賽娜",
+        "木龙女",
+        "木赛娜"
+      ]
+    },
+    {
+      "id": "c1072",
+      "name": "赛珂兰特",
+      "name_en": "Sigret",
+      "base": {
+        "atk": 1228,
+        "hp": 5784,
+        "def": 553,
+        "spd": 109,
+        "crit": 23,
+        "cdmg": 165,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1072.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "賽珂蘭特",
+        "水镰",
+        "水镰刀",
+        "龙13镰刀"
+      ]
+    },
+    {
+      "id": "c1081",
+      "name": "赛瑞丝",
+      "name_en": "Cerise",
+      "base": {
+        "atk": 970,
+        "hp": 5299,
+        "def": 603,
+        "spd": 122,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1081.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "賽瑞絲"
+      ]
+    },
+    {
+      "id": "c1002",
+      "name": "赛西莉亚",
+      "name_en": "Cecilia",
+      "base": {
+        "atk": 821,
+        "hp": 6751,
+        "def": 648,
+        "spd": 110,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1002.png",
+      "element": "fire",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "賽西莉亞",
+        "火龙盾",
+        "火塞西"
+      ]
+    },
+    {
+      "id": "c3064",
+      "name": "赛雷斯特",
+      "name_en": "Celeste",
+      "base": {
+        "atk": 929,
+        "hp": 4733,
+        "def": 494,
+        "spd": 128,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3064.png",
+      "element": "light",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "賽雷斯特"
+      ]
+    },
+    {
+      "id": "c2039",
+      "name": "赤月贵族海斯特",
+      "name_en": "Blood Moon Haste",
+      "base": {
+        "atk": 621,
+        "hp": 5474,
+        "def": 802,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2039.png",
+      "element": "dark",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "赤月的貴族海斯特",
+        "暗正太"
+      ]
+    },
+    {
+      "id": "c1178",
+      "name": "赫卡特",
+      "name_en": "Hecate",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1178.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "赫卡特"
+      ]
+    },
+    {
+      "id": "c3023",
+      "name": "赫尔嘉",
+      "name_en": "Helga",
+      "base": {
+        "atk": 1000,
+        "hp": 4895,
+        "def": 518,
+        "spd": 114,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3023.png",
+      "element": "wind",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "赫爾嘉"
+      ]
+    },
+    {
+      "id": "c1153",
+      "name": "赫尔赛蒂",
+      "name_en": "Harsetti",
+      "base": {
+        "atk": 1039,
+        "hp": 6034,
+        "def": 613,
+        "spd": 124,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1153.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "赫爾賽蒂",
+        "女帝",
+        "boss"
+      ]
+    },
+    {
+      "id": "c2001",
+      "name": "起源拉斯",
+      "name_en": "Genesis Ras",
+      "base": {
+        "atk": 885,
+        "hp": 6663,
+        "def": 733,
+        "spd": 99,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2001.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "神拉斯"
+      ]
+    },
+    {
+      "id": "c1126",
+      "name": "路雅",
+      "name_en": "Lua",
+      "base": {
+        "atk": 993,
+        "hp": 6002,
+        "def": 611,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1126.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "卤鸭"
+      ]
+    },
+    {
+      "id": "c2165",
+      "name": "转学生艾庭",
+      "name_en": "New Kid Adin",
+      "base": {
+        "atk": 1068,
+        "hp": 4733,
+        "def": 515,
+        "spd": 119,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2165.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "轉學生艾庭"
+      ]
+    },
+    {
+      "id": "c2031",
+      "name": "辅助型拉兹",
+      "name_en": "Auxiliary Lots",
+      "base": {
+        "atk": 1021,
+        "hp": 5474,
+        "def": 610,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2031.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 4,
+      "aliases": [
+        "輔助型拉茲",
+        "暗拉兹"
+      ]
+    },
+    {
+      "id": "c3152",
+      "name": "达拉士",
+      "name_en": "Talaz",
+      "base": {
+        "atk": 1144,
+        "hp": 4895,
+        "def": 543,
+        "spd": 101,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3152.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "達拉士"
+      ]
+    },
+    {
+      "id": "c3154",
+      "name": "达黎儿",
+      "name_en": "Talia",
+      "base": {
+        "atk": 903,
+        "hp": 4895,
+        "def": 501,
+        "spd": 113,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3154.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "達黎兒"
+      ]
+    },
+    {
+      "id": "c1076",
+      "name": "迪埃妮",
+      "name_en": "Diene",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1076.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "圣女"
+      ]
+    },
+    {
+      "id": "c2101",
+      "name": "都市暗影小泡芙",
+      "name_en": "Urban Shadow Choux",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117,
+        "crit": 45,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2101.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c2185",
+      "name": "里安娜路西艾拉",
+      "name_en": "Rhianna and Luciella",
+      "base": {
+        "atk": 1003,
+        "hp": 5057,
+        "def": 511,
+        "spd": 132,
+        "crit": 35,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2185.png",
+      "element": "dark",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c3034",
+      "name": "里科黎司",
+      "name_en": "Rikoris",
+      "base": {
+        "atk": 951,
+        "hp": 5517,
+        "def": 583,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3034.png",
+      "element": "light",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c2042",
+      "name": "野心分子泰温",
+      "name_en": "Ambitious Tywin",
+      "base": {
+        "atk": 894,
+        "hp": 6840,
+        "def": 694,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2042.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "野心份子泰溫",
+        "光泰温",
+        "小皇帝"
+      ]
+    },
+    {
+      "id": "m0171",
+      "name": "野生安卡拉",
+      "name_en": "Wild Angara",
+      "base": {
+        "atk": 1089,
+        "hp": 5237,
+        "def": 525,
+        "spd": 106,
+        "crit": 23,
+        "cdmg": 160,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/m0171.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 2,
+      "aliases": []
+    },
+    {
+      "id": "c1054",
+      "name": "铃儿",
+      "name_en": "Rin",
+      "base": {
+        "atk": 594,
+        "hp": 5057,
+        "def": 691,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1054.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "鈴兒"
+      ]
+    },
+    {
+      "id": "c5128",
+      "name": "银光海啸和英",
+      "name_en": "Argent Waves Hwayoung",
+      "base": {
+        "atk": 1283,
+        "hp": 5138,
+        "def": 522,
+        "spd": 116,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5128.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": [
+        "銀光海嘯和英"
+      ]
+    },
+    {
+      "id": "c4123",
+      "name": "银波克莉丝媞",
+      "name_en": "Silvertide Christy",
+      "base": {
+        "atk": 667,
+        "hp": 5784,
+        "def": 749,
+        "spd": 95,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 35,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4123.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "銀波克莉絲媞"
+      ]
+    },
+    {
+      "id": "c2102",
+      "name": "镇魂罗安纳",
+      "name_en": "Requiem Roana",
+      "base": {
+        "atk": 1316,
+        "hp": 4777,
+        "def": 715,
+        "spd": 108,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2102.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "鎮魂的羅安納",
+        "暗瓜"
+      ]
+    },
+    {
+      "id": "c1156",
+      "name": "雅儿贝德",
+      "name_en": "Albedo",
+      "base": {
+        "atk": 894,
+        "hp": 6840,
+        "def": 694,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1156.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "雅兒貝德",
+        "雅儿贝德"
+      ]
+    },
+    {
+      "id": "c1017",
+      "name": "雅卡泰丝",
+      "name_en": "Achates",
+      "base": {
+        "atk": 603,
+        "hp": 4945,
+        "def": 662,
+        "spd": 103,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1017.png",
+      "element": "fire",
+      "role": "manauser",
+      "stars": 4,
+      "aliases": [
+        "雅卡泰絲",
+        "火奶",
+        "小火奶"
+      ]
+    },
+    {
+      "id": "c1143",
+      "name": "雅咪德",
+      "name_en": "Amid",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1143.png",
+      "element": "ice",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "ymd"
+      ]
+    },
+    {
+      "id": "c1048",
+      "name": "雅拉敏塔",
+      "name_en": "Aramintha",
+      "base": {
+        "atk": 1197,
+        "hp": 4572,
+        "def": 683,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1048.png",
+      "element": "fire",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "响指",
+        "火响指"
+      ]
+    },
+    {
+      "id": "c3004",
+      "name": "雅洛薇",
+      "name_en": "Arowell",
+      "base": {
+        "atk": 758,
+        "hp": 5826,
+        "def": 672,
+        "spd": 95,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 12,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3004.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "小光盾"
+      ]
+    },
+    {
+      "id": "c1144",
+      "name": "雅碧凯",
+      "name_en": "Abigail",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1144.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "雅碧凱"
+      ]
+    },
+    {
+      "id": "c3012",
+      "name": "雅莉莎",
+      "name_en": "Alexa",
+      "base": {
+        "atk": 1081,
+        "hp": 4572,
+        "def": 494,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3012.png",
+      "element": "ice",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c3158",
+      "name": "雅蜜琪",
+      "name_en": "Amiki",
+      "base": {
+        "atk": 1019,
+        "hp": 5738,
+        "def": 571,
+        "spd": 98,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3158.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "ymq"
+      ]
+    },
+    {
+      "id": "c1141",
+      "name": "雨修",
+      "name_en": "Beehoo",
+      "base": {
+        "atk": 993,
+        "hp": 6002,
+        "def": 611,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1141.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "雨脩"
+      ]
+    },
+    {
+      "id": "c2111",
+      "name": "雪国的苏莉塔妮亚",
+      "name_en": "Solitaria of the Snow",
+      "base": {
+        "atk": 1039,
+        "hp": 5299,
+        "def": 673,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2111.png",
+      "element": "light",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "雪國的蘇莉塔妮亞"
+      ]
+    },
+    {
+      "id": "c1176",
+      "name": "雪花",
+      "name_en": "Setsuka",
+      "base": {
+        "atk": 1228,
+        "hp": 6266,
+        "def": 473,
+        "spd": 113,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1176.png",
+      "element": "fire",
+      "role": "assassin",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1090",
+      "name": "雷伊",
+      "name_en": "Ray",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 30,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1090.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "医生"
+      ]
+    },
+    {
+      "id": "c3075",
+      "name": "雷奎姆洛",
+      "name_en": "Requiemroar",
+      "base": {
+        "atk": 848,
+        "hp": 4046,
+        "def": 613,
+        "spd": 106,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 18,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3075.png",
+      "element": "dark",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c1114",
+      "name": "雷姆",
+      "name_en": "Rem",
+      "base": {
+        "atk": 1208,
+        "hp": 6488,
+        "def": 616,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1114.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "蕾姆",
+        "蓝毛女仆"
+      ]
+    },
+    {
+      "id": "c3092",
+      "name": "雷娜",
+      "name_en": "Lena",
+      "base": {
+        "atk": 951,
+        "hp": 5517,
+        "def": 583,
+        "spd": 104,
+        "crit": 65,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3092.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "水拳"
+      ]
+    },
+    {
+      "id": "c1029",
+      "name": "雷欧",
+      "name_en": "Leo",
+      "base": {
+        "atk": 930,
+        "hp": 5380,
+        "def": 564,
+        "spd": 112,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1029.png",
+      "element": "wind",
+      "role": "ranger",
+      "stars": 4,
+      "aliases": [
+        "雷歐"
+      ]
+    },
+    {
+      "id": "c1066",
+      "name": "露娜",
+      "name_en": "Luna",
+      "base": {
+        "atk": 1119,
+        "hp": 6266,
+        "def": 627,
+        "spd": 109,
+        "crit": 45,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1066.png",
+      "element": "ice",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "水露娜",
+        "水龙女"
+      ]
+    },
+    {
+      "id": "c1169",
+      "name": "露彬",
+      "name_en": "Robin",
+      "base": {
+        "atk": 1003,
+        "hp": 5704,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1169.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c1180",
+      "name": "露易莎",
+      "name_en": "Ruiza",
+      "base": {
+        "atk": 993,
+        "hp": 6002,
+        "def": 611,
+        "spd": 120,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1180.png",
+      "element": "fire",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c3113",
+      "name": "露西",
+      "name_en": "Lucy",
+      "base": {
+        "atk": 558,
+        "hp": 4733,
+        "def": 661,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3113.png",
+      "element": "wind",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": []
+    },
+    {
+      "id": "c2065",
+      "name": "风云苏琳",
+      "name_en": "Tempest Surin",
+      "base": {
+        "atk": 1010,
+        "hp": 5097,
+        "def": 497,
+        "spd": 117,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 12,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2065.png",
+      "element": "light",
+      "role": "assassin",
+      "stars": 4,
+      "aliases": [
+        "風雲蘇琳"
+      ]
+    },
+    {
+      "id": "c2129",
+      "name": "风纪委员艾莉雅",
+      "name_en": "Disciplinary Prefect Aria",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2129.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "風紀委員艾莉雅"
+      ]
+    },
+    {
+      "id": "c1104",
+      "name": "魔勒",
+      "name_en": "Mort",
+      "base": {
+        "atk": 957,
+        "hp": 6148,
+        "def": 634,
+        "spd": 109,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1104.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c4044",
+      "name": "魔法学者朵莉思",
+      "name_en": "Magic Scholar Doris",
+      "base": {
+        "atk": 540,
+        "hp": 5734,
+        "def": 705,
+        "spd": 101,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 25,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4044.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 3,
+      "aliases": [
+        "魔法學者朵莉思",
+        "转职光奶",
+        "转职小光奶"
+      ]
+    },
+    {
+      "id": "c5004",
+      "name": "魔神的暗影",
+      "name_en": "Archdemon's Shadow",
+      "base": {
+        "atk": 1316,
+        "hp": 4777,
+        "def": 715,
+        "spd": 108,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5004.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c3013",
+      "name": "鲁兹德",
+      "name_en": "Roozid",
+      "base": {
+        "atk": 1081,
+        "hp": 4572,
+        "def": 494,
+        "spd": 111,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3013.png",
+      "element": "wind",
+      "role": "assassin",
+      "stars": 3,
+      "aliases": [
+        "魯茲德"
+      ]
+    },
+    {
+      "id": "c1069",
+      "name": "鲁特比",
+      "name_en": "Ludwig",
+      "base": {
+        "atk": 1412,
+        "hp": 4248,
+        "def": 645,
+        "spd": 112,
+        "crit": 23,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c1069.png",
+      "element": "wind",
+      "role": "mage",
+      "stars": 5,
+      "aliases": [
+        "魯特比",
+        "木正太",
+        "木鲁特比"
+      ]
+    },
+    {
+      "id": "c4003",
+      "name": "鹰猎人可露莉",
+      "name_en": "Falconer Kluri",
+      "base": {
+        "atk": 703,
+        "hp": 5914,
+        "def": 625,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 18,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4003.png",
+      "element": "wind",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "鷹獵人可露莉",
+        "鹰盾"
+      ]
+    },
+    {
+      "id": "c5069",
+      "name": "黎明序曲鲁特比",
+      "name_en": "Aubade Ludwig",
+      "base": {
+        "atk": 1003,
+        "hp": 5704,
+        "def": 585,
+        "spd": 115,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c5069.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 5,
+      "aliases": [
+        "黎明的序曲魯特比"
+      ]
+    },
+    {
+      "id": "c2186",
+      "name": "黎洁特",
+      "name_en": "Lisette",
+      "base": {
+        "atk": 830,
+        "hp": 5121,
+        "def": 735,
+        "spd": 107,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2186.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "黎潔特",
+        "迪彩",
+        "女神迪彩",
+        "狄彩"
+      ]
+    },
+    {
+      "id": "c3062",
+      "name": "黎玛",
+      "name_en": "Rima",
+      "base": {
+        "atk": 822,
+        "hp": 4693,
+        "def": 561,
+        "spd": 117,
+        "crit": 27,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3062.png",
+      "element": "ice",
+      "role": "ranger",
+      "stars": 3,
+      "aliases": [
+        "黎瑪"
+      ]
+    },
+    {
+      "id": "c2076",
+      "name": "黑暗牧者迪埃妮",
+      "name_en": "Shepherd of the Dark Diene",
+      "base": {
+        "atk": 1039,
+        "hp": 6034,
+        "def": 613,
+        "spd": 124,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2076.png",
+      "element": "dark",
+      "role": "mage",
+      "stars": 5,
+      "aliases": []
+    },
+    {
+      "id": "c2012",
+      "name": "黑暗的科尔布思",
+      "name_en": "Dark Corvus",
+      "base": {
+        "atk": 966,
+        "hp": 7323,
+        "def": 657,
+        "spd": 102,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2012.png",
+      "element": "dark",
+      "role": "warrior",
+      "stars": 5,
+      "aliases": [
+        "黑暗的科爾布思",
+        "暗魔王"
+      ]
+    },
+    {
+      "id": "c4005",
+      "name": "黑骑士费莉丝",
+      "name_en": "Shadow Knight Pyllis",
+      "base": {
+        "atk": 685,
+        "hp": 6403,
+        "def": 703,
+        "spd": 97,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 25,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c4005.png",
+      "element": "dark",
+      "role": "knight",
+      "stars": 3,
+      "aliases": [
+        "黑騎士費莉絲",
+        "转职暗盾",
+        "黑骑士",
+        "转职小暗盾"
+      ]
+    },
+    {
+      "id": "c3021",
+      "name": "黛莉亚",
+      "name_en": "Tieria",
+      "base": {
+        "atk": 839,
+        "hp": 5517,
+        "def": 591,
+        "spd": 100,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c3021.png",
+      "element": "fire",
+      "role": "warrior",
+      "stars": 3,
+      "aliases": [
+        "黛莉亞"
+      ]
+    },
+    {
+      "id": "c2106",
+      "name": "龙之伴侣赛娜",
+      "name_en": "Dragon Bride Senya",
+      "base": {
+        "atk": 894,
+        "hp": 6840,
+        "def": 694,
+        "spd": 104,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2106.png",
+      "element": "light",
+      "role": "knight",
+      "stars": 5,
+      "aliases": [
+        "龍之伴侶賽娜",
+        "光龙女",
+        "光赛娜",
+        "婚纱赛娜"
+      ]
+    },
+    {
+      "id": "c2132",
+      "name": "龙王莎伦",
+      "name_en": "Dragon King Sharun",
+      "base": {
+        "atk": 785,
+        "hp": 5077,
+        "def": 634,
+        "spd": 114,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 30,
+        "res": 0,
+        "dual": 3
+      },
+      "portrait": "hero-portraits/c2132.png",
+      "element": "light",
+      "role": "manauser",
+      "stars": 5,
+      "aliases": [
+        "龍王莎倫",
+        "龙王",
+        "龙王莎伦"
+      ]
+    }
+  ],
+  "alias_sources": [
+    "https://www.taptap.cn/moment/694233215501598946",
+    "https://wiki.biligame.com/epic7/幻影的泰妮布里雅",
+    "https://wiki.biligame.com/epic7/海边的维尔萝娜",
+    "https://www.taptap.cn/moment/848954491758707729",
+    "https://github.com/fribbels/Fribbels-Epic-7-Optimizer/tree/main/data/locales"
+  ],
+  "alias_note": "常用外号、繁体名及联动名称；右键头像可在本地补充外号。有歧义时保留多个候选。"
+}

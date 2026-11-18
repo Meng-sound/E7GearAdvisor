@@ -1,0 +1,9 @@
+Hero base-stat catalog, Chinese names and portraits retrieved 2026-11-15.
+Source: https://github.com/fribbels/Fribbels-Epic-7-Optimizer
+Commit: cd69229c7c60547e85cb12f3135a724f01516aa0
+Base-stat field: calculatedStatus.lv60SixStarFullyAwakened
+Chinese names: data/locales/zh/translation.json
+Portraits: data/cachedimages/*_s.png
+Only factual stat/name mappings and resized portraits are bundled.
+Epic Seven and game character artwork belong to their respective owners, including Smilegate/Super Creative. No new license to the game artwork is granted.
+Community data is not an official game API or a guarantee of current balance.

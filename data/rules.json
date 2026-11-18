@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "source": "用户提供的 GVG 萌新打铁指南思维导图；视频正文未读取",
+  "source_url": "https://www.bilibili.com/video/BV1VMnM6aEFf",
+  "weights": {"atk_pct": 1, "hp_pct": 1, "def_pct": 1, "atk": 1, "hp": 1, "def": 1, "spd": 2, "crit": 1.5, "cdmg": 1.125, "eff": 1, "res": 1},
+  "flat_reference": {"atk": 1000, "hp": 6000, "def": 600},
+  "try_score": 28,
+  "keep_reforged_score": 90,
+  "speed_chase_start": 2,
+  "single_percent_keep": 25,
+  "triple_roll_keep": 3,
+  "speed_keep": 15,
+  "finished_keep_score": 70,
+  "stop_after_low_rolls": false,
+  "notes": [
+    "速度15和成品70分是本工具可调整默认线，不是视频结论。",
+    "固定值按参考基础属性换算百分比，不把小词条一律算5分。",
+    "只统计副属性分；主属性用于角色适配。",
+    "只对实际90级+15成品使用90分保留线；不猜测重铸后的分数。",
+    "图中的连续低跳停手规则含义不够明确，尚未启用。"
+  ]
+}

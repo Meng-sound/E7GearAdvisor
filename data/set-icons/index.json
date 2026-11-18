@@ -1,0 +1,122 @@
+[
+  {
+    "name": "攻击",
+    "display": "攻击",
+    "file": "00.png"
+  },
+  {
+    "name": "生命",
+    "display": "生命值",
+    "file": "01.png"
+  },
+  {
+    "name": "暴击",
+    "display": "暴击",
+    "file": "02.png"
+  },
+  {
+    "name": "命中",
+    "display": "命中",
+    "file": "03.png"
+  },
+  {
+    "name": "吸血",
+    "display": "吸血",
+    "file": "04.png"
+  },
+  {
+    "name": "夹攻",
+    "display": "夹攻",
+    "file": "05.png"
+  },
+  {
+    "name": "愤怒",
+    "display": "愤怒",
+    "file": "06.png"
+  },
+  {
+    "name": "复仇",
+    "display": "复仇",
+    "file": "07.png"
+  },
+  {
+    "name": "防御",
+    "display": "防御",
+    "file": "08.png"
+  },
+  {
+    "name": "速度",
+    "display": "速度",
+    "file": "09.png"
+  },
+  {
+    "name": "破灭",
+    "display": "破灭",
+    "file": "10.png"
+  },
+  {
+    "name": "抵抗",
+    "display": "抵抗",
+    "file": "11.png"
+  },
+  {
+    "name": "反击",
+    "display": "反击",
+    "file": "12.png"
+  },
+  {
+    "name": "免疫",
+    "display": "免疫",
+    "file": "13.png"
+  },
+  {
+    "name": "贯穿",
+    "display": "穿透",
+    "file": "14.png"
+  },
+  {
+    "name": "伤口",
+    "display": "伤口",
+    "file": "15.png"
+  },
+  {
+    "name": "保护",
+    "display": "守护",
+    "file": "16.png"
+  },
+  {
+    "name": "逆袭",
+    "display": "逆袭",
+    "file": "17.png"
+  },
+  {
+    "name": "开战",
+    "display": "开战",
+    "file": "18.png"
+  },
+  {
+    "name": "弱化",
+    "display": "弱化",
+    "file": "19.png"
+  },
+  {
+    "name": "激流",
+    "display": "激流",
+    "file": "20.png"
+  },
+  {
+    "name": "回击",
+    "display": "回击",
+    "file": "21.png"
+  },
+  {
+    "name": "追击",
+    "display": "追击",
+    "file": "22.png"
+  },
+  {
+    "name": "全力",
+    "display": "全力",
+    "file": "23.png"
+  }
+]

@@ -1,0 +1,4872 @@
+{
+  "source": "https://raw.githubusercontent.com/tsukiyakii4uu/e7-e7-sidekick-resources/main/heroes.json",
+  "checked_on": "2026-11-14",
+  "note": "完整社区库快照；配装由职业/技能关键词粗分，均为需校准的候选。四个示例保留人工档案。不是当前版本最优配装数据库。",
+  "heroes": [
+    {
+      "name": "Cermia",
+      "name_zh": "洁若米亚",
+      "archetype": "攻击暴击输出",
+      "base": {
+        "atk": 1359,
+        "hp": 5542,
+        "def": 585,
+        "spd": 105
+      },
+      "sets": [
+        "攻击",
+        "破灭",
+        "贯穿",
+        "暴击",
+        "速度"
+      ],
+      "main": {
+        "项链": [
+          "crit",
+          "cdmg"
+        ],
+        "戒指": [
+          "atk_pct"
+        ],
+        "鞋子": [
+          "spd",
+          "atk_pct"
+        ]
+      },
+      "owned": false,
+      "basis": "基础属性来自社区库；攻击暴击配装为示例权重，须按自己的玩法校准"
+    },
+    {
+      "name": "Edward Elric",
+      "name_zh": "爱德华·艾尔利克",
+      "archetype": "生命暴击输出",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117
+      },
+      "sets": [
+        "速度",
+        "反击",
+        "吸血",
+        "贯穿",
+        "免疫"
+      ],
+      "main": {
+        "项链": [
+          "crit",
+          "cdmg",
+          "hp_pct"
+        ],
+        "戒指": [
+          "hp_pct"
+        ],
+        "鞋子": [
+          "spd",
+          "hp_pct"
+        ]
+      },
+      "owned": false,
+      "basis": "社区库技能含自身生命比例伤害；配装权重为示例，非当前版本最优解"
+    },
+    {
+      "name": "Frida",
+      "name_zh": "芙莉达（Frida）",
+      "archetype": "生存辅助",
+      "base": {
+        "atk": 694,
+        "hp": 4855,
+        "def": 655,
+        "spd": 117
+      },
+      "sets": [
+        "速度",
+        "生命",
+        "抵抗",
+        "免疫"
+      ],
+      "main": {
+        "项链": [
+          "hp_pct",
+          "def_pct"
+        ],
+        "戒指": [
+          "hp_pct",
+          "def_pct",
+          "res"
+        ],
+        "鞋子": [
+          "spd"
+        ]
+      },
+      "owned": false,
+      "basis": "社区库角色职业与辅助技能；生存辅助为示例配装权重，须校准"
+    },
+    {
+      "name": "Abigail",
+      "name_zh": "雅碧凯（Abigail）",
+      "archetype": "生命暴击输出",
+      "base": {
+        "atk": 984,
+        "hp": 6266,
+        "def": 637,
+        "spd": 117
+      },
+      "sets": [
+        "速度",
+        "反击",
+        "免疫",
+        "贯穿"
+      ],
+      "main": {
+        "项链": [
+          "crit",
+          "cdmg",
+          "hp_pct"
+        ],
+        "戒指": [
+          "hp_pct"
+        ],
+        "鞋子": [
+          "spd",
+          "hp_pct"
+        ]
+      },
+      "owned": false,
+      "basis": "社区库技能含生命比例伤害；配装为示例权重，非当前版本最优解"
+    },
+    {
+      "name": "Holiday Yufine",
+      "key": "holiday_yufine",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6266.0,
+        "def": 627.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Benimaru",
+      "key": "benimaru",
+      "base": {
+        "atk": 1177.0,
+        "hp": 5542.0,
+        "def": 553.0,
+        "spd": 119.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ainos 2.0",
+      "key": "ainos_2_0",
+      "base": {
+        "atk": 812.0,
+        "hp": 4801.0,
+        "def": 688.0,
+        "spd": 112.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Requiemroar",
+      "key": "requiemroar",
+      "base": {
+        "atk": 848.0,
+        "hp": 4046.0,
+        "def": 613.0,
+        "spd": 106.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Otillie",
+      "key": "otillie",
+      "base": {
+        "atk": 885.0,
+        "hp": 4693.0,
+        "def": 617.0,
+        "spd": 110.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Commander Lorina",
+      "key": "commander_lorina",
+      "base": {
+        "atk": 1372.0,
+        "hp": 4895.0,
+        "def": 543.0,
+        "spd": 101.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Shadow Knight Pyllis",
+      "key": "shadow_knight_pyllis",
+      "base": {
+        "atk": 685.0,
+        "hp": 6403.0,
+        "def": 703.0,
+        "spd": 96.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Hurado",
+      "key": "hurado",
+      "base": {
+        "atk": 930.0,
+        "hp": 5121.0,
+        "def": 585.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Chaos Sect Axe",
+      "key": "chaos_sect_axe",
+      "base": {
+        "atk": 1144.0,
+        "hp": 6013.0,
+        "def": 624.0,
+        "spd": 101.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Suthan",
+      "key": "suthan",
+      "base": {
+        "atk": 1119.0,
+        "hp": 4263.0,
+        "def": 652.0,
+        "spd": 103.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Hasol",
+      "key": "hasol",
+      "base": {
+        "atk": 758.0,
+        "hp": 6002.0,
+        "def": 639.0,
+        "spd": 101.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Pernilla",
+      "key": "pernilla",
+      "base": {
+        "atk": 1144.0,
+        "hp": 4895.0,
+        "def": 543.0,
+        "spd": 101.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sven",
+      "key": "sven",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5517.0,
+        "def": 452.0,
+        "spd": 108.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "All-Rounder Wanda",
+      "key": "all_rounder_wanda",
+      "base": {
+        "atk": 1005.0,
+        "hp": 5333.0,
+        "def": 532.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Penelope",
+      "key": "penelope",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5517.0,
+        "def": 452.0,
+        "spd": 108.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Juni",
+      "key": "juni",
+      "base": {
+        "atk": 1000.0,
+        "hp": 4895.0,
+        "def": 518.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Batisse",
+      "key": "batisse",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5097.0,
+        "def": 518.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sonia",
+      "key": "sonia",
+      "base": {
+        "atk": 540.0,
+        "hp": 4900.0,
+        "def": 729.0,
+        "spd": 98.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Jecht",
+      "key": "jecht",
+      "base": {
+        "atk": 812.0,
+        "hp": 3925.0,
+        "def": 599.0,
+        "spd": 107.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mirsa",
+      "key": "mirsa",
+      "base": {
+        "atk": 885.0,
+        "hp": 4410.0,
+        "def": 501.0,
+        "spd": 120.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Savior Adin",
+      "key": "savior_adin",
+      "base": {
+        "atk": 1238.0,
+        "hp": 4572.0,
+        "def": 494.0,
+        "spd": 117.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Yoonryoung",
+      "key": "yoonryoung",
+      "base": {
+        "atk": 703.0,
+        "hp": 5914.0,
+        "def": 596.0,
+        "spd": 105.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Gunther",
+      "key": "gunther",
+      "base": {
+        "atk": 1664.0,
+        "hp": 5517.0,
+        "def": 583.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Adlay",
+      "key": "adlay",
+      "base": {
+        "atk": 1039.0,
+        "hp": 3925.0,
+        "def": 606.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Celeste",
+      "key": "celeste",
+      "base": {
+        "atk": 929.0,
+        "hp": 4733.0,
+        "def": 494.0,
+        "spd": 128.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Talia",
+      "key": "talia",
+      "base": {
+        "atk": 903.0,
+        "hp": 4895.0,
+        "def": 501.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Gloomyrain",
+      "key": "gloomyrain",
+      "base": {
+        "atk": 1199.0,
+        "hp": 4491.0,
+        "def": 613.0,
+        "spd": 107.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Leah",
+      "key": "leah",
+      "base": {
+        "atk": 1081.0,
+        "hp": 4450.0,
+        "def": 504.0,
+        "spd": 118.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Kiris",
+      "key": "kiris",
+      "base": {
+        "atk": 857.0,
+        "hp": 5057.0,
+        "def": 543.0,
+        "spd": 110.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Camilla",
+      "key": "camilla",
+      "base": {
+        "atk": 885.0,
+        "hp": 4733.0,
+        "def": 571.0,
+        "spd": 110.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Captain Rikoris",
+      "key": "captain_rikoris",
+      "base": {
+        "atk": 1061.0,
+        "hp": 5517.0,
+        "def": 583.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lilka",
+      "key": "lilka",
+      "base": {
+        "atk": 1005.0,
+        "hp": 4693.0,
+        "def": 532.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Unbound Knight Arowell",
+      "key": "unbound_knight_arowell",
+      "base": {
+        "atk": 758.0,
+        "hp": 6818.0,
+        "def": 672.0,
+        "spd": 95.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Magic Scholar Doris",
+      "key": "magic_scholar_doris",
+      "base": {
+        "atk": 540.0,
+        "hp": 5734.0,
+        "def": 705.0,
+        "spd": 101.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Elson",
+      "key": "elson",
+      "base": {
+        "atk": 540.0,
+        "hp": 4900.0,
+        "def": 729.0,
+        "spd": 98.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lucy",
+      "key": "lucy",
+      "base": {
+        "atk": 558.0,
+        "hp": 5016.0,
+        "def": 661.0,
+        "spd": 102.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Kikirat v2",
+      "key": "kikirat_v2",
+      "base": {
+        "atk": 667.0,
+        "hp": 5704.0,
+        "def": 749.0,
+        "spd": 90.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Eaton",
+      "key": "eaton",
+      "base": {
+        "atk": 685.0,
+        "hp": 7684.0,
+        "def": 703.0,
+        "spd": 91.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Vigilante Leader Glenn",
+      "key": "vigilante_leader_glenn",
+      "base": {
+        "atk": 1026.0,
+        "hp": 5298.0,
+        "def": 525.0,
+        "spd": 110.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Bernard",
+      "key": "bernard",
+      "base": {
+        "atk": 594.0,
+        "hp": 4329.0,
+        "def": 603.0,
+        "spd": 112.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Verdant Adin",
+      "key": "verdant_adin",
+      "base": {
+        "atk": 1081.0,
+        "hp": 4572.0,
+        "def": 494.0,
+        "spd": 116.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Doll Maker Pearlhorizon",
+      "key": "doll_maker_pearlhorizon",
+      "base": {
+        "atk": 921.0,
+        "hp": 5963.0,
+        "def": 631.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ezra",
+      "key": "ezra",
+      "base": {
+        "atk": 948.0,
+        "hp": 5738.0,
+        "def": 539.0,
+        "spd": 102.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Righteous Thief Roozid",
+      "key": "righteous_thief_roozid",
+      "base": {
+        "atk": 812.0,
+        "hp": 5160.0,
+        "def": 462.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Aither",
+      "key": "aither",
+      "base": {
+        "atk": 712.0,
+        "hp": 4592.0,
+        "def": 672.0,
+        "spd": 103.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Orte",
+      "key": "orte",
+      "base": {
+        "atk": 857.0,
+        "hp": 4531.0,
+        "def": 483.0,
+        "spd": 125.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Falconer Kluri",
+      "key": "falconer_kluri",
+      "base": {
+        "atk": 703.0,
+        "hp": 5914.0,
+        "def": 625.0,
+        "spd": 114.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Shepherd Jena",
+      "key": "shepherd_jena",
+      "base": {
+        "atk": 1063.0,
+        "hp": 5305.0,
+        "def": 599.0,
+        "spd": 111.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mercenary Helga",
+      "key": "mercenary_helga",
+      "base": {
+        "atk": 1150.0,
+        "hp": 5874.0,
+        "def": 518.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mucacha",
+      "key": "mucacha",
+      "base": {
+        "atk": 1000.0,
+        "hp": 4895.0,
+        "def": 518.0,
+        "spd": 114.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Silvertide Christy",
+      "key": "silvertide_christy",
+      "base": {
+        "atk": 667.0,
+        "hp": 5784.0,
+        "def": 749.0,
+        "spd": 95.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mistychain",
+      "key": "mistychain",
+      "base": {
+        "atk": 1252.0,
+        "hp": 3925.0,
+        "def": 606.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Serene Purity Adin",
+      "key": "serene_purity_adin",
+      "base": {
+        "atk": 1081.0,
+        "hp": 5194.0,
+        "def": 494.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Angelic Montmorancy",
+      "key": "angelic_montmorancy",
+      "base": {
+        "atk": 812.0,
+        "hp": 5312.0,
+        "def": 729.0,
+        "spd": 98.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ains",
+      "key": "ains",
+      "base": {
+        "atk": 951.0,
+        "hp": 5517.0,
+        "def": 583.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Muse Rima",
+      "key": "muse_rima",
+      "base": {
+        "atk": 822.0,
+        "hp": 5120.0,
+        "def": 561.0,
+        "spd": 117.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ian",
+      "key": "ian",
+      "base": {
+        "atk": 1081.0,
+        "hp": 4450.0,
+        "def": 504.0,
+        "spd": 118.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mascot Hazel",
+      "key": "mascot_hazel",
+      "base": {
+        "atk": 849.0,
+        "hp": 5256.0,
+        "def": 662.0,
+        "spd": 111.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Bask",
+      "key": "bask",
+      "base": {
+        "atk": 842.0,
+        "hp": 6463.0,
+        "def": 617.0,
+        "spd": 90.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Muwi",
+      "key": "muwi",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5517.0,
+        "def": 452.0,
+        "spd": 108.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Taranor Royal Guard",
+      "key": "taranor_royal_guard",
+      "base": {
+        "atk": 842.0,
+        "hp": 6463.0,
+        "def": 617.0,
+        "spd": 90.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Researcher Carrot",
+      "key": "researcher_carrot",
+      "base": {
+        "atk": 1194.0,
+        "hp": 4906.0,
+        "def": 666.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Summer's Disciple Alexa",
+      "key": "summers_disciple_alexa",
+      "base": {
+        "atk": 1159.0,
+        "hp": 5194.0,
+        "def": 494.0,
+        "spd": 111.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ragnvald",
+      "key": "ragnvald",
+      "base": {
+        "atk": 1081.0,
+        "hp": 4572.0,
+        "def": 494.0,
+        "spd": 111.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Helen",
+      "key": "helen",
+      "base": {
+        "atk": 685.0,
+        "hp": 6403.0,
+        "def": 703.0,
+        "spd": 91.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Taranor Guard",
+      "key": "taranor_guard",
+      "base": {
+        "atk": 951.0,
+        "hp": 5517.0,
+        "def": 583.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Enott",
+      "key": "enott",
+      "base": {
+        "atk": 1019.0,
+        "hp": 5738.0,
+        "def": 571.0,
+        "spd": 98.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Talaz",
+      "key": "talaz",
+      "base": {
+        "atk": 1144.0,
+        "hp": 4895.0,
+        "def": 543.0,
+        "spd": 101.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Judith",
+      "key": "judith",
+      "base": {
+        "atk": 848.0,
+        "hp": 4289.0,
+        "def": 494.0,
+        "spd": 117.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Zealot Carmainerose",
+      "key": "zealot_carmainerose",
+      "base": {
+        "atk": 1168.0,
+        "hp": 4367.0,
+        "def": 732.0,
+        "spd": 101.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Hataan",
+      "key": "hataan",
+      "base": {
+        "atk": 1081.0,
+        "hp": 4572.0,
+        "def": 494.0,
+        "spd": 111.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lena",
+      "key": "lena",
+      "base": {
+        "atk": 951.0,
+        "hp": 5517.0,
+        "def": 583.0,
+        "spd": 104.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Chaos Inquisitor",
+      "key": "chaos_inquisitor",
+      "base": {
+        "atk": 963.0,
+        "hp": 5609.0,
+        "def": 606.0,
+        "spd": 95.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Champion Zerato",
+      "key": "champion_zerato",
+      "base": {
+        "atk": 1159.0,
+        "hp": 4733.0,
+        "def": 627.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sinful Angelica",
+      "key": "sinful_angelica",
+      "base": {
+        "atk": 649.0,
+        "hp": 4572.0,
+        "def": 631.0,
+        "spd": 114.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Shooting Star Achates",
+      "key": "shooting_star_achates",
+      "base": {
+        "atk": 576.0,
+        "hp": 5700.0,
+        "def": 743.0,
+        "spd": 98.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Auxiliary Lots",
+      "key": "auxiliary_lots",
+      "base": {
+        "atk": 1021.0,
+        "hp": 5474.0,
+        "def": 610.0,
+        "spd": 117.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Nemunas",
+      "key": "nemunas",
+      "base": {
+        "atk": 920.0,
+        "hp": 4855.0,
+        "def": 525.0,
+        "spd": 110.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Januta",
+      "key": "januta",
+      "base": {
+        "atk": 1144.0,
+        "hp": 4895.0,
+        "def": 543.0,
+        "spd": 101.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Melany",
+      "key": "melany",
+      "base": {
+        "atk": 951.0,
+        "hp": 5517.0,
+        "def": 583.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Tieria",
+      "key": "tieria",
+      "base": {
+        "atk": 839.0,
+        "hp": 5517.0,
+        "def": 591.0,
+        "spd": 100.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Assassin Cidd",
+      "key": "assassin_cidd",
+      "base": {
+        "atk": 930.0,
+        "hp": 4774.0,
+        "def": 497.0,
+        "spd": 128.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Roaming Warrior Leo",
+      "key": "roaming_warrior_leo",
+      "base": {
+        "atk": 1088.0,
+        "hp": 5016.0,
+        "def": 553.0,
+        "spd": 111.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Crescent Moon Rin",
+      "key": "crescent_moon_rin",
+      "base": {
+        "atk": 1027.0,
+        "hp": 5299.0,
+        "def": 469.0,
+        "spd": 126.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Claudia",
+      "key": "claudia",
+      "base": {
+        "atk": 703.0,
+        "hp": 5914.0,
+        "def": 596.0,
+        "spd": 105.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Godmother",
+      "key": "godmother",
+      "base": {
+        "atk": 1005.0,
+        "hp": 4693.0,
+        "def": 532.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Holy Flame Adin",
+      "key": "holy_flame_adin",
+      "base": {
+        "atk": 1199.0,
+        "hp": 5194.0,
+        "def": 494.0,
+        "spd": 111.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Azalea",
+      "key": "azalea",
+      "base": {
+        "atk": 1019.0,
+        "hp": 5738.0,
+        "def": 571.0,
+        "spd": 98.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Adventurer Ras",
+      "key": "adventurer_ras",
+      "base": {
+        "atk": 758.0,
+        "hp": 6818.0,
+        "def": 672.0,
+        "spd": 101.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Celestial Mercedes",
+      "key": "celestial_mercedes",
+      "base": {
+        "atk": 1187.0,
+        "hp": 4491.0,
+        "def": 627.0,
+        "spd": 101.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Blood Blade Karin",
+      "key": "blood_blade_karin",
+      "base": {
+        "atk": 1138.0,
+        "hp": 5871.0,
+        "def": 462.0,
+        "spd": 111.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Peacemaker Furious",
+      "key": "peacemaker_furious",
+      "base": {
+        "atk": 970.0,
+        "hp": 5935.0,
+        "def": 557.0,
+        "spd": 106.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Kitty Clarissa",
+      "key": "kitty_clarissa",
+      "base": {
+        "atk": 957.0,
+        "hp": 5057.0,
+        "def": 592.0,
+        "spd": 112.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Angel of Light Angelica",
+      "key": "angel_of_light_angelica",
+      "base": {
+        "atk": 957.0,
+        "hp": 5016.0,
+        "def": 645.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Great Chief Khawana",
+      "key": "great_chief_khawana",
+      "base": {
+        "atk": 1138.0,
+        "hp": 5421.0,
+        "def": 536.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Infinite Horizon Achates",
+      "key": "infinite_horizon_achates",
+      "base": {
+        "atk": 576.0,
+        "hp": 5165.0,
+        "def": 767.0,
+        "spd": 100.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Guider Aither",
+      "key": "guider_aither",
+      "base": {
+        "atk": 1252.0,
+        "hp": 4612.0,
+        "def": 627.0,
+        "spd": 107.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Troublemaker Crozet",
+      "key": "troublemaker_crozet",
+      "base": {
+        "atk": 776.0,
+        "hp": 6021.0,
+        "def": 718.0,
+        "spd": 98.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Benevolent Romann",
+      "key": "benevolent_romann",
+      "base": {
+        "atk": 957.0,
+        "hp": 5016.0,
+        "def": 645.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Abyssal Yufine",
+      "key": "abyssal_yufine",
+      "base": {
+        "atk": 830.0,
+        "hp": 6619.0,
+        "def": 713.0,
+        "spd": 106.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Assassin Coli",
+      "key": "assassin_coli",
+      "base": {
+        "atk": 1027.0,
+        "hp": 5299.0,
+        "def": 469.0,
+        "spd": 126.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Last Piece Karin",
+      "key": "last_piece_karin",
+      "base": {
+        "atk": 1029.0,
+        "hp": 5097.0,
+        "def": 473.0,
+        "spd": 126.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Blaze Dingo",
+      "key": "blaze_dingo",
+      "base": {
+        "atk": 885.0,
+        "hp": 4167.0,
+        "def": 627.0,
+        "spd": 109.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Wanderer Silk",
+      "key": "wanderer_silk",
+      "base": {
+        "atk": 930.0,
+        "hp": 5380.0,
+        "def": 564.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Bad Cat Armin",
+      "key": "bad_cat_armin",
+      "base": {
+        "atk": 912.0,
+        "hp": 5871.0,
+        "def": 614.0,
+        "spd": 115.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Watcher Schuri",
+      "key": "watcher_schuri",
+      "base": {
+        "atk": 970.0,
+        "hp": 5935.0,
+        "def": 557.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Fallen Cecilia",
+      "key": "fallen_cecilia",
+      "base": {
+        "atk": 894.0,
+        "hp": 6840.0,
+        "def": 694.0,
+        "spd": 104.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Fighter Maya",
+      "key": "fighter_maya",
+      "base": {
+        "atk": 821.0,
+        "hp": 6266.0,
+        "def": 703.0,
+        "spd": 97.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Tempest Surin",
+      "key": "tempest_surin",
+      "base": {
+        "atk": 1010.0,
+        "hp": 5097.0,
+        "def": 497.0,
+        "spd": 117.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Shadow Rose",
+      "key": "shadow_rose",
+      "base": {
+        "atk": 889.0,
+        "hp": 5784.0,
+        "def": 610.0,
+        "spd": 107.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Moon Bunny Dominiel",
+      "key": "moon_bunny_dominiel",
+      "base": {
+        "atk": 649.0,
+        "hp": 4572.0,
+        "def": 631.0,
+        "spd": 114.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Assassin Cartuja",
+      "key": "assassin_cartuja",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6091.0,
+        "def": 594.0,
+        "spd": 100.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "General Purrgis",
+      "key": "general_purrgis",
+      "base": {
+        "atk": 903.0,
+        "hp": 6635.0,
+        "def": 630.0,
+        "spd": 103.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Rose",
+      "key": "rose",
+      "base": {
+        "atk": 821.0,
+        "hp": 6266.0,
+        "def": 703.0,
+        "spd": 97.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Cartuja",
+      "key": "cartuja",
+      "base": {
+        "atk": 903.0,
+        "hp": 6635.0,
+        "def": 630.0,
+        "spd": 103.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Rin",
+      "key": "rin",
+      "base": {
+        "atk": 594.0,
+        "hp": 5057.0,
+        "def": 691.0,
+        "spd": 104.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Silk",
+      "key": "silk",
+      "base": {
+        "atk": 1188.0,
+        "hp": 4693.0,
+        "def": 518.0,
+        "spd": 121.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Kizuna AI",
+      "key": "kizuna_ai",
+      "base": {
+        "atk": 576.0,
+        "hp": 5700.0,
+        "def": 743.0,
+        "spd": 98.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Coli",
+      "key": "coli",
+      "base": {
+        "atk": 1138.0,
+        "hp": 5871.0,
+        "def": 462.0,
+        "spd": 111.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Clarissa",
+      "key": "clarissa",
+      "base": {
+        "atk": 1252.0,
+        "hp": 5219.0,
+        "def": 564.0,
+        "spd": 103.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Angelica",
+      "key": "angelica",
+      "base": {
+        "atk": 576.0,
+        "hp": 5700.0,
+        "def": 743.0,
+        "spd": 98.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Purrgis",
+      "key": "purrgis",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6091.0,
+        "def": 594.0,
+        "spd": 100.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Crozet",
+      "key": "crozet",
+      "base": {
+        "atk": 739.0,
+        "hp": 6868.0,
+        "def": 733.0,
+        "spd": 93.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Leo",
+      "key": "leo",
+      "base": {
+        "atk": 930.0,
+        "hp": 5380.0,
+        "def": 564.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lots",
+      "key": "lots",
+      "base": {
+        "atk": 603.0,
+        "hp": 4945.0,
+        "def": 662.0,
+        "spd": 103.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Zerato",
+      "key": "zerato",
+      "base": {
+        "atk": 1159.0,
+        "hp": 4733.0,
+        "def": 627.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Romann",
+      "key": "romann",
+      "base": {
+        "atk": 1109.0,
+        "hp": 4329.0,
+        "def": 655.0,
+        "spd": 105.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Dominiel",
+      "key": "dominiel",
+      "base": {
+        "atk": 957.0,
+        "hp": 5016.0,
+        "def": 645.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Armin",
+      "key": "armin",
+      "base": {
+        "atk": 721.0,
+        "hp": 6189.0,
+        "def": 785.0,
+        "spd": 91.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Free Spirit Tieria",
+      "key": "free_spirit_tieria",
+      "base": {
+        "atk": 957.0,
+        "hp": 5057.0,
+        "def": 592.0,
+        "spd": 112.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Cidd",
+      "key": "cidd",
+      "base": {
+        "atk": 1029.0,
+        "hp": 5097.0,
+        "def": 473.0,
+        "spd": 126.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Karin",
+      "key": "karin",
+      "base": {
+        "atk": 1188.0,
+        "hp": 4855.0,
+        "def": 508.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Furious",
+      "key": "furious",
+      "base": {
+        "atk": 1068.0,
+        "hp": 5650.0,
+        "def": 536.0,
+        "spd": 110.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Schuri",
+      "key": "schuri",
+      "base": {
+        "atk": 1068.0,
+        "hp": 5650.0,
+        "def": 536.0,
+        "spd": 110.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Death Dealer Ray",
+      "key": "death_dealer_ray",
+      "base": {
+        "atk": 621.0,
+        "hp": 6034.0,
+        "def": 775.0,
+        "spd": 100.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Achates",
+      "key": "achates",
+      "base": {
+        "atk": 603.0,
+        "hp": 4945.0,
+        "def": 662.0,
+        "spd": 103.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mercedes",
+      "key": "mercedes",
+      "base": {
+        "atk": 1187.0,
+        "hp": 4491.0,
+        "def": 627.0,
+        "spd": 101.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Specter Tenebria",
+      "key": "specter_tenebria",
+      "base": {
+        "atk": 1197.0,
+        "hp": 4572.0,
+        "def": 683.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Zio",
+      "key": "zio",
+      "base": {
+        "atk": 1255.0,
+        "hp": 5016.0,
+        "def": 652.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Veronica",
+      "key": "veronica",
+      "base": {
+        "atk": 1188.0,
+        "hp": 4693.0,
+        "def": 518.0,
+        "spd": 121.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Corvus",
+      "key": "corvus",
+      "base": {
+        "atk": 903.0,
+        "hp": 6635.0,
+        "def": 630.0,
+        "spd": 103.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Maya",
+      "key": "maya",
+      "base": {
+        "atk": 821.0,
+        "hp": 6796.0,
+        "def": 648.0,
+        "spd": 112.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Serila",
+      "key": "serila",
+      "base": {
+        "atk": 1218.0,
+        "hp": 4521.0,
+        "def": 683.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Dingo",
+      "key": "dingo",
+      "base": {
+        "atk": 957.0,
+        "hp": 5057.0,
+        "def": 592.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Blood Moon Haste",
+      "key": "blood_moon_haste",
+      "base": {
+        "atk": 621.0,
+        "hp": 5474.0,
+        "def": 802.0,
+        "spd": 102.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Requiem Roana",
+      "key": "requiem_roana",
+      "base": {
+        "atk": 1316.0,
+        "hp": 4777.0,
+        "def": 715.0,
+        "spd": 108.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Eternal Wanderer Ludwig",
+      "key": "eternal_wanderer_ludwig",
+      "base": {
+        "atk": 1412.0,
+        "hp": 4248.0,
+        "def": 645.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Khawana",
+      "key": "khawana",
+      "base": {
+        "atk": 957.0,
+        "hp": 4653.0,
+        "def": 515.0,
+        "spd": 123.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Khawazu",
+      "key": "khawazu",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6091.0,
+        "def": 594.0,
+        "spd": 100.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Archdemon's Shadow",
+      "key": "archdemons_shadow",
+      "base": {
+        "atk": 1316.0,
+        "hp": 4777.0,
+        "def": 715.0,
+        "spd": 108.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Surin",
+      "key": "surin",
+      "base": {
+        "atk": 1010.0,
+        "hp": 5097.0,
+        "def": 497.0,
+        "spd": 117.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Baiken",
+      "key": "baiken",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Operator Sigret",
+      "key": "operator_sigret",
+      "base": {
+        "atk": 1079.0,
+        "hp": 5502.0,
+        "def": 564.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Remnant Violet",
+      "key": "remnant_violet",
+      "base": {
+        "atk": 1283.0,
+        "hp": 5138.0,
+        "def": 522.0,
+        "spd": 116.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lone Crescent Bellona",
+      "key": "lone_crescent_bellona",
+      "base": {
+        "atk": 1208.0,
+        "hp": 6488.0,
+        "def": 616.0,
+        "spd": 102.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Desert Jewel Basar",
+      "key": "desert_jewel_basar",
+      "base": {
+        "atk": 957.0,
+        "hp": 4370.0,
+        "def": 652.0,
+        "spd": 111.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ainz Ooal Gown",
+      "key": "ainz_ooal_gown",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5299.0,
+        "def": 673.0,
+        "spd": 115.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sea Phantom Politis",
+      "key": "sea_phantom_politis",
+      "base": {
+        "atk": 993.0,
+        "hp": 6002.0,
+        "def": 611.0,
+        "spd": 120.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Briar Witch Iseria",
+      "key": "briar_witch_iseria",
+      "base": {
+        "atk": 1182.0,
+        "hp": 5299.0,
+        "def": 571.0,
+        "spd": 114.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Martial Artist Ken",
+      "key": "martial_artist_ken",
+      "base": {
+        "atk": 1359.0,
+        "hp": 5784.0,
+        "def": 585.0,
+        "spd": 105.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Apocalypse Ravi",
+      "key": "apocalypse_ravi",
+      "base": {
+        "atk": 975.0,
+        "hp": 7054.0,
+        "def": 652.0,
+        "spd": 106.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Architect Laika",
+      "key": "architect_laika",
+      "base": {
+        "atk": 1306.0,
+        "hp": 4248.0,
+        "def": 652.0,
+        "spd": 121.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Solitaria of the Snow",
+      "key": "solitaria_of_the_snow",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5299.0,
+        "def": 673.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Closer Charles",
+      "key": "closer_charles",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Arbiter Vildred",
+      "key": "arbiter_vildred",
+      "base": {
+        "atk": 1283.0,
+        "hp": 5138.0,
+        "def": 522.0,
+        "spd": 116.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Pirate Captain Flan",
+      "key": "pirate_captain_flan",
+      "base": {
+        "atk": 1182.0,
+        "hp": 5299.0,
+        "def": 571.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Designer Lilibet",
+      "key": "designer_lilibet",
+      "base": {
+        "atk": 975.0,
+        "hp": 7054.0,
+        "def": 652.0,
+        "spd": 106.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Dark Corvus",
+      "key": "dark_corvus",
+      "base": {
+        "atk": 966.0,
+        "hp": 7323.0,
+        "def": 657.0,
+        "spd": 102.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Straze",
+      "key": "straze",
+      "base": {
+        "atk": 1228.0,
+        "hp": 5784.0,
+        "def": 553.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Dragon King Sharun",
+      "key": "dragon_king_sharun",
+      "base": {
+        "atk": 640.0,
+        "hp": 5340.0,
+        "def": 720.0,
+        "spd": 106.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Faithless Lidica",
+      "key": "faithless_lidica",
+      "base": {
+        "atk": 1182.0,
+        "hp": 5299.0,
+        "def": 571.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Maid Chloe",
+      "key": "maid_chloe",
+      "base": {
+        "atk": 649.0,
+        "hp": 5254.0,
+        "def": 694.0,
+        "spd": 105.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Navy Captain Landy",
+      "key": "navy_captain_landy",
+      "base": {
+        "atk": 1134.0,
+        "hp": 5825.0,
+        "def": 662.0,
+        "spd": 99.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Urban Shadow Choux",
+      "key": "urban_shadow_choux",
+      "base": {
+        "atk": 984.0,
+        "hp": 6266.0,
+        "def": 637.0,
+        "spd": 117.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ruele of Light",
+      "key": "ruele_of_light",
+      "base": {
+        "atk": 621.0,
+        "hp": 5474.0,
+        "def": 802.0,
+        "spd": 102.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sylvan Sage Vivian",
+      "key": "sylvan_sage_vivian",
+      "base": {
+        "atk": 1359.0,
+        "hp": 4895.0,
+        "def": 652.0,
+        "spd": 110.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "New Moon Luna",
+      "key": "new_moon_luna",
+      "base": {
+        "atk": 1039.0,
+        "hp": 6034.0,
+        "def": 613.0,
+        "spd": 124.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Dragon Bride Senya",
+      "key": "dragon_bride_senya",
+      "base": {
+        "atk": 894.0,
+        "hp": 7524.0,
+        "def": 694.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Silver Blade Aramintha",
+      "key": "silver_blade_aramintha",
+      "base": {
+        "atk": 1197.0,
+        "hp": 4572.0,
+        "def": 683.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Spirit Eye Celine",
+      "key": "spirit_eye_celine",
+      "base": {
+        "atk": 1158.0,
+        "hp": 5016.0,
+        "def": 532.0,
+        "spd": 122.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ludwig",
+      "key": "ludwig",
+      "base": {
+        "atk": 1412.0,
+        "hp": 4248.0,
+        "def": 645.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Roana",
+      "key": "roana",
+      "base": {
+        "atk": 621.0,
+        "hp": 5474.0,
+        "def": 802.0,
+        "spd": 102.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Judge Kise",
+      "key": "judge_kise",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5340.0,
+        "def": 617.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Empyrean Ilynav",
+      "key": "empyrean_ilynav",
+      "base": {
+        "atk": 794.0,
+        "hp": 7332.0,
+        "def": 767.0,
+        "spd": 95.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Belian",
+      "key": "belian",
+      "base": {
+        "atk": 821.0,
+        "hp": 6751.0,
+        "def": 648.0,
+        "spd": 110.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Basar",
+      "key": "basar",
+      "base": {
+        "atk": 1316.0,
+        "hp": 4777.0,
+        "def": 715.0,
+        "spd": 108.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ram",
+      "key": "ram",
+      "base": {
+        "atk": 1556.0,
+        "hp": 4572.0,
+        "def": 683.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Bellona",
+      "key": "bellona",
+      "base": {
+        "atk": 1003.0,
+        "hp": 5704.0,
+        "def": 585.0,
+        "spd": 115.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "ae-GISELLE",
+      "key": "ae_giselle",
+      "base": {
+        "atk": 1286.0,
+        "hp": 4733.0,
+        "def": 652.0,
+        "spd": 103.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Astromancer Elena",
+      "key": "astromancer_elena",
+      "base": {
+        "atk": 1079.0,
+        "hp": 5502.0,
+        "def": 564.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Little Queen Charlotte",
+      "key": "little_queen_charlotte",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6266.0,
+        "def": 627.0,
+        "spd": 109.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ambitious Tywin",
+      "key": "ambitious_tywin",
+      "base": {
+        "atk": 894.0,
+        "hp": 6840.0,
+        "def": 694.0,
+        "spd": 104.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ocean Breeze Luluca",
+      "key": "ocean_breeze_luluca",
+      "base": {
+        "atk": 649.0,
+        "hp": 5254.0,
+        "def": 694.0,
+        "spd": 105.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Iseria",
+      "key": "iseria",
+      "base": {
+        "atk": 1158.0,
+        "hp": 6002.0,
+        "def": 553.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Landy",
+      "key": "landy",
+      "base": {
+        "atk": 1158.0,
+        "hp": 6002.0,
+        "def": 553.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Last Rider Krau",
+      "key": "last_rider_krau",
+      "base": {
+        "atk": 839.0,
+        "hp": 6405.0,
+        "def": 752.0,
+        "spd": 100.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Pavel",
+      "key": "pavel",
+      "base": {
+        "atk": 1283.0,
+        "hp": 4976.0,
+        "def": 536.0,
+        "spd": 124.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Destina",
+      "key": "destina",
+      "base": {
+        "atk": 621.0,
+        "hp": 6034.0,
+        "def": 775.0,
+        "spd": 100.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ray",
+      "key": "ray",
+      "base": {
+        "atk": 694.0,
+        "hp": 4855.0,
+        "def": 655.0,
+        "spd": 117.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Vivian",
+      "key": "vivian",
+      "base": {
+        "atk": 1228.0,
+        "hp": 4370.0,
+        "def": 662.0,
+        "spd": 119.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Violet",
+      "key": "violet",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Command Model Laika",
+      "key": "command_model_laika",
+      "base": {
+        "atk": 1182.0,
+        "hp": 5299.0,
+        "def": 571.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Vildred",
+      "key": "vildred",
+      "base": {
+        "atk": 1283.0,
+        "hp": 5138.0,
+        "def": 522.0,
+        "spd": 116.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Alencia",
+      "key": "alencia",
+      "base": {
+        "atk": 975.0,
+        "hp": 7054.0,
+        "def": 652.0,
+        "spd": 106.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Midnight Gala Lilias",
+      "key": "midnight_gala_lilias",
+      "base": {
+        "atk": 1208.0,
+        "hp": 5178.0,
+        "def": 508.0,
+        "spd": 121.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ervalen",
+      "key": "ervalen",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Blooming Lidica",
+      "key": "blooming_lidica",
+      "base": {
+        "atk": 1057.0,
+        "hp": 5542.0,
+        "def": 532.0,
+        "spd": 118.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Fumyr",
+      "key": "fumyr",
+      "base": {
+        "atk": 1102.0,
+        "hp": 5782.0,
+        "def": 634.0,
+        "spd": 120.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Rimuru",
+      "key": "rimuru",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6266.0,
+        "def": 627.0,
+        "spd": 109.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Zahhak",
+      "key": "zahhak",
+      "base": {
+        "atk": 1177.0,
+        "hp": 5542.0,
+        "def": 553.0,
+        "spd": 119.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Diene",
+      "key": "diene",
+      "base": {
+        "atk": 649.0,
+        "hp": 5254.0,
+        "def": 694.0,
+        "spd": 105.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Elena",
+      "key": "elena",
+      "base": {
+        "atk": 649.0,
+        "hp": 5254.0,
+        "def": 694.0,
+        "spd": 105.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Celine",
+      "key": "celine",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Yufine",
+      "key": "yufine",
+      "base": {
+        "atk": 1228.0,
+        "hp": 5784.0,
+        "def": 553.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Arunka",
+      "key": "arunka",
+      "base": {
+        "atk": 1570.0,
+        "hp": 6488.0,
+        "def": 616.0,
+        "spd": 102.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Laia",
+      "key": "laia",
+      "base": {
+        "atk": 984.0,
+        "hp": 6266.0,
+        "def": 637.0,
+        "spd": 117.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Fairytale Tenebria",
+      "key": "fairytale_tenebria",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5299.0,
+        "def": 673.0,
+        "spd": 115.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Emilia",
+      "key": "emilia",
+      "base": {
+        "atk": 649.0,
+        "hp": 5254.0,
+        "def": 694.0,
+        "spd": 105.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Luluca",
+      "key": "luluca",
+      "base": {
+        "atk": 1316.0,
+        "hp": 4777.0,
+        "def": 715.0,
+        "spd": 108.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Charles",
+      "key": "charles",
+      "base": {
+        "atk": 957.0,
+        "hp": 6148.0,
+        "def": 634.0,
+        "spd": 109.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mort",
+      "key": "mort",
+      "base": {
+        "atk": 957.0,
+        "hp": 6148.0,
+        "def": 634.0,
+        "spd": 109.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Senya",
+      "key": "senya",
+      "base": {
+        "atk": 1112.0,
+        "hp": 6321.0,
+        "def": 645.0,
+        "spd": 100.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Albedo",
+      "key": "albedo",
+      "base": {
+        "atk": 894.0,
+        "hp": 6840.0,
+        "def": 694.0,
+        "spd": 104.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Immortal Wukong",
+      "key": "immortal_wukong",
+      "base": {
+        "atk": 1208.0,
+        "hp": 6488.0,
+        "def": 616.0,
+        "spd": 102.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Eda",
+      "key": "eda",
+      "base": {
+        "atk": 1255.0,
+        "hp": 5016.0,
+        "def": 652.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Zeno",
+      "key": "zeno",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5299.0,
+        "def": 673.0,
+        "spd": 115.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Birgitta",
+      "key": "birgitta",
+      "base": {
+        "atk": 785.0,
+        "hp": 5077.0,
+        "def": 634.0,
+        "spd": 114.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Seaside Bellona",
+      "key": "seaside_bellona",
+      "base": {
+        "atk": 1182.0,
+        "hp": 5299.0,
+        "def": 571.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ran",
+      "key": "ran",
+      "base": {
+        "atk": 1119.0,
+        "hp": 5380.0,
+        "def": 483.0,
+        "spd": 129.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Riza Hawkeye",
+      "key": "riza_hawkeye",
+      "base": {
+        "atk": 1003.0,
+        "hp": 5704.0,
+        "def": 585.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Dizzy",
+      "key": "dizzy",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5299.0,
+        "def": 673.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Tenebria",
+      "key": "tenebria",
+      "base": {
+        "atk": 1359.0,
+        "hp": 4895.0,
+        "def": 652.0,
+        "spd": 110.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lua",
+      "key": "lua",
+      "base": {
+        "atk": 993.0,
+        "hp": 6002.0,
+        "def": 611.0,
+        "spd": 120.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Tywin",
+      "key": "tywin",
+      "base": {
+        "atk": 821.0,
+        "hp": 6751.0,
+        "def": 648.0,
+        "spd": 110.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Krau",
+      "key": "krau",
+      "base": {
+        "atk": 839.0,
+        "hp": 6405.0,
+        "def": 752.0,
+        "spd": 100.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sigret",
+      "key": "sigret",
+      "base": {
+        "atk": 1228.0,
+        "hp": 5784.0,
+        "def": 553.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "ae-NINGNING",
+      "key": "ae_ningning",
+      "base": {
+        "atk": 785.0,
+        "hp": 5077.0,
+        "def": 634.0,
+        "spd": 114.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Rem",
+      "key": "rem",
+      "base": {
+        "atk": 1208.0,
+        "hp": 6488.0,
+        "def": 616.0,
+        "spd": 102.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Taeyou",
+      "key": "taeyou",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5340.0,
+        "def": 617.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sez",
+      "key": "sez",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Byblis",
+      "key": "byblis",
+      "base": {
+        "atk": 993.0,
+        "hp": 6002.0,
+        "def": 611.0,
+        "spd": 120.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "ae-KARINA",
+      "key": "ae_karina",
+      "base": {
+        "atk": 821.0,
+        "hp": 6751.0,
+        "def": 648.0,
+        "spd": 110.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Brieg",
+      "key": "brieg",
+      "base": {
+        "atk": 821.0,
+        "hp": 6751.0,
+        "def": 648.0,
+        "spd": 110.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Choux",
+      "key": "choux",
+      "base": {
+        "atk": 966.0,
+        "hp": 7323.0,
+        "def": 657.0,
+        "spd": 102.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Peira",
+      "key": "peira",
+      "base": {
+        "atk": 1075.0,
+        "hp": 5562.0,
+        "def": 487.0,
+        "spd": 128.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lethe",
+      "key": "lethe",
+      "base": {
+        "atk": 885.0,
+        "hp": 6149.0,
+        "def": 613.0,
+        "spd": 121.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Tamarinne",
+      "key": "tamarinne",
+      "base": {
+        "atk": 957.0,
+        "hp": 4370.0,
+        "def": 652.0,
+        "spd": 111.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Yuna",
+      "key": "yuna",
+      "base": {
+        "atk": 1158.0,
+        "hp": 6002.0,
+        "def": 553.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Cerise",
+      "key": "cerise",
+      "base": {
+        "atk": 970.0,
+        "hp": 5299.0,
+        "def": 603.0,
+        "spd": 122.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Aria",
+      "key": "aria",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5299.0,
+        "def": 673.0,
+        "spd": 115.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Elvira",
+      "key": "elvira",
+      "base": {
+        "atk": 1057.0,
+        "hp": 5542.0,
+        "def": 532.0,
+        "spd": 118.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Luna",
+      "key": "luna",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6266.0,
+        "def": 627.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Kise",
+      "key": "kise",
+      "base": {
+        "atk": 1283.0,
+        "hp": 5138.0,
+        "def": 522.0,
+        "spd": 116.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Shuna",
+      "key": "shuna",
+      "base": {
+        "atk": 649.0,
+        "hp": 5254.0,
+        "def": 694.0,
+        "spd": 105.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Chloe",
+      "key": "chloe",
+      "base": {
+        "atk": 1177.0,
+        "hp": 5542.0,
+        "def": 553.0,
+        "spd": 119.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Elphelt",
+      "key": "elphelt",
+      "base": {
+        "atk": 1003.0,
+        "hp": 5704.0,
+        "def": 585.0,
+        "spd": 115.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Melissa",
+      "key": "melissa",
+      "base": {
+        "atk": 1412.0,
+        "hp": 4248.0,
+        "def": 645.0,
+        "spd": 112.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ravi",
+      "key": "ravi",
+      "base": {
+        "atk": 966.0,
+        "hp": 7323.0,
+        "def": 657.0,
+        "spd": 102.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "ae-WINTER",
+      "key": "ae_winter",
+      "base": {
+        "atk": 1057.0,
+        "hp": 5542.0,
+        "def": 532.0,
+        "spd": 118.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Jenua",
+      "key": "jenua",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Eligos",
+      "key": "eligos",
+      "base": {
+        "atk": 1283.0,
+        "hp": 4976.0,
+        "def": 536.0,
+        "spd": 124.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Summertime Iseria",
+      "key": "summertime_iseria",
+      "base": {
+        "atk": 1504.0,
+        "hp": 5704.0,
+        "def": 585.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Charlotte",
+      "key": "charlotte",
+      "base": {
+        "atk": 1134.0,
+        "hp": 5825.0,
+        "def": 662.0,
+        "spd": 99.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Nahkwol",
+      "key": "nahkwol",
+      "base": {
+        "atk": 1003.0,
+        "hp": 5704.0,
+        "def": 585.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Aramintha",
+      "key": "aramintha",
+      "base": {
+        "atk": 1197.0,
+        "hp": 4572.0,
+        "def": 683.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Hwayoung",
+      "key": "hwayoung",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6266.0,
+        "def": 627.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Shalltear",
+      "key": "shalltear",
+      "base": {
+        "atk": 1177.0,
+        "hp": 5542.0,
+        "def": 553.0,
+        "spd": 119.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Baal & Sezan",
+      "key": "baal_sezan",
+      "base": {
+        "atk": 1197.0,
+        "hp": 4572.0,
+        "def": 683.0,
+        "spd": 106.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lidica",
+      "key": "lidica",
+      "base": {
+        "atk": 1283.0,
+        "hp": 4976.0,
+        "def": 536.0,
+        "spd": 124.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lilias",
+      "key": "lilias",
+      "base": {
+        "atk": 821.0,
+        "hp": 6751.0,
+        "def": 648.0,
+        "spd": 110.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Milim",
+      "key": "milim",
+      "base": {
+        "atk": 1359.0,
+        "hp": 4895.0,
+        "def": 652.0,
+        "spd": 110.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Haste",
+      "key": "haste",
+      "base": {
+        "atk": 1089.0,
+        "hp": 5380.0,
+        "def": 511.0,
+        "spd": 120.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Roy Mustang",
+      "key": "roy_mustang",
+      "base": {
+        "atk": 1412.0,
+        "hp": 4248.0,
+        "def": 645.0,
+        "spd": 112.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ken",
+      "key": "ken",
+      "base": {
+        "atk": 966.0,
+        "hp": 7323.0,
+        "def": 657.0,
+        "spd": 102.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Ilynav",
+      "key": "ilynav",
+      "base": {
+        "atk": 957.0,
+        "hp": 6148.0,
+        "def": 634.0,
+        "spd": 109.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Cecilia",
+      "key": "cecilia",
+      "base": {
+        "atk": 821.0,
+        "hp": 6751.0,
+        "def": 648.0,
+        "spd": 110.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Kayron",
+      "key": "kayron",
+      "base": {
+        "atk": 1119.0,
+        "hp": 5340.0,
+        "def": 483.0,
+        "spd": 129.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Politis",
+      "key": "politis",
+      "base": {
+        "atk": 1197.0,
+        "hp": 4572.0,
+        "def": 683.0,
+        "spd": 106.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Kawerik",
+      "key": "kawerik",
+      "base": {
+        "atk": 1306.0,
+        "hp": 4248.0,
+        "def": 652.0,
+        "spd": 121.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Beehoo",
+      "key": "beehoo",
+      "base": {
+        "atk": 1303.0,
+        "hp": 5704.0,
+        "def": 760.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Kane",
+      "key": "kane",
+      "base": {
+        "atk": 1359.0,
+        "hp": 5542.0,
+        "def": 585.0,
+        "spd": 105.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sol",
+      "key": "sol",
+      "base": {
+        "atk": 1177.0,
+        "hp": 5542.0,
+        "def": 553.0,
+        "spd": 119.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Bomb Model Kanna",
+      "key": "bomb_model_kanna",
+      "base": {
+        "atk": 1182.0,
+        "hp": 5299.0,
+        "def": 571.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Jack-O'",
+      "key": "jack_o",
+      "base": {
+        "atk": 1228.0,
+        "hp": 5784.0,
+        "def": 553.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Fenris",
+      "key": "fenris",
+      "base": {
+        "atk": 1327.0,
+        "hp": 5138.0,
+        "def": 582.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Harsetti",
+      "key": "harsetti",
+      "base": {
+        "atk": 1039.0,
+        "hp": 6034.0,
+        "def": 613.0,
+        "spd": 124.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Afternoon Soak Flan",
+      "key": "afternoon_soak_flan",
+      "base": {
+        "atk": 1182.0,
+        "hp": 5299.0,
+        "def": 571.0,
+        "spd": 114.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Fenne",
+      "key": "fenne",
+      "base": {
+        "atk": 621.0,
+        "hp": 6034.0,
+        "def": 775.0,
+        "spd": 100.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Young Senya",
+      "key": "young_senya",
+      "base": {
+        "atk": 621.0,
+        "hp": 5474.0,
+        "def": 802.0,
+        "spd": 102.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Hellion Lua",
+      "key": "hellion_lua",
+      "base": {
+        "atk": 993.0,
+        "hp": 6002.0,
+        "def": 611.0,
+        "spd": 120.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Bystander Hwayoung",
+      "key": "bystander_hwayoung",
+      "base": {
+        "atk": 1208.0,
+        "hp": 6488.0,
+        "def": 616.0,
+        "spd": 102.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lone Wolf Peira",
+      "key": "lone_wolf_peira",
+      "base": {
+        "atk": 885.0,
+        "hp": 6149.0,
+        "def": 613.0,
+        "spd": 121.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Tori",
+      "key": "tori",
+      "base": {
+        "atk": 1283.0,
+        "hp": 5138.0,
+        "def": 522.0,
+        "spd": 116.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Schniel",
+      "key": "schniel",
+      "base": {
+        "atk": 694.0,
+        "hp": 5340.0,
+        "def": 655.0,
+        "spd": 117.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Successor Taeyou",
+      "key": "successor_taeyou",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6266.0,
+        "def": 627.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Guard Captain Krau",
+      "key": "guard_captain_krau",
+      "base": {
+        "atk": 984.0,
+        "hp": 6266.0,
+        "def": 637.0,
+        "spd": 117.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "New Kid Adin",
+      "key": "new_kid_adin",
+      "base": {
+        "atk": 1068.0,
+        "hp": 4733.0,
+        "def": 515.0,
+        "spd": 119.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Westwind Executioner Schuri",
+      "key": "westwind_executioner_schuri",
+      "base": {
+        "atk": 1088.0,
+        "hp": 5016.0,
+        "def": 553.0,
+        "spd": 111.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Victorika",
+      "key": "victorika",
+      "base": {
+        "atk": 1049.0,
+        "hp": 5461.0,
+        "def": 634.0,
+        "spd": 97.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Boss Arunka",
+      "key": "boss_arunka",
+      "base": {
+        "atk": 776.0,
+        "hp": 6593.0,
+        "def": 822.0,
+        "spd": 93.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Rinak",
+      "key": "rinak",
+      "base": {
+        "atk": 1112.0,
+        "hp": 5623.0,
+        "def": 480.0,
+        "spd": 129.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Disciplinary Prefect Aria",
+      "key": "disciplinary_prefect_aria",
+      "base": {
+        "atk": 966.0,
+        "hp": 7323.0,
+        "def": 657.0,
+        "spd": 102.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Robin",
+      "key": "robin",
+      "base": {
+        "atk": 1003.0,
+        "hp": 5704.0,
+        "def": 585.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Argent Waves Hwayoung",
+      "key": "argent_waves_hwayoung",
+      "base": {
+        "atk": 1283.0,
+        "hp": 5138.0,
+        "def": 522.0,
+        "spd": 116.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Witch of the Mere Tenebria",
+      "key": "witch_of_the_mere_tenebria",
+      "base": {
+        "atk": 1102.0,
+        "hp": 5782.0,
+        "def": 634.0,
+        "spd": 120.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Inheritor Amiki",
+      "key": "inheritor_amiki",
+      "base": {
+        "atk": 1179.0,
+        "hp": 5738.0,
+        "def": 571.0,
+        "spd": 107.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Aram",
+      "key": "aram",
+      "base": {
+        "atk": 785.0,
+        "hp": 5077.0,
+        "def": 634.0,
+        "spd": 114.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Specimen Sez",
+      "key": "specimen_sez",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sage Baal & Sezan",
+      "key": "sage_baal_sezan",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5299.0,
+        "def": 673.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Conqueror Lilias",
+      "key": "conqueror_lilias",
+      "base": {
+        "atk": 885.0,
+        "hp": 6149.0,
+        "def": 613.0,
+        "spd": 121.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lionheart Cermia",
+      "key": "lionheart_cermia",
+      "base": {
+        "atk": 984.0,
+        "hp": 6266.0,
+        "def": 637.0,
+        "spd": 117.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Commander Pavel",
+      "key": "commander_pavel",
+      "base": {
+        "atk": 1327.0,
+        "hp": 5138.0,
+        "def": 582.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Twisted Eidolon Kayron",
+      "key": "twisted_eidolon_kayron",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Top Model Luluca",
+      "key": "top_model_luluca",
+      "base": {
+        "atk": 1228.0,
+        "hp": 4370.0,
+        "def": 662.0,
+        "spd": 119.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Festive Eda",
+      "key": "festive_eda",
+      "base": {
+        "atk": 1102.0,
+        "hp": 5782.0,
+        "def": 634.0,
+        "spd": 120.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Flan",
+      "key": "flan",
+      "base": {
+        "atk": 1003.0,
+        "hp": 5704.0,
+        "def": 585.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Summer Break Charlotte",
+      "key": "summer_break_charlotte",
+      "base": {
+        "atk": 957.0,
+        "hp": 6148.0,
+        "def": 634.0,
+        "spd": 109.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lilibet",
+      "key": "lilibet",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6266.0,
+        "def": 627.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mui",
+      "key": "mui",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5340.0,
+        "def": 617.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Sharun",
+      "key": "sharun",
+      "base": {
+        "atk": 640.0,
+        "hp": 5340.0,
+        "def": 720.0,
+        "spd": 106.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Challenger Dominiel",
+      "key": "challenger_dominiel",
+      "base": {
+        "atk": 1187.0,
+        "hp": 4491.0,
+        "def": 627.0,
+        "spd": 101.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Inferno Khawazu",
+      "key": "inferno_khawazu",
+      "base": {
+        "atk": 1119.0,
+        "hp": 6091.0,
+        "def": 594.0,
+        "spd": 100.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Lady of the Scales",
+      "key": "lady_of_the_scales",
+      "base": {
+        "atk": 694.0,
+        "hp": 4855.0,
+        "def": 655.0,
+        "spd": 117.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Yulha",
+      "key": "yulha",
+      "base": {
+        "atk": 894.0,
+        "hp": 6840.0,
+        "def": 694.0,
+        "spd": 104.0
+      },
+      "archetype": "攻击非暴击",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Crimson Armin",
+      "key": "crimson_armin",
+      "base": {
+        "atk": 821.0,
+        "hp": 6266.0,
+        "def": 703.0,
+        "spd": 97.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Mediator Kawerik",
+      "key": "mediator_kawerik",
+      "base": {
+        "atk": 966.0,
+        "hp": 7323.0,
+        "def": 657.0,
+        "spd": 102.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Wandering Prince Cidd",
+      "key": "wandering_prince_cidd",
+      "base": {
+        "atk": 1021.0,
+        "hp": 5474.0,
+        "def": 610.0,
+        "spd": 117.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Amid",
+      "key": "amid",
+      "base": {
+        "atk": 694.0,
+        "hp": 4855.0,
+        "def": 655.0,
+        "spd": 117.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Setsuka",
+      "key": "setsuka",
+      "base": {
+        "atk": 1228.0,
+        "hp": 6266.0,
+        "def": 473.0,
+        "spd": 113.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Genesis Ras",
+      "key": "genesis_ras",
+      "base": {
+        "atk": 885.0,
+        "hp": 6663.0,
+        "def": 733.0,
+        "spd": 99.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Wretched Rose",
+      "key": "wretched_rose",
+      "base": {
+        "atk": 603.0,
+        "hp": 4945.0,
+        "def": 662.0,
+        "spd": 103.0
+      },
+      "archetype": "生存辅助",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Stark",
+      "key": "stark",
+      "base": {
+        "atk": 966.0,
+        "hp": 7323.0,
+        "def": 657.0,
+        "spd": 102.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Frieren",
+      "key": "frieren",
+      "base": {
+        "atk": 1412.0,
+        "hp": 4248.0,
+        "def": 645.0,
+        "spd": 112.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Revna",
+      "key": "revna",
+      "base": {
+        "atk": 1039.0,
+        "hp": 5517.0,
+        "def": 452.0,
+        "spd": 108.0
+      },
+      "archetype": "生命暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Fern",
+      "key": "fern",
+      "base": {
+        "atk": 1286.0,
+        "hp": 4733.0,
+        "def": 652.0,
+        "spd": 103.0
+      },
+      "archetype": "防御暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Saria",
+      "key": "saria",
+      "base": {
+        "atk": 1327.0,
+        "hp": 5138.0,
+        "def": 582.0,
+        "spd": 109.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "School Nurse Yulha",
+      "key": "school_nurse_yulha",
+      "base": {
+        "atk": 1054.0,
+        "hp": 6606.0,
+        "def": 518.0,
+        "spd": 115.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    },
+    {
+      "name": "Swift Flagbearer Sigret",
+      "key": "swift_flagbearer_sigret",
+      "base": {
+        "atk": 1057.0,
+        "hp": 5542.0,
+        "def": 532.0,
+        "spd": 118.0
+      },
+      "archetype": "攻击暴击输出",
+      "sets": [],
+      "owned": false,
+      "basis": "由职业和英文技能关键词自动分类，未核实当前版本配装；请编辑角色档案"
+    }
+  ]
+}

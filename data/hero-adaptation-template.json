@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "source": "自定义示例：编辑并核对后导入",
+  "heroes": {
+    "Cermia": {
+      "hero_id": "c1079",
+      "weights": {
+        "atk_pct": 1,
+        "atk": 1,
+        "hp_pct": 0,
+        "hp": 0,
+        "def_pct": 0,
+        "def": 0,
+        "spd": 0.8,
+        "crit": 1,
+        "cdmg": 1,
+        "eff": 0,
+        "res": 0
+      },
+      "sets": [
+        "攻击",
+        "破灭",
+        "穿透",
+        "速度",
+        "暴击"
+      ],
+      "main": {
+        "项链": [
+          "crit",
+          "cdmg"
+        ],
+        "戒指": [
+          "atk_pct"
+        ],
+        "鞋子": [
+          "spd",
+          "atk_pct"
+        ]
+      },
+      "basis": "示例词条需求，不代表唯一配装"
+    }
+  }
+}

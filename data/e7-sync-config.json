@@ -1,0 +1,21 @@
+{
+  "endpoint": "https://krivpfvxi0.execute-api.us-west-2.amazonaws.com/dev/getBuilds",
+  "method": "POST",
+  "body_format": "plain_text_hero_name",
+  "headers": {"Content-Type": "text/plain", "User-Agent": "Mozilla/5.0"},
+  "concurrency": 1,
+  "interval_sec": 30,
+  "jitter_sec": 3,
+  "timeout_sec": 90,
+  "retry_500": {"max_retries": 2, "delay_sec": 15},
+  "backoff_403_sec": [60, 120, 300, 900],
+  "reset_backoff_on_success": true,
+  "max_consecutive_403": 3,
+  "hard_pause_sec": 900,
+  "cache_ttl_days": 7,
+  "incremental": true,
+  "storage_dir": "e7-hero-cache",
+  "checkpoint_file": "e7-hero-cache/_checkpoint.json",
+  "log_file": "e7-hero-cache/_sync.log",
+  "expected": {"full_sync_minutes": 223, "daily_incremental_minutes": 2}
+}

@@ -1,0 +1,2269 @@
+{
+  "source": "User-supplied Fribbels offline artifact cache and Chinese translations",
+  "artifacts": {
+    "efk21": {
+      "code": "efk21",
+      "name_en": "3F",
+      "name": "3F",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk21_ico.png"
+    },
+    "efk26": {
+      "code": "efk26",
+      "name_en": "A Boss's Dignity",
+      "name": "老大的威严",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk26_ico.png"
+    },
+    "efw21": {
+      "code": "efw21",
+      "name_en": "A Little Queen's Huge Crown",
+      "name": "小小女王的巨大王冠",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw21_ico.png"
+    },
+    "efk23": {
+      "code": "efk23",
+      "name_en": "A Precious Connection",
+      "name": "珍贵缘分",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk23_ico.png"
+    },
+    "ef412": {
+      "code": "ef412",
+      "name_en": "A Song for Everybody",
+      "name": "献给你和这个世界的歌曲",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef412_ico.png"
+    },
+    "ef504": {
+      "code": "ef504",
+      "name_en": "A Symbol of Unity",
+      "name": "团结象征",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef504_ico.png"
+    },
+    "efm01": {
+      "code": "efm01",
+      "name_en": "Abyssal Crown",
+      "name": "深渊王冠",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm01_ico.png"
+    },
+    "efk04": {
+      "code": "efk04",
+      "name_en": "Adamant Shield",
+      "name": "金刚石盾牌",
+      "role": "knight",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk04_ico.png"
+    },
+    "efr17": {
+      "code": "efr17",
+      "name_en": "Air-to-Surface Missile: MISHA",
+      "name": "空对地导弹：美莎",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr17_ico.png"
+    },
+    "efa12": {
+      "code": "efa12",
+      "name_en": "Alabastron",
+      "name": "雪花石膏瓶",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa12_ico.png"
+    },
+    "efw13": {
+      "code": "efw13",
+      "name_en": "Alencinox's Wrath",
+      "name": "艾莲西诺克斯的逆鳞",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw13_ico.png"
+    },
+    "efa07": {
+      "code": "efa07",
+      "name_en": "Alexa's Basket",
+      "name": "雅莉莎的提篮",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa07_ico.png"
+    },
+    "ef307": {
+      "code": "ef307",
+      "name_en": "Alsacian Spear",
+      "name": "艾尔赛斯之矛",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef307_ico.png"
+    },
+    "efr07": {
+      "code": "efr07",
+      "name_en": "Ambrote",
+      "name": "安布罗泰",
+      "role": "ranger",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr07_ico.png"
+    },
+    "efr29": {
+      "code": "efr29",
+      "name_en": "An Assassin's Pledge",
+      "name": "杀手的庇护",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr29_ico.png"
+    },
+    "efr24": {
+      "code": "efr24",
+      "name_en": "An Offer You Can't Refuse",
+      "name": "无法拒绝的提议",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr24_ico.png"
+    },
+    "efk14": {
+      "code": "efk14",
+      "name_en": "Ancient Dragon's Legacy",
+      "name": "古龙遗产",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk14_ico.png"
+    },
+    "ef304": {
+      "code": "ef304",
+      "name_en": "Ancient Sheath",
+      "name": "古代剑鞘",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef304_ico.png"
+    },
+    "efr11": {
+      "code": "efr11",
+      "name_en": "Andre's Crossbow",
+      "name": "安德烈斯之弩",
+      "role": "ranger",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr11_ico.png"
+    },
+    "efw23": {
+      "code": "efw23",
+      "name_en": "Anti-Magic Mask",
+      "name": "抗魔面具",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw23_ico.png"
+    },
+    "ef314": {
+      "code": "ef314",
+      "name_en": "Aqua Rose",
+      "name": "水玫瑰",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef314_ico.png"
+    },
+    "ef315": {
+      "code": "ef315",
+      "name_en": "Axe of Heavenly Mandate",
+      "name": "参天斧",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef315_ico.png"
+    },
+    "ef306": {
+      "code": "ef306",
+      "name_en": "Atma's Portal",
+      "name": "亚特玛的传送门",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef306_ico.png"
+    },
+    "efr32": {
+      "code": "efr32",
+      "name_en": "Aubade Orb",
+      "name": "黎明宝珠",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr32_ico.png"
+    },
+    "efk03": {
+      "code": "efk03",
+      "name_en": "Aurius",
+      "name": "亚乌利斯",
+      "role": "knight",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk03_ico.png"
+    },
+    "efr30": {
+      "code": "efr30",
+      "name_en": "Awakened Leaf",
+      "name": "苏醒之叶",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr30_ico.png"
+    },
+    "efw22": {
+      "code": "efw22",
+      "name_en": "Azure Comet",
+      "name": "青光彗星",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw22_ico.png"
+    },
+    "efm15": {
+      "code": "efm15",
+      "name_en": "Barthez's Orbuculum",
+      "name": "巴泰斯的水晶球",
+      "role": "mage",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm15_ico.png"
+    },
+    "ef507": {
+      "code": "ef507",
+      "name_en": "Bastion of Hope",
+      "name": "希望堡垒",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef507_ico.png"
+    },
+    "efk09": {
+      "code": "efk09",
+      "name_en": "Bastion of Perlutia",
+      "name": "波鲁迪亚的堡垒",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk09_ico.png"
+    },
+    "efa24": {
+      "code": "efa24",
+      "name_en": "Beguiling Wings",
+      "name": "迷惑羽翼",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa24_ico.png"
+    },
+    "efw30": {
+      "code": "efw30",
+      "name_en": "Benimaru's Tachi",
+      "name": "红丸之刀",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw30_ico.png"
+    },
+    "efh20": {
+      "code": "efh20",
+      "name_en": "Bird's-Eye View",
+      "name": "观察者之眼",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh20_ico.png"
+    },
+    "ef104": {
+      "code": "ef104",
+      "name_en": "Biting Wind Star",
+      "name": "寒风飞镖",
+      "role": "",
+      "rarity": 1,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef104_ico.png"
+    },
+    "efm16": {
+      "code": "efm16",
+      "name_en": "Black Hand of the Goddess",
+      "name": "女神的黑手",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm16_ico.png"
+    },
+    "ef425": {
+      "code": "ef425",
+      "name_en": "Blazing Full Moon Trophy",
+      "name": "燃烧的满月奖杯",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef425_ico.png"
+    },
+    "ef408": {
+      "code": "ef408",
+      "name_en": "Blessings of Camaraderie",
+      "name": "战友们的祝福",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef408_ico.png"
+    },
+    "ef506": {
+      "code": "ef506",
+      "name_en": "Guide to a Decision",
+      "name": "选择指标",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef506_ico.png"
+    },
+    "ef205": {
+      "code": "ef205",
+      "name_en": "Bloodbead Dagger",
+      "name": "血诛短剑",
+      "role": "",
+      "rarity": 2,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef205_ico.png"
+    },
+    "efr01": {
+      "code": "efr01",
+      "name_en": "Bloodstone",
+      "name": "血玉髓",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr01_ico.png"
+    },
+    "efm14": {
+      "code": "efm14",
+      "name_en": "Bloody Rose",
+      "name": "血玫瑰",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm14_ico.png"
+    },
+    "efw07": {
+      "code": "efw07",
+      "name_en": "Border Coin",
+      "name": "孤注一掷",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw07_ico.png"
+    },
+    "ef426": {
+      "code": "ef426",
+      "name_en": "Brilliant Confidence",
+      "name": "闪耀的自信",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef426_ico.png"
+    },
+    "efk20": {
+      "code": "efk20",
+      "name_en": "Broken Will of the Priest",
+      "name": "残破的祭司长意志",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk20_ico.png"
+    },
+    "efm33": {
+      "code": "efm33",
+      "name_en": "Butterfly Hair Ornament",
+      "name": "蝴蝶发夹",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm33_ico.png"
+    },
+    "ef318": {
+      "code": "ef318",
+      "name_en": "Butterfly Mandolin",
+      "name": "蝴蝶的曼陀林",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef318_ico.png"
+    },
+    "efa33": {
+      "code": "efa33",
+      "name_en": "Butterfly's Baptism",
+      "name": "蝶之洗礼",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa33_ico.png"
+    },
+    "ef401": {
+      "code": "ef401",
+      "name_en": "Card of Small Miracles",
+      "name": "小小奇迹贺年卡",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef401_ico.png"
+    },
+    "efh06": {
+      "code": "efh06",
+      "name_en": "Celestine",
+      "name": "天青石",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh06_ico.png"
+    },
+    "efw18": {
+      "code": "efw18",
+      "name_en": "Champion's Trophy",
+      "name": "优胜者奖杯",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw18_ico.png"
+    },
+    "efm07": {
+      "code": "efm07",
+      "name_en": "Chatty",
+      "name": "柴迪",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm07_ico.png"
+    },
+    "efw17": {
+      "code": "efw17",
+      "name_en": "Circus Fantasia",
+      "name": "奇幻马戏团",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw17_ico.png"
+    },
+    "efw16": {
+      "code": "efw16",
+      "name_en": "Cradle of Life",
+      "name": "生命摇篮",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw16_ico.png"
+    },
+    "efw09": {
+      "code": "efw09",
+      "name_en": "Creation & Destruction",
+      "name": "创造之福＆破坏之颂",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw09_ico.png"
+    },
+    "efm18": {
+      "code": "efm18",
+      "name_en": "Crimson Moon of Nightmares",
+      "name": "红色噩梦之月",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm18_ico.png"
+    },
+    "efw10": {
+      "code": "efw10",
+      "name_en": "Crimson Seed",
+      "name": "红焰种子",
+      "role": "warrior",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw10_ico.png"
+    },
+    "efk13": {
+      "code": "efk13",
+      "name_en": "Crown of Glory",
+      "name": "荣耀之冠",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk13_ico.png"
+    },
+    "ef503": {
+      "code": "ef503",
+      "name_en": "Cruel Mischief",
+      "name": "残酷的玩笑",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef503_ico.png"
+    },
+    "efh27": {
+      "code": "efh27",
+      "name_en": "Cure-All Magic Wand",
+      "name": "万能恢复魔法棒",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh27_ico.png"
+    },
+    "ef309": {
+      "code": "ef309",
+      "name_en": "Cursed Compass",
+      "name": "诅咒的罗盘",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef309_ico.png"
+    },
+    "efw42": {
+      "code": "efw42",
+      "name_en": "Custom-Made Power Anchor",
+      "name": "量身特制力量之锚",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw42_ico.png"
+    },
+    "ef434": {
+      "code": "ef434",
+      "name_en": "Cutie Pando",
+      "name": "小可爱胖嘟",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef434_ico.png"
+    },
+    "efa25": {
+      "code": "efa25",
+      "name_en": "Dark Blood Keeper",
+      "name": "黑血守护者",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa25_ico.png"
+    },
+    "ef317": {
+      "code": "ef317",
+      "name_en": "Daydream Joker",
+      "name": "白日梦小丑",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef317_ico.png"
+    },
+    "ef420": {
+      "code": "ef420",
+      "name_en": "Days of Destiny",
+      "name": "命中注定的相遇",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef420_ico.png"
+    },
+    "ef201": {
+      "code": "ef201",
+      "name_en": "Deadly Sword",
+      "name": "必杀大剑",
+      "role": "",
+      "rarity": 2,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef201_ico.png"
+    },
+    "ef102": {
+      "code": "ef102",
+      "name_en": "Demon's Pistol",
+      "name": "恶魔手枪",
+      "role": "",
+      "rarity": 1,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef102_ico.png"
+    },
+    "ef312": {
+      "code": "ef312",
+      "name_en": "Devil's Brand",
+      "name": "恶魔烙印",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef312_ico.png"
+    },
+    "efm13": {
+      "code": "efm13",
+      "name_en": "Dignus Orb",
+      "name": "尊严宝珠",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm13_ico.png"
+    },
+    "efa27": {
+      "code": "efa27",
+      "name_en": "Discreet Hands",
+      "name": "隐秘之手",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa27_ico.png"
+    },
+    "efh12": {
+      "code": "efh12",
+      "name_en": "Doctor's Bag",
+      "name": "急救包",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh12_ico.png"
+    },
+    "efa16": {
+      "code": "efa16",
+      "name_en": "Double-Edged Decrescent",
+      "name": "双刃下弦月",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa16_ico.png"
+    },
+    "efw11": {
+      "code": "efw11",
+      "name_en": "Draco Plate",
+      "name": "龙族板甲",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw11_ico.png"
+    },
+    "ef103": {
+      "code": "ef103",
+      "name_en": "Dream Scroll",
+      "name": "梦之卷轴",
+      "role": "",
+      "rarity": 1,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef103_ico.png"
+    },
+    "efr27": {
+      "code": "efr27",
+      "name_en": "Dreamlike Holiday",
+      "name": "如梦假日",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr27_ico.png"
+    },
+    "efw02": {
+      "code": "efw02",
+      "name_en": "Durandal",
+      "name": "杜兰月",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw02_ico.png"
+    },
+    "efa05": {
+      "code": "efa05",
+      "name_en": "Dust Devil",
+      "name": "尘埃恶魔",
+      "role": "assassin",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa05_ico.png"
+    },
+    "efr12": {
+      "code": "efr12",
+      "name_en": "Dux Noctis",
+      "name": "暗夜指挥者",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr12_ico.png"
+    },
+    "efh17": {
+      "code": "efh17",
+      "name_en": "EXIF Detective (E.d.) Gadget",
+      "name": "EXIF Detective(E.d.)",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh17_ico.png"
+    },
+    "ef302": {
+      "code": "ef302",
+      "name_en": "Egg of Delusion",
+      "name": "迷惑之蛋",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef302_ico.png"
+    },
+    "efw03": {
+      "code": "efw03",
+      "name_en": "El's Fist",
+      "name": "艾尔之拳",
+      "role": "warrior",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw03_ico.png"
+    },
+    "efk02": {
+      "code": "efk02",
+      "name_en": "Elbris Ritual Sword",
+      "name": "埃布利斯的宝剑",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk02_ico.png"
+    },
+    "efr25": {
+      "code": "efr25",
+      "name_en": "Elegiac Candles",
+      "name": "慰灵烛光",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr25_ico.png"
+    },
+    "ef202": {
+      "code": "ef202",
+      "name_en": "Elf's Bow",
+      "name": "妖精之弓",
+      "role": "",
+      "rarity": 2,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef202_ico.png"
+    },
+    "efa04": {
+      "code": "efa04",
+      "name_en": "Elyha's Knife",
+      "name": "埃里哈刀",
+      "role": "assassin",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa04_ico.png"
+    },
+    "ef106": {
+      "code": "ef106",
+      "name_en": "Enhanced Gauntlet",
+      "name": "强化拳套",
+      "role": "",
+      "rarity": 1,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef106_ico.png"
+    },
+    "ef319": {
+      "code": "ef319",
+      "name_en": "Envoy's Pipe",
+      "name": "死神烟斗",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef319_ico.png"
+    },
+    "efh08": {
+      "code": "efh08",
+      "name_en": "Eternus",
+      "name": "埃特诺斯",
+      "role": "manauser",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh08_ico.png"
+    },
+    "efm02": {
+      "code": "efm02",
+      "name_en": "Etica's Scepter",
+      "name": "艾帝嘉权杖",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm02_ico.png"
+    },
+    "efh29": {
+      "code": "efh29",
+      "name_en": "Excommunicant's Censer",
+      "name": "隐退者的香炉",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh29_ico.png"
+    },
+    "ef316": {
+      "code": "ef316",
+      "name_en": "Exorcist's Tonfa",
+      "name": "斗鬼的拐棍",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef316_ico.png"
+    },
+    "efm19": {
+      "code": "efm19",
+      "name_en": "Fairy Tale for a Nightmare",
+      "name": "噩梦童话",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm19_ico.png"
+    },
+    "ef204": {
+      "code": "ef204",
+      "name_en": "Fairy's Grimoire",
+      "name": "妖精的魔法书",
+      "role": "",
+      "rarity": 2,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef204_ico.png"
+    },
+    "efh18": {
+      "code": "efh18",
+      "name_en": "Fan of Light and Dark",
+      "name": "昏明之扇",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh18_ico.png"
+    },
+    "efa26": {
+      "code": "efa26",
+      "name_en": "Feed of Criticism",
+      "name": "众矢之的",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa26_ico.png"
+    },
+    "ef206": {
+      "code": "ef206",
+      "name_en": "Firm Shield",
+      "name": "坚定之盾",
+      "role": "",
+      "rarity": 2,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef206_ico.png"
+    },
+    "efa34": {
+      "code": "efa34",
+      "name_en": "Flame Dragon's Jewel",
+      "name": "火龙宝石",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa34_ico.png"
+    },
+    "ef437": {
+      "code": "ef437",
+      "name_en": "Flames on a snowy mountain",
+      "name": "雪山上绽放的烟花",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef437_ico.png"
+    },
+    "efh15": {
+      "code": "efh15",
+      "name_en": "Flawless Garments",
+      "name": "天衣无缝",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh15_ico.png"
+    },
+    "efw15": {
+      "code": "efw15",
+      "name_en": "Flower Shower",
+      "name": "洒花",
+      "role": "warrior",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw15_ico.png"
+    },
+    "ef321": {
+      "code": "ef321",
+      "name_en": "Forest Totem",
+      "name": "绿林图腾",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef321_ico.png"
+    },
+    "efm28": {
+      "code": "efm28",
+      "name_en": "Frame of Light",
+      "name": "Frame of Light",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm28_ico.png"
+    },
+    "ef509": {
+      "code": "ef509",
+      "name_en": "Frantic Flight",
+      "name": "紧急升空",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef509_ico.png"
+    },
+    "efw28": {
+      "code": "efw28",
+      "name_en": "Fullmetals Automail",
+      "name": "钢铁机械铠",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw28_ico.png"
+    },
+    "efr31": {
+      "code": "efr31",
+      "name_en": "Gifted Pen",
+      "name": "蒙赐之笔",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr31_ico.png"
+    },
+    "efr19": {
+      "code": "efr19",
+      "name_en": "Glo-Wings 21",
+      "name": "光辉羽翼21",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr19_ico.png"
+    },
+    "efa31": {
+      "code": "efa31",
+      "name_en": "Glorious Flag",
+      "name": "荣耀旗帜",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa31_ico.png"
+    },
+    "efk24": {
+      "code": "efk24",
+      "name_en": "Glorious Throne",
+      "name": "荣耀王座",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk24_ico.png"
+    },
+    "efa19": {
+      "code": "efa19",
+      "name_en": "Goblet of Oath",
+      "name": "誓言之杯",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa19_ico.png"
+    },
+    "ef313": {
+      "code": "ef313",
+      "name_en": "Goblin's Lamp",
+      "name": "鬼怪明灯",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef313_ico.png"
+    },
+    "ef411": {
+      "code": "ef411",
+      "name_en": "Golden Cocoa Cookie",
+      "name": "黄金可可豆饼干",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef411_ico.png"
+    },
+    "efw31": {
+      "code": "efw31",
+      "name_en": "Golden Rose",
+      "name": "金玫瑰",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw31_ico.png"
+    },
+    "ef301": {
+      "code": "ef301",
+      "name_en": "Grail of Blood",
+      "name": "鲜血圣杯",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef301_ico.png"
+    },
+    "efh14": {
+      "code": "efh14",
+      "name_en": "Guardian Ice Crystals",
+      "name": "守护的冰封碎片",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh14_ico.png"
+    },
+    "efr13": {
+      "code": "efr13",
+      "name_en": "Guiding Light",
+      "name": "引导之光",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr13_ico.png"
+    },
+    "efw04": {
+      "code": "efw04",
+      "name_en": "Hell Cutter",
+      "name": "地狱切割机",
+      "role": "warrior",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw04_ico.png"
+    },
+    "efk05": {
+      "code": "efk05",
+      "name_en": "Hilag Lance",
+      "name": "锡拉革骑士长矛",
+      "role": "knight",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk05_ico.png"
+    },
+    "efk01": {
+      "code": "efk01",
+      "name_en": "Holy Sacrifice",
+      "name": "神圣牺牲",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk01_ico.png"
+    },
+    "efh22": {
+      "code": "efh22",
+      "name_en": "Homage to Tarman",
+      "name": "致敬塔尔曼",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh22_ico.png"
+    },
+    "efa22": {
+      "code": "efa22",
+      "name_en": "Hostess of the Banquet",
+      "name": "宴会之主",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa22_ico.png"
+    },
+    "ef428": {
+      "code": "ef428",
+      "name_en": "III. The Empress",
+      "name": "III. The Empress",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef428_ico.png"
+    },
+    "ef429": {
+      "code": "ef429",
+      "name_en": "IV. The Emperor",
+      "name": "IV. The Emperor",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef429_ico.png"
+    },
+    "efh07": {
+      "code": "efh07",
+      "name_en": "Idol's Cheer",
+      "name": "歌姬助阵",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh07_ico.png"
+    },
+    "efm08": {
+      "code": "efm08",
+      "name_en": "Iela Violin",
+      "name": "依埃萝小提琴",
+      "role": "mage",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm08_ico.png"
+    },
+    "efm26": {
+      "code": "efm26",
+      "name_en": "Ignition Cloth Gloves",
+      "name": "发火布手套",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm26_ico.png"
+    },
+    "efw26": {
+      "code": "efw26",
+      "name_en": "Indestructible Gaiters",
+      "name": "金刚绑腿",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw26_ico.png"
+    },
+    "efr03": {
+      "code": "efr03",
+      "name_en": "Infinity Basket",
+      "name": "无限提篮",
+      "role": "ranger",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr03_ico.png"
+    },
+    "efr33": {
+      "code": "efr33",
+      "name_en": "Intoxicating Indulgence",
+      "name": "无法自拔的沉溺",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr33_ico.png"
+    },
+    "efr08": {
+      "code": "efr08",
+      "name_en": "Iron Fan",
+      "name": "铁扇",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr08_ico.png"
+    },
+    "efw25": {
+      "code": "efw25",
+      "name_en": "Jack-O's Symbol",
+      "name": "洁克‧欧的象征",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw25_ico.png"
+    },
+    "efw39": {
+      "code": "efw39",
+      "name_en": "Jumbo Berry Special",
+      "name": "超大草莓圣代",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw39_ico.png"
+    },
+    "efw08": {
+      "code": "efw08",
+      "name_en": "Junkyard Dog",
+      "name": "Junkyard Dog",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw08_ico.png"
+    },
+    "efk07": {
+      "code": "efk07",
+      "name_en": "Justice for All",
+      "name": "为众人的正义",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk07_ico.png"
+    },
+    "efm04": {
+      "code": "efm04",
+      "name_en": "Kal'adra",
+      "name": "嘉拉特拉",
+      "role": "mage",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm04_ico.png"
+    },
+    "efm20": {
+      "code": "efm20",
+      "name_en": "Knowledge Seed",
+      "name": "知识种子",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm20_ico.png"
+    },
+    "ef308": {
+      "code": "ef308",
+      "name_en": "Labyrinth Cube",
+      "name": "迷宫的方块",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef308_ico.png"
+    },
+    "ef511": {
+      "code": "ef511",
+      "name_en": "Land of Lingering Light",
+      "name": "光耀之地",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef511_ico.png"
+    },
+    "efm17": {
+      "code": "efm17",
+      "name_en": "Last Teatime",
+      "name": "最后的下午茶",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm17_ico.png"
+    },
+    "efa29": {
+      "code": "efa29",
+      "name_en": "Lethal Whispers",
+      "name": "危险呢喃",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa29_ico.png"
+    },
+    "efr34": {
+      "code": "efr34",
+      "name_en": "Light and Darkness",
+      "name": "光与暗",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr34_ico.png"
+    },
+    "ef402": {
+      "code": "ef402",
+      "name_en": "Love Potion",
+      "name": "爱情灵丹",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef402_ico.png"
+    },
+    "efk22": {
+      "code": "efk22",
+      "name_en": "M.O.A.S",
+      "name": "M.O.A.S",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk22_ico.png"
+    },
+    "efh05": {
+      "code": "efh05",
+      "name_en": "Magaraha's Tome",
+      "name": "玛姬拉哈的魔法古书",
+      "role": "manauser",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh05_ico.png"
+    },
+    "efm31": {
+      "code": "efm31",
+      "name_en": "Magic Bubble Maker",
+      "name": "魔法泡泡机",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm31_ico.png"
+    },
+    "efm23": {
+      "code": "efm23",
+      "name_en": "Magic for Friends",
+      "name": "为了朋友的魔法",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm23_ico.png"
+    },
+    "efa13": {
+      "code": "efa13",
+      "name_en": "Manica of Control",
+      "name": "控制的护臂",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa13_ico.png"
+    },
+    "efa30": {
+      "code": "efa30",
+      "name_en": "Master of the Nightmare",
+      "name": "噩梦之主",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa30_ico.png"
+    },
+    "efk18": {
+      "code": "efk18",
+      "name_en": "Mature Sunglasses",
+      "name": "成熟的墨镜",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk18_ico.png"
+    },
+    "efw14": {
+      "code": "efw14",
+      "name_en": "Merciless Glutton",
+      "name": "无情的大食客",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw14_ico.png"
+    },
+    "ef406": {
+      "code": "ef406",
+      "name_en": "Midnight Bloom",
+      "name": "月夜之花",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef406_ico.png"
+    },
+    "ef439": {
+      "code": "ef439",
+      "name_en": "Midnight Pizza Delivery",
+      "name": "深夜披萨护胃队",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef439_ico.png"
+    },
+    "ef311": {
+      "code": "ef311",
+      "name_en": "Mighty Yaksha",
+      "name": "金刚夜叉",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef311_ico.png"
+    },
+    "efm32": {
+      "code": "efm32",
+      "name_en": "Mirrored Lotus Ring",
+      "name": "镜莲华戒指",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm32_ico.png"
+    },
+    "efa03": {
+      "code": "efa03",
+      "name_en": "Moonlight Dreamblade",
+      "name": "皎月梦夜",
+      "role": "assassin",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa03_ico.png"
+    },
+    "ef415": {
+      "code": "ef415",
+      "name_en": "Moonlight's Vestige",
+      "name": "月光之痕",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef415_ico.png"
+    },
+    "efr14": {
+      "code": "efr14",
+      "name_en": "Ms. Confille",
+      "name": "Miss Confile",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr14_ico.png"
+    },
+    "efm10": {
+      "code": "efm10",
+      "name_en": "Necro & Undine",
+      "name": "恶魔＆天使",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm10_ico.png"
+    },
+    "ef410": {
+      "code": "ef410",
+      "name_en": "New Year Cookies",
+      "name": "蕴含幸福的岁末饼干",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef410_ico.png"
+    },
+    "ef436": {
+      "code": "ef436",
+      "name_en": "New Year's Festival Souvenir",
+      "name": "新年庆典纪念品",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef436_ico.png"
+    },
+    "efk06": {
+      "code": "efk06",
+      "name_en": "Noble Oath",
+      "name": "高洁的誓言",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk06_ico.png"
+    },
+    "ef427": {
+      "code": "ef427",
+      "name_en": "Succubus Mirror",
+      "name": "魅魔之镜",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef427_ico.png"
+    },
+    "ef322": {
+      "code": "ef322",
+      "name_en": "Oath Key",
+      "name": "誓约钥匙",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef322_ico.png"
+    },
+    "ef423": {
+      "code": "ef423",
+      "name_en": "Official Levulin Beach Volleyball",
+      "name": "里伯林沙滩排球指定用球",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef423_ico.png"
+    },
+    "efr26": {
+      "code": "efr26",
+      "name_en": "Old Gardening Shears",
+      "name": "老旧园艺剪刀",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr26_ico.png"
+    },
+    "ef405": {
+      "code": "ef405",
+      "name_en": "One Year of Gratitude",
+      "name": "心存感谢的一年",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef405_ico.png"
+    },
+    "efr06": {
+      "code": "efr06",
+      "name_en": "Otherworldly Machinery",
+      "name": "异界的机械",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr06_ico.png"
+    },
+    "ef435": {
+      "code": "ef435",
+      "name_en": "Our Beautiful Seasons",
+      "name": "共度的季节",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef435_ico.png"
+    },
+    "ef508": {
+      "code": "ef508",
+      "name_en": "P.O.S",
+      "name": "P.O.S",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef508_ico.png"
+    },
+    "efw34": {
+      "code": "efw34",
+      "name_en": "Pipette Lance",
+      "name": "滴管长枪",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw34_ico.png"
+    },
+    "ef403": {
+      "code": "ef403",
+      "name_en": "Portrait of the Saviors",
+      "name": "救援者们的画像",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef403_ico.png"
+    },
+    "efw32": {
+      "code": "efw32",
+      "name_en": "Prayer of Solitude",
+      "name": "孤独祈祷",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw32_ico.png"
+    },
+    "ef432": {
+      "code": "ef432",
+      "name_en": "Prelude to a New Era",
+      "name": "新时代的序幕",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef432_ico.png"
+    },
+    "efh23": {
+      "code": "efh23",
+      "name_en": "Proof of Friendship",
+      "name": "友情信物",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh23_ico.png"
+    },
+    "efh25": {
+      "code": "efh25",
+      "name_en": "Proof of Love",
+      "name": "爱之印记",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh25_ico.png"
+    },
+    "ef501": {
+      "code": "ef501",
+      "name_en": "Proof of Valor",
+      "name": "勇猛证据",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef501_ico.png"
+    },
+    "ef303": {
+      "code": "ef303",
+      "name_en": "Prophetic Candlestick",
+      "name": "预视的烛台",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef303_ico.png"
+    },
+    "efw24": {
+      "code": "efw24",
+      "name_en": "Pure White Trust",
+      "name": "纯白信赖",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw24_ico.png"
+    },
+    "efh26": {
+      "code": "efh26",
+      "name_en": "Queen's Whistle",
+      "name": "女王之哨",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh26_ico.png"
+    },
+    "efm09": {
+      "code": "efm09",
+      "name_en": "Radiant Forever",
+      "name": "灿烂的永恒",
+      "role": "mage",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm09_ico.png"
+    },
+    "ef404": {
+      "code": "ef404",
+      "name_en": "Rainbow Scale",
+      "name": "人鱼公主的鳞片",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef404_ico.png"
+    },
+    "ef305": {
+      "code": "ef305",
+      "name_en": "Ranon's Memorandum",
+      "name": "拉农的备忘录",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef305_ico.png"
+    },
+    "ef424": {
+      "code": "ef424",
+      "name_en": "Records of Unity",
+      "name": "团结的记录",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef424_ico.png"
+    },
+    "efm34": {
+      "code": "efm34",
+      "name_en": "Refracted Desire",
+      "name": "扭曲欲望",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm34_ico.png"
+    },
+    "ef443": {
+      "code": "ef443",
+      "name_en": "Reingar Festival Dumpling",
+      "name": "雷茵格尔庆典肉包",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef443_ico.png"
+    },
+    "efr10": {
+      "code": "efr10",
+      "name_en": "Reingar's Special Drink",
+      "name": "雷茵格尔特调饮料",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr10_ico.png"
+    },
+    "efr28": {
+      "code": "efr28",
+      "name_en": "Renewed Will",
+      "name": "意志升华",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr28_ico.png"
+    },
+    "ef409": {
+      "code": "ef409",
+      "name_en": "Resolute Soldier Series",
+      "name": "《有决心的士兵》系列",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef409_ico.png"
+    },
+    "efa01": {
+      "code": "efa01",
+      "name_en": "Rhianna & Luciella",
+      "name": "里安娜＆路西艾拉",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa01_ico.png"
+    },
+    "efk12": {
+      "code": "efk12",
+      "name_en": "Rise of a Monarch",
+      "name": "王的诞生",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk12_ico.png"
+    },
+    "efw40": {
+      "code": "efw40",
+      "name_en": "Ritual of Sealing Flames",
+      "name": "封焰仪式",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw40_ico.png"
+    },
+    "efk19": {
+      "code": "efk19",
+      "name_en": "Rocket Punch Gauntlet",
+      "name": "Rocket Punch",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk19_ico.png"
+    },
+    "efh01": {
+      "code": "efh01",
+      "name_en": "Rod of Amaryllis",
+      "name": "孤挺花之杖",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh01_ico.png"
+    },
+    "efr05": {
+      "code": "efr05",
+      "name_en": "Rosa Hargana",
+      "name": "罗沙哈勒戈纳",
+      "role": "ranger",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr05_ico.png"
+    },
+    "efw36": {
+      "code": "efw36",
+      "name_en": "Ruyi Jingu Bang",
+      "name": "如意金箍棒",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw36_ico.png"
+    },
+    "efh16": {
+      "code": "efh16",
+      "name_en": "Sacred Tree Branch",
+      "name": "神木树枝",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh16_ico.png"
+    },
+    "efw20": {
+      "code": "efw20",
+      "name_en": "Samsara Prayer Beads",
+      "name": "循环念珠",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw20_ico.png"
+    },
+    "efa06": {
+      "code": "efa06",
+      "name_en": "Santa Muerte",
+      "name": "死亡圣神",
+      "role": "assassin",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa06_ico.png"
+    },
+    "efr04": {
+      "code": "efr04",
+      "name_en": "Sashe Ithanes",
+      "name": "香袋伊妲涅斯",
+      "role": "ranger",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr04_ico.png"
+    },
+    "efm25": {
+      "code": "efm25",
+      "name_en": "Scroll of Shadows",
+      "name": "暗影之书",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm25_ico.png"
+    },
+    "efr22": {
+      "code": "efr22",
+      "name_en": "Seal of Capture",
+      "name": "束缚之印",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr22_ico.png"
+    },
+    "efa14": {
+      "code": "efa14",
+      "name_en": "Secret Art - Storm Sword",
+      "name": "秘笈：雷天一剑",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa14_ico.png"
+    },
+    "efa23": {
+      "code": "efa23",
+      "name_en": "Seductive Flower",
+      "name": "诱惑之花",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa23_ico.png"
+    },
+    "efw12": {
+      "code": "efw12",
+      "name_en": "Sepulcrum",
+      "name": "塞弗克鲁姆",
+      "role": "warrior",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw12_ico.png"
+    },
+    "efm22": {
+      "code": "efm22",
+      "name_en": "Severed Horn Wand",
+      "name": "被截断的犄角手杖",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm22_ico.png"
+    },
+    "efa32": {
+      "code": "efa32",
+      "name_en": "Shadow Winds 7",
+      "name": "暗影之风7",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa32_ico.png"
+    },
+    "efr20": {
+      "code": "efr20",
+      "name_en": "Sharpshooters Handgun",
+      "name": "神枪手的手枪",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr20_ico.png"
+    },
+    "efa15": {
+      "code": "efa15",
+      "name_en": "Shepherd of the Hollow",
+      "name": "无为的引导者",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa15_ico.png"
+    },
+    "efa10": {
+      "code": "efa10",
+      "name_en": "Shepherds of Chaos",
+      "name": "混沌的引导者们",
+      "role": "assassin",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa10_ico.png"
+    },
+    "efh02": {
+      "code": "efh02",
+      "name_en": "Shimadra Staff",
+      "name": "席玛德拉的手杖",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh02_ico.png"
+    },
+    "efw01": {
+      "code": "efw01",
+      "name_en": "Sigurd Scythe",
+      "name": "席格勒赛斯",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw01_ico.png"
+    },
+    "efa11": {
+      "code": "efa11",
+      "name_en": "Silver Rain",
+      "name": "银光骤雨",
+      "role": "assassin",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa11_ico.png"
+    },
+    "efm05": {
+      "code": "efm05",
+      "name_en": "Sira-Ren",
+      "name": "席拉－莲",
+      "role": "mage",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm05_ico.png"
+    },
+    "efw19": {
+      "code": "efw19",
+      "name_en": "Snow Crystal",
+      "name": "白雪水晶",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw19_ico.png"
+    },
+    "efh19": {
+      "code": "efh19",
+      "name_en": "Sole Consolation",
+      "name": "唯一慰藉",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh19_ico.png"
+    },
+    "efr02": {
+      "code": "efr02",
+      "name_en": "Song of Stars",
+      "name": "星辰之歌",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr02_ico.png"
+    },
+    "efr35": {
+      "code": "efr35",
+      "name_en": "Sorrow of the Rose",
+      "name": "玫瑰之悲",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr35_ico.png"
+    },
+    "efr21": {
+      "code": "efr21",
+      "name_en": "Spatiotemporal Fan",
+      "name": "时空折扇",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr21_ico.png"
+    },
+    "efw27": {
+      "code": "efw27",
+      "name_en": "Spear of Purification",
+      "name": "破邪之矛",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw27_ico.png"
+    },
+    "efk15": {
+      "code": "efk15",
+      "name_en": "Spear of a New Dawn",
+      "name": "开辟之矛",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk15_ico.png"
+    },
+    "ef440": {
+      "code": "ef440",
+      "name_en": "Special Strawberry Cake",
+      "name": "特别的草莓蛋糕",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef440_ico.png"
+    },
+    "efr23": {
+      "code": "efr23",
+      "name_en": "Sphere of Inferno",
+      "name": "焚灭之球",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr23_ico.png"
+    },
+    "efk17": {
+      "code": "efk17",
+      "name_en": "Sphere of Sadism",
+      "name": "嗜虐之球",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk17_ico.png"
+    },
+    "efm11": {
+      "code": "efm11",
+      "name_en": "Spirit's Breath",
+      "name": "精灵气息",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm11_ico.png"
+    },
+    "ef407": {
+      "code": "ef407",
+      "name_en": "Spooky Solayu Stories",
+      "name": "奇闻轶事录",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef407_ico.png"
+    },
+    "efh21": {
+      "code": "efh21",
+      "name_en": "Spotted Mouse Hair Tie",
+      "name": "点点鼠发圈",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh21_ico.png"
+    },
+    "efm30": {
+      "code": "efm30",
+      "name_en": "Staff of Ainz Ooal Gown",
+      "name": "安兹·乌尔·恭之杖",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm30_ico.png"
+    },
+    "ef203": {
+      "code": "ef203",
+      "name_en": "Staff of Wisdom",
+      "name": "智慧的手杖",
+      "role": "",
+      "rarity": 2,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef203_ico.png"
+    },
+    "efr18": {
+      "code": "efr18",
+      "name_en": "Star of the Deep Sea",
+      "name": "深海漂浮之星",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr18_ico.png"
+    },
+    "efk10": {
+      "code": "efk10",
+      "name_en": "Steadfast Gatekeeper",
+      "name": "坚定的看守者",
+      "role": "knight",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk10_ico.png"
+    },
+    "efh09": {
+      "code": "efh09",
+      "name_en": "Stella Harpa",
+      "name": "星之竖琴",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh09_ico.png"
+    },
+    "efw05": {
+      "code": "efw05",
+      "name_en": "Strak Gauntlet",
+      "name": "史特雷克拳套",
+      "role": "warrior",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw05_ico.png"
+    },
+    "efw38": {
+      "code": "efw38",
+      "name_en": "Strike of Aspiration",
+      "name": "夙愿一击",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw38_ico.png"
+    },
+    "efa28": {
+      "code": "efa28",
+      "name_en": "Summer Photogenic",
+      "name": "夏日倩影",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa28_ico.png"
+    },
+    "ef413": {
+      "code": "ef413",
+      "name_en": "Super Duper Water Gun Shooter",
+      "name": "至尊王牌水枪",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef413_ico.png"
+    },
+    "efw35": {
+      "code": "efw35",
+      "name_en": "Sweet Miracle",
+      "name": "甜蜜奇迹",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw35_ico.png"
+    },
+    "efw29": {
+      "code": "efw29",
+      "name_en": "Sword of Autumn Eclipse",
+      "name": "秋端染刀",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw29_ico.png"
+    },
+    "efa20": {
+      "code": "efa20",
+      "name_en": "Sword of Cycling Seasons",
+      "name": "循环之剑",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa20_ico.png"
+    },
+    "efk08": {
+      "code": "efk08",
+      "name_en": "Sword of Ezera",
+      "name": "伊杰拉的圣剑",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk08_ico.png"
+    },
+    "efr09": {
+      "code": "efr09",
+      "name_en": "Sword of Judgment",
+      "name": "审判之剑",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr09_ico.png"
+    },
+    "efa17": {
+      "code": "efa17",
+      "name_en": "Sword of Summer Twilight",
+      "name": "夏夜闪刀",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa17_ico.png"
+    },
+    "efa18": {
+      "code": "efa18",
+      "name_en": "Sword of Winter Shadow",
+      "name": "冬晷切刀",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa18_ico.png"
+    },
+    "ef310": {
+      "code": "ef310",
+      "name_en": "Sword of the Morning",
+      "name": "黎明剑",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef310_ico.png"
+    },
+    "ef101": {
+      "code": "ef101",
+      "name_en": "Sword of the Sun",
+      "name": "太阳之剑",
+      "role": "",
+      "rarity": 1,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef101_ico.png"
+    },
+    "efm03": {
+      "code": "efm03",
+      "name_en": "Tagehel's Ancient Book",
+      "name": "塔克赫尔古书",
+      "role": "mage",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm03_ico.png"
+    },
+    "efm12": {
+      "code": "efm12",
+      "name_en": "Tear of the Desert",
+      "name": "沙漠之泪",
+      "role": "mage",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm12_ico.png"
+    },
+    "efa21": {
+      "code": "efa21",
+      "name_en": "The Armament",
+      "name": "Armament",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa21_ico.png"
+    },
+    "ef421": {
+      "code": "ef421",
+      "name_en": "The Guardian Star's Blessing",
+      "name": "守护星的祝福",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef421_ico.png"
+    },
+    "efw37": {
+      "code": "efw37",
+      "name_en": "Thorn of the Blue Rose",
+      "name": "蓝玫瑰尖刺",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw37_ico.png"
+    },
+    "efm06": {
+      "code": "efm06",
+      "name_en": "Time Matter",
+      "name": "时间的物质",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm06_ico.png"
+    },
+    "ef320": {
+      "code": "ef320",
+      "name_en": "Timeless Anchor",
+      "name": "永劫之锚",
+      "role": "",
+      "rarity": 3,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef320_ico.png"
+    },
+    "ef414": {
+      "code": "ef414",
+      "name_en": "To a New World",
+      "name": "致崭新的时代",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef414_ico.png"
+    },
+    "efw41": {
+      "code": "efw41",
+      "name_en": "Tome of Life's End",
+      "name": "寿命之书",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw41_ico.png"
+    },
+    "efa09": {
+      "code": "efa09",
+      "name_en": "Torn Sleeve",
+      "name": "撕裂的右衣袖",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa09_ico.png"
+    },
+    "efh11": {
+      "code": "efh11",
+      "name_en": "Touch of Rekos",
+      "name": "列科斯的救援",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh11_ico.png"
+    },
+    "efm21": {
+      "code": "efm21",
+      "name_en": "Twilight Calamity",
+      "name": "落日之灾",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm21_ico.png"
+    },
+    "efw33": {
+      "code": "efw33",
+      "name_en": "Tyrant's Descent",
+      "name": "暴君血统",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw33_ico.png"
+    },
+    "efw06": {
+      "code": "efw06",
+      "name_en": "Uberius's Tooth",
+      "name": "尤贝里乌斯的臼齿",
+      "role": "warrior",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efw06_ico.png"
+    },
+    "efm29": {
+      "code": "efm29",
+      "name_en": "Umbral Keystones",
+      "name": "暗影源石",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm29_ico.png"
+    },
+    "efh10": {
+      "code": "efh10",
+      "name_en": "Unfading Memories",
+      "name": "不凋零的回忆",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh10_ico.png"
+    },
+    "ef510": {
+      "code": "ef510",
+      "name_en": "Unleashed Axe of Heavenly Mandate",
+      "name": "解放·参天斧",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef510_ico.png"
+    },
+    "efr16": {
+      "code": "efr16",
+      "name_en": "Unseen Observer",
+      "name": "隐形的观察者",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr16_ico.png"
+    },
+    "efm24": {
+      "code": "efm24",
+      "name_en": "Upgraded Dragon Knuckles",
+      "name": "改良型龙指虎",
+      "role": "mage",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efm24_ico.png"
+    },
+    "ef433": {
+      "code": "ef433",
+      "name_en": "VI. The Lovers",
+      "name": "VI. The Lovers",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef433_ico.png"
+    },
+    "ef431": {
+      "code": "ef431",
+      "name_en": "VII. The Chariot",
+      "name": "VII. The Chariot",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef431_ico.png"
+    },
+    "ef105": {
+      "code": "ef105",
+      "name_en": "Venus Orb",
+      "name": "金星宝珠",
+      "role": "",
+      "rarity": 1,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef105_ico.png"
+    },
+    "efh28": {
+      "code": "efh28",
+      "name_en": "Veritas",
+      "name": "真实香水",
+      "role": "manauser",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh28_ico.png"
+    },
+    "ef502": {
+      "code": "ef502",
+      "name_en": "Victorious Flag",
+      "name": "胜利旗帜",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef502_ico.png"
+    },
+    "efa08": {
+      "code": "efa08",
+      "name_en": "Violet Talisman",
+      "name": "紫色护身符",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa08_ico.png"
+    },
+    "efr15": {
+      "code": "efr15",
+      "name_en": "Wall of Order",
+      "name": "秩序护墙",
+      "role": "ranger",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efr15_ico.png"
+    },
+    "ef505": {
+      "code": "ef505",
+      "name_en": "War Horn",
+      "name": "进攻号角",
+      "role": "",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef505_ico.png"
+    },
+    "efh03": {
+      "code": "efh03",
+      "name_en": "Water's Origin",
+      "name": "波涛的祈愿",
+      "role": "manauser",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh03_ico.png"
+    },
+    "efa02": {
+      "code": "efa02",
+      "name_en": "Wind Rider",
+      "name": "乘风者",
+      "role": "assassin",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efa02_ico.png"
+    },
+    "efk16": {
+      "code": "efk16",
+      "name_en": "Wings of Light and Shadow",
+      "name": "明暗双翼",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk16_ico.png"
+    },
+    "efk25": {
+      "code": "efk25",
+      "name_en": "With a Little Friend",
+      "name": "与小同伴同行",
+      "role": "knight",
+      "rarity": 5,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efk25_ico.png"
+    },
+    "efh04": {
+      "code": "efh04",
+      "name_en": "Wondrous Potion Vial",
+      "name": "灵药的试管",
+      "role": "manauser",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/efh04_ico.png"
+    },
+    "ef442": {
+      "code": "ef442",
+      "name_en": "XII. The Hanged Man",
+      "name": "XII. The Hanged Man",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef442_ico.png"
+    },
+    "ef417": {
+      "code": "ef417",
+      "name_en": "XIII. Death",
+      "name": "XIII. Death",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef417_ico.png"
+    },
+    "ef422": {
+      "code": "ef422",
+      "name_en": "XIV. Temperance",
+      "name": "XIV. Temperance",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef422_ico.png"
+    },
+    "ef430": {
+      "code": "ef430",
+      "name_en": "XIX. The Sun",
+      "name": "XIX. The Sun",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef430_ico.png"
+    },
+    "ef441": {
+      "code": "ef441",
+      "name_en": "XV. The Devil",
+      "name": "XV. The Devil",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef441_ico.png"
+    },
+    "ef418": {
+      "code": "ef418",
+      "name_en": "XVI. The Tower",
+      "name": "XVI. The Tower",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef418_ico.png"
+    },
+    "ef438": {
+      "code": "ef438",
+      "name_en": "XVII. The Star",
+      "name": "XVII. The Star",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef438_ico.png"
+    },
+    "ef419": {
+      "code": "ef419",
+      "name_en": "XVIII. The Moon",
+      "name": "XVIII. The Moon",
+      "role": "",
+      "rarity": 4,
+      "icon_url": "https://static-pubcomm.onstove.com/event/live/epic7/guide/wearingStatus/images/artifact/ef419_ico.png"
+    }
+  }
+}

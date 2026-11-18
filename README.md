@@ -1,0 +1,61 @@
+# 装备强化计算器 · E7GearAdvisor
+
+第七史诗社区辅助工具：装备识别与评分、角色总分计算、英雄面板参考、团战进攻作业查询，以及刷商店、推图和月光剧场后台任务。
+
+项目仓库：https://github.com/Meng-sound/E7GearAdvisor
+
+## 下载与启动
+
+在 [Releases](https://github.com/Meng-sound/E7GearAdvisor/releases) 下载 **E7GearAdvisor-Windows.zip**，完整解压到可写目录，双击 `装备强化计算器.exe` 或 `start.bat`。无需另外安装 Python。EXE 是启动器，请保留整个文件夹。
+
+Windows x64；游戏不要最小化。普通方式启动即可；仅当游戏以管理员权限运行、导致后台输入权限不一致时，使用 `Start-Admin.cmd`。个人设置保存在程序目录 `userdata/`，发布包不含维护者的设置、密钥、账号或操作记录。
+
+## 功能
+
+- 装备 F8 单次读取、F9 连续读取，制作装备批量识别。
+- 角色面板、套装、神器强化等级与刻印读取，角色总分自动计算；不明确的数据会保留待确认状态。
+- 随包提供 **393 名英雄的社区面板参考汇总**，以及已有头像、神器和套装图标。已有参考可离线查看，也可联网更新；无样本的英雄不编造面板。
+- 团战识别完成后自动搜索；手动修改英雄后点击“查询”。综合查询并行读取五个来源，也可只查所选来源。
+- 同一进攻阵容跨来源合并展示，按单个来源的最大样本数降序，不累加可能重复的样本；保留各来源统计。网站投稿作业单独展示，不把用户反馈当作实测胜率。
+- 刷商店、红装条件购买、推图和月光剧场采用后台输入，不移动前台鼠标。F10 紧急停止；开始前核对资源停止条件和购买设置。
+
+## 读取被遮挡的游戏
+
+装备、角色面板、团战阵容和自动任务的窗口取图优先使用 Windows Graphics Capture，然后尝试 PrintWindow。后台兼容时允许其他窗口遮挡；不支持最小化。后台取图不可用时，只能在确认游戏无遮挡后使用兼容取图，否则提示失败，不读取遮挡软件的画面。手动框选屏幕区域需要无遮挡。
+
+取图能力仍取决于 Windows、显卡驱动、游戏窗口和权限；支持后台取图不代表 OCR 永远正确。加载黑屏、游戏更新、特殊皮肤、缩放或压缩图片可能影响识别。社区接口可能限流或中断，失败会单独提示，不用本地战报替代在线结果。
+
+## 更新
+
+“设置 / 数据 → 检查更新”默认连接 `Meng-sound/E7GearAdvisor`。只检查公开正式 Release，下载优先使用完整 Windows ZIP，并验证 SHA256。不会静默覆盖或运行新版。解压新版后，可将旧版 `userdata/` 复制到新版以保留个人设置。
+
+## 从源码运行
+
+Windows x64 / Python 3.12，安装时启用 Tcl/Tk：
+
+```powershell
+python -m pip install -r requirements.txt
+python pc_app.py
+```
+
+源码不包含嵌入式 Python 和大型运行依赖；需要直接运行请下载 Windows 包。本地 OCR 依赖和自动任务依赖可通过上述 requirements 安装。
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+## 构建发布包
+
+使用已验证可运行的完整 Windows 目录作为依赖来源，输出到一个不存在的新目录：
+
+```powershell
+python tools/build_release.py --dependencies C:/path/to/E7GearAdvisor --output C:/path/to/release-1.0.0
+```
+
+生成 GitHub 源码目录、源码 ZIP、Windows ZIP、SHA256SUMS.txt 和离线资源清单。详细步骤见 [GITHUB-RELEASE.md](GITHUB-RELEASE.md)。
+
+## 来源、许可与免责声明
+
+完整参考链接、作者归属和免责声明见 [ABOUT.md](ABOUT.md)，许可范围见 [LICENSES.md](LICENSES.md)。本项目并非所有部分采用统一许可，E7Pilot 相关内容适用 PolyForm Noncommercial 1.0.0；其他代码、资料、依赖和游戏素材分别保留原有权利与条款。
+
+本工具为非官方社区软件，与游戏开发商及运营方无隶属关系。识别和社区数据可能有误差；自动任务可能消耗游戏资源，请核对设置并监督运行，自行了解游戏规则及账号风险。项目新增代码尚未指定统一许可证，不能将源码公开理解为无限制授权。

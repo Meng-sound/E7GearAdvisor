@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "heroes": [
+    {
+      "id": "custom_example",
+      "name": "我的角色",
+      "name_en": "My Hero",
+      "base": {
+        "atk": 1200,
+        "hp": 6000,
+        "def": 650,
+        "spd": 110,
+        "crit": 15,
+        "cdmg": 150,
+        "eff": 0,
+        "res": 0,
+        "dual": 3
+      },
+      "aliases": [
+        "自定义角色"
+      ],
+      "archetype": "攻击暴击输出",
+      "portrait": "diche-icon.png"
+    }
+  ]
+}

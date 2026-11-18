@@ -1,0 +1,38 @@
+[
+  {
+    "file": "sword85.png",
+    "slot": "武器",
+    "name": "深渊龙兽骨刃剑",
+    "set": "速度"
+  },
+  {
+    "file": "sword90.png",
+    "slot": "武器",
+    "name": "远古龙兽骨刃剑",
+    "set": "速度"
+  },
+  {
+    "file": "armor85.png",
+    "slot": "铠甲",
+    "name": "深渊龙兽皮甲",
+    "set": "速度"
+  },
+  {
+    "file": "neck85.png",
+    "slot": "项链",
+    "name": "黑曜石项链",
+    "set": "破灭"
+  },
+  {
+    "file": "neck88.png",
+    "slot": "项链",
+    "name": "毁灭者证据",
+    "set": "生命"
+  },
+  {
+    "file": "helmet85.png",
+    "slot": "头盔",
+    "name": "",
+    "set": ""
+  }
+]
