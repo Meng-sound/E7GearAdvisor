@@ -127,6 +127,8 @@ internal static class SingleFileLauncher {
         start.WorkingDirectory = Cache; start.UseShellExecute = false; start.CreateNoWindow = true;
         start.WindowStyle = ProcessWindowStyle.Hidden;
         start.EnvironmentVariables["E7_ADVISOR_HOME"] = user;
+        // Lets the app replace this EXE in place when the user accepts an update.
+        start.EnvironmentVariables["E7_ADVISOR_LAUNCHER_EXE"] = Process.GetCurrentProcess().MainModule.FileName;
         start.EnvironmentVariables["TCL_LIBRARY"] = Path.Combine(Cache, "runtime", "tcl", "tcl8.6");
         start.EnvironmentVariables["TK_LIBRARY"] = Path.Combine(Cache, "runtime", "tcl", "tk8.6");
         Process.Start(start);
