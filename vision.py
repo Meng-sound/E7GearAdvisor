@@ -295,7 +295,8 @@ class ScreenReader:
 
     def read(self, request, mode='auto', slot='头盔',on_captured=None):
         if hasattr(self.ocr,'begin_frame'):self.ocr.begin_frame()
-        with tempfile.TemporaryDirectory(prefix='e7-vision-') as td:
+        # ignore_cleanup_errors: a locked temporary file must not turn a good read into an error.
+        with tempfile.TemporaryDirectory(prefix='e7-vision-',ignore_cleanup_errors=True) as td:
             if request.get('path'):
                 source = request['path']
             else:

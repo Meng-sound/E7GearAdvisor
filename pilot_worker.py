@@ -27,7 +27,13 @@ def run(request,check_only=False):
  from stream_capture import StreamCapture
  from process_permissions import input_permission_error
  from window_input import WindowInput
+ from emulator import identify,content_rect
  config=request['config'];target=request['target'];state={'stop':False,'pause':False,'actions':0,'held':None,'epoch':0};bots=[]
+ # Android emulators (国服) ignore Win32 mouse messages: touches go through the
+ # emulator's native interface / ADB and the frame is the phone screen only.
+ emulated=bool((identify(target.get('title'),target.get('class_name'),target.get('process')) or {}).get('kind')=='emulator')
+ emulator_input=None
+ if emulated:emulator_input=WindowInput(target,request.get('input_backend'))
  data=Path(request['user_dir'])/'e7pilot';data.mkdir(parents=True,exist_ok=True)
  pilot.user_data_dir=lambda:data
  pilot.runtime_root=lambda:root/'vendor/e7pilot'
@@ -46,9 +52,16 @@ def run(request,check_only=False):
  threading.Thread(target=commands,daemon=True).start()
  original_post=win32gui.PostMessage
  original_size=pilot.GameWindow.client_size
+ def window_size(window):
+  width,height=original_size(window)
+  if not emulated:return width,height
+  left,top,right,bottom=content_rect(width,height)
+  return right-left,bottom-top
  def release():
   if state['held'] is not None:
-   try:original_post(target['hwnd'],0x202,0,state['held'])
+   try:
+    if emulated:emulator_input.backend.press_end()
+    else:original_post(target['hwnd'],0x202,0,state['held'])
    finally:state['held']=None
  def guard():
   if state['stop']:raise TaskStopped()
@@ -57,9 +70,30 @@ def run(request,check_only=False):
    release()
    if state['stop'] or ctypes.windll.user32.GetAsyncKeyState(0x79)&0x8000:raise TaskStopped()
    time.sleep(.05)
+ def touch(msg,wparam,lparam):
+  """Translate Win32 mouse traffic into emulator touches."""
+  width,height=window_size(window)
+  if msg in (0x200,0x201,0x202):
+   px=(lparam&65535)*width/1819;py=((lparam>>16)&65535)*height/1023
+   if msg==0x201:emulator_input.backend.press_start(px,py);state['held']=lparam;state['actions']+=1
+   elif msg==0x202:
+    if state['held'] is not None:emulator_input.backend.press_end();state['held']=None
+   if msg in (0x201,) or (msg==0x200 and wparam==1):state['epoch']+=1
+   return True
+  if msg==0x20A:
+   x=ctypes.c_short(lparam&65535).value;y=ctypes.c_short((lparam>>16)&65535).value
+   ox,oy=window.client_origin_on_screen()
+   rx=(x-ox)/max(1,width);ry=(y-oy)/max(1,height)
+   notches=int((wparam>>16)&0xFFFF)
+   emulator_input.scroll(max(.02,min(.98,rx)),max(.02,min(.98,ry)),-120 if notches>32767 else 120)
+   state['epoch']+=1;return True
+  return False
  def post(hwnd,msg,wparam,lparam):
   if hwnd!=target['hwnd']:raise TaskStopped('输入目标不是绑定的游戏窗口')
   if msg not in (0x202,0x101):guard()
+  if emulated:
+   if touch(msg,wparam,lparam):return True
+   return True  # keyboard/other messages have no emulator equivalent
   if msg in (0x200,0x201,0x202):
    x=lparam&65535;y=(lparam>>16)&65535;w,h=original_size(window)
    lparam=(round(x*w/1819)&65535)|((round(y*h/1023)&65535)<<16)
@@ -120,13 +154,14 @@ def run(request,check_only=False):
   story.log('📜 推图日志输出测试 ✓')
   assert pilot.Ocr.read.__module__=='core'
   print('PILOT_CHECK_OK native source policies and OCR, no host expense guard; UTF8 and background input',flush=True);stream.close();return
- error=input_permission_error(target)
- if error:raise RuntimeError(error)
- backend=WindowInput(target)
+ if not emulated:
+  error=input_permission_error(target)
+  if error:raise RuntimeError(error)
+ backend=emulator_input if emulated else WindowInput(target)
  # Check identity, dimensions and cancellation before every background input.
  original_post_guarded=win32gui.PostMessage
  def checked_post(hwnd,msg,wparam,lparam):
-  if msg not in (0x202,0x101):backend.check(original_size(window))
+  if msg not in (0x202,0x101):backend.check(window_size(window))
   return original_post_guarded(hwnd,msg,wparam,lparam)
  win32gui.PostMessage=checked_post
  window=pilot.GameWindow(target['hwnd'],'background')

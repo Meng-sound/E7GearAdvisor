@@ -40,5 +40,15 @@ class OCRRobustnessTests(unittest.TestCase):
    self.assertEqual(read.call_count,1);self.assertTrue(second['cache_hit']);self.assertEqual(second['cache_scope'],'equipment-panel')
    image.putpixel((1500,600),(1,0,0));image.save(path);third=reader.read({'path':str(path)},mode='single')
    self.assertEqual(read.call_count,2);self.assertEqual(third['gear'].subs[0].value,11)
+ def test_ocr_releases_the_image_file_handle(self):
+  # Windows cannot delete a file while the OCR loader still holds it open.
+  import sys
+  sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'neural'))
+  from rapidocr_onnxruntime.utils.load_image import LoadImage
+  with tempfile.TemporaryDirectory() as folder:
+   path=Path(folder)/'frame.png';Image.new('RGB',(40,20),'white').save(path)
+   LoadImage()(str(path))
+   path.unlink()
+   self.assertFalse(path.exists())
 
 if __name__=='__main__':unittest.main()

@@ -24,7 +24,7 @@ class StreamCapture:
    if response.get('error'):raise RuntimeError(response['error'])
    from PIL import Image
    with Image.open(Path(self.directory.name)/'frame.png') as image:picture=image.copy()
-   picture.info['capture_backend']='Windows图形捕获（常驻，支持遮挡）'
+   picture.info['capture_backend']=response.get('backend') or 'Windows图形捕获（常驻，支持遮挡）'
    picture.info['loading']=bool(response.get('loading',False));return picture
   except (OSError,RuntimeError,queue.Empty):
    self.failed=True;self.close();return capture_game_window(target)
@@ -39,6 +39,24 @@ def serve(target,directory):
  sys.path.insert(0,str(Path(__file__).parent/'neural'))
  from windows_capture import WindowsCapture
  from PIL import Image,ImageStat
+ import emulator
+ # MuMu's device frame is native resolution, so a small/scaled/covered window no
+ # longer limits the frame. Other emulators keep the window path (ADB is slower).
+ device=None
+ if emulator.prefers_native_capture(target.get('title')):
+  try:device=emulator.open_input(target,backend='emulator')
+  except (OSError,RuntimeError):device=None
+ if device is not None:
+  try:
+   for request in sys.stdin:
+    if request.strip()!='capture':continue
+    picture=device.capture().convert('RGB')
+    stat=ImageStat.Stat(picture.resize((64,64)))
+    picture.save(Path(directory)/'frame.png',compress_level=0)
+    print(json.dumps({'ok':True,'loading':max(stat.mean)<3,
+                      'backend':f"{target.get('emulator') or '模拟器'}原生取图（常驻，支持遮挡/最小化）"}),flush=True)
+  finally:device.close()
+  return
  user=ctypes.WinDLL('user32',use_last_error=True)
  user.GetWindowThreadProcessId.argtypes=[wintypes.HWND,ctypes.POINTER(wintypes.DWORD)]
  user.GetWindowTextW.argtypes=[wintypes.HWND,wintypes.LPWSTR,ctypes.c_int]
@@ -81,6 +99,10 @@ def serve(target,directory):
     left,top=x-area[0],y-area[1]
     if min(left,top)<0 or left+width>picture.width or top+height>picture.height:raise RuntimeError('客户区边界不一致')
     picture=picture.crop((left,top,left+width,top+height))
+   import emulator
+   if emulator.is_game_window(target.get('title')):
+    # Emulator windows carry a tab bar / toolbar; keep frames identical to the device frame.
+    picture=emulator.crop_content(picture)
    stat=ImageStat.Stat(picture.resize((64,64)))
    loading=max(stat.mean)<3
    picture.save(Path(directory)/'frame.png',compress_level=0);print(json.dumps({'ok':True,'loading':loading}),flush=True)

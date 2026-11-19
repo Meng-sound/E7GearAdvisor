@@ -13,6 +13,7 @@ from tkinter import filedialog,messagebox,simpledialog,ttk
 from app import RegionSelector
 from core import Gear,Stat,Store,LABELS,SLOTS,SETS,import_heroes,recommend,DEFAULT_RULES
 from desktop_capture import find_game_windows,select_game_rectangle
+import emulator
 from ocr import WindowsOCR
 from local_ocr import LocalOCR
 from craft_window import CraftWindow
@@ -67,12 +68,14 @@ class PCCalculator(FeatureMixin,ModernLayout,tk.Tk):
         configure_cache(USER/'hero-library-cache.json')
         self.hero_catalog=merge_catalog(load_catalog(ROOT/'data/hero-catalog.json'),user_heroes(self.custom_hero_path));self.alias_path=USER/'hero-aliases.json';merge_user_aliases(self.hero_catalog,self.alias_path);self.selected_hero_id=None;self.hero_photo=None;self._changing_base=False;self.picker=None
         self.auto_window=tk.BooleanVar(value=True);self.hide_window=tk.BooleanVar(value=False)
+        self.input_mode=tk.StringVar(value=list(emulator.INPUT_MODES)[0])
         self.fixed_bugs=tk.BooleanVar(value=True);self.verified=tk.BooleanVar(value=False)
         self.topmost=tk.BooleanVar(value=False)
         self.route=tk.StringVar(value=ROUTES[0]);self.roll_profile=tk.StringVar(value=PROFILES[0])
         self.reforged=tk.BooleanVar(value=False);self.fixed_main=tk.BooleanVar(value=False)
         self.status=tk.StringVar(value='打开游戏的装备强化页，点击读取并计算；修改数值后自动重新计算。')
         self._style();self._build();self._load_preferences()
+        self.input_mode.trace_add('write',lambda *_:self.input_mode_changed())
         self.score_mode.trace_add('write',lambda *_:self.mode_changed())
         self.mode_changed()
         for var in list(self.vars.values())+[self.main_key,self.main_value]+self.sub_keys+self.sub_values:
@@ -133,7 +136,13 @@ class PCCalculator(FeatureMixin,ModernLayout,tk.Tk):
         for text,callback in [('新增角色',lambda:self.edit_hero(True)),('编辑所选角色',self.edit_hero),('导入角色JSON',self.import_hero_panels),('导出角色JSON',self.export_hero_panels)]:
             ttk.Button(row,text=text,command=callback).pack(side='left',padx=(0,5))
         self._pair(settings,'判断路线',self.route,ROUTES)
-        for label,var in [('自动定位第七史诗窗口',self.auto_window),('已经重铸（90级自动识别）',self.reforged)]:ttk.Checkbutton(settings,text=label,variable=var).pack(anchor='w',pady=4)
+        for label,var in [('自动定位游戏窗口（客户端或模拟器）',self.auto_window),('已经重铸（90级自动识别）',self.reforged)]:ttk.Checkbutton(settings,text=label,variable=var).pack(anchor='w',pady=4)
+        row=ttk.Frame(settings,style='Card.TFrame');row.pack(fill='x',pady=4)
+        ttk.Label(row,text='输入方式').pack(side='left')
+        ttk.Combobox(row,textvariable=self.input_mode,values=list(emulator.INPUT_MODES),state='readonly',width=22).pack(side='left',padx=(8,8))
+        ttk.Button(row,text='检测窗口/模拟器',command=self.detect_emulator).pack(side='left')
+        self.input_status=ttk.Label(settings,text='模拟器点击走原生接口或 ADB，不抢鼠标。',foreground=MUTED,wraplength=560)
+        self.input_status.pack(anchor='w',pady=(0,4))
         row=ttk.Frame(settings,style='Card.TFrame');row.pack(fill='x',pady=8)
         self._button(row,'手动框选',self.pick_region);self._button(row,'检查OCR',self.check_ocr);self._button(row,'应用设置',self.calculate)
         row=ttk.Frame(history_tab,style='Card.TFrame');row.pack(fill='x',pady=(0,8))
@@ -689,10 +698,43 @@ class PCCalculator(FeatureMixin,ModernLayout,tk.Tk):
             import scoring_settings
             self.score_mode.set(migrate_mode(settings,scoring_settings.enabled()))
             self.region=settings.get('region');self.auto_window.set(bool(settings.get('auto_window',True)));self.roll_profile.set(settings.get('roll_profile',PROFILES[0]))
+            label=settings.get('input_mode')
+            if label in emulator.INPUT_MODES:self.input_mode.set(label)
         except (OSError,ValueError,TypeError):pass
+        emulator.DEFAULT_INPUT=emulator.INPUT_MODES.get(self.input_mode.get(),'auto')
 
     def _save_preferences(self):
-        (USER/'pc-settings.json').write_text(json.dumps({'base':{k:v.get() for k,v in self.base.items()},'region':self.region,'auto_window':self.auto_window.get(),'roll_profile':self.roll_profile.get(),'selected_hero_id':self.selected_hero_id,'score_mode':self.score_mode.get(),'score_mode_schema':2},ensure_ascii=False,indent=2),encoding='utf-8')
+        (USER/'pc-settings.json').write_text(json.dumps({'base':{k:v.get() for k,v in self.base.items()},'region':self.region,'auto_window':self.auto_window.get(),'input_mode':self.input_mode.get(),'roll_profile':self.roll_profile.get(),'selected_hero_id':self.selected_hero_id,'score_mode':self.score_mode.get(),'score_mode_schema':2},ensure_ascii=False,indent=2),encoding='utf-8')
+
+    def input_mode_changed(self):
+        emulator.DEFAULT_INPUT=emulator.INPUT_MODES.get(self.input_mode.get(),'auto')
+        self._save_preferences()
+
+    def detect_emulator(self):
+        """Report which window hosts the game and how clicks would reach it."""
+        emulator.DEFAULT_INPUT=emulator.INPUT_MODES.get(self.input_mode.get(),'auto')
+        try:
+            windows=find_game_windows()
+        except (OSError,RuntimeError) as exc:
+            self.input_status.configure(text='检测失败：'+str(exc));return
+        if not windows:
+            self.input_status.configure(text='没有找到游戏窗口：请打开第七史诗（PC 客户端或模拟器）。');return
+        window=windows[0]
+        source='模拟器 · '+window['emulator'] if window.get('source')=='emulator' else 'PC 客户端'
+        backend=None;note=''
+        if window.get('source')=='emulator':
+            try:
+                backend=emulator.open_input(window,backend=emulator.DEFAULT_INPUT)
+                if backend is None:note='未启用模拟器输入（将尝试窗口消息）'
+                else:
+                    width,height=backend.size
+                    note=f'{type(backend).__name__} · 设备 {width}×{height} · 点击不抢鼠标'
+                    backend.close()
+            except (OSError,RuntimeError) as exc:
+                note='输入不可用：'+str(exc)
+        detail=window.get('client') or [0,0]
+        self.input_status.configure(text=f"当前窗口：{source} · {window['title']} · 客户区 {detail[0]}×{detail[1]}"+(f' · {note}' if note else ''))
+        self.status.set(self.input_status.cget('text'))
 
     def algorithm_notes(self):
         from threshold_settings import current

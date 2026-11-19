@@ -24,11 +24,14 @@ class PilotRunner:
  def run(self):
   try:
    from process_permissions import input_permission_error
-   error=input_permission_error(self.target)
-   if error:raise RuntimeError(error)
+   import emulator
+   emulated=bool((emulator.identify(self.target.get('title')) or {}).get('kind')=='emulator')
+   if not emulated:
+    error=input_permission_error(self.target)
+    if error:raise RuntimeError(error)
    with tempfile.TemporaryDirectory(prefix='e7-pilot-') as folder:
     from pilot_settings import load
-    request=Path(folder)/'request.json';request.write_text(json.dumps(dict(target=self.target,config={'mode':self.config.mode},source_settings=load(self.user_dir),user_dir=self.user_dir),ensure_ascii=False),'utf8')
+    request=Path(folder)/'request.json';request.write_text(json.dumps(dict(target=self.target,config={'mode':self.config.mode},input_backend=emulator.DEFAULT_INPUT,source_settings=load(self.user_dir),user_dir=self.user_dir),ensure_ascii=False),'utf8')
     python=Path(sys.executable).with_name('python.exe')
     if not python.is_file():python=Path(sys.executable)
     environment=dict(os.environ,PYTHONIOENCODING='utf-8',PYTHONUTF8='1')

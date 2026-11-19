@@ -166,22 +166,53 @@ def visible_client_image(hwnd,expected_pid,expected_title):
     if max(stats.mean)<2 or max(stats.stddev)<.5:raise RuntimeError('兼容取图仍为空白，请确认游戏已进入场景')
     picture.info['capture_backend']='兼容取图（游戏需无遮挡）';return picture
 
+def device_image(target):
+    """Emulator frame straight from the device (works while minimized/occluded)."""
+    import emulator
+    backend=emulator.open_input(target,backend='emulator')
+    if backend is None:raise RuntimeError('该模拟器没有可用的原生取图接口')
+    try:
+        picture=backend.capture()
+    finally:
+        backend.close()
+    picture=picture.convert('RGB')
+    picture.info['capture_backend']=f"{target.get('emulator') or '模拟器'}原生取图（支持遮挡/最小化）"
+    return picture
+
 def capture_client(hwnd,pid,title,mode='auto'):
     if mode not in ('auto','background','visible'):raise ValueError('未知取图模式')
+    import emulator
+    target={'hwnd':hwnd,'pid':pid,'title':title}
+    info=emulator.identify(title)
+    emulated=bool(info and info['kind']=='emulator')
+    def finish(picture):
+        # Emulator windows carry a tab bar / toolbar; hand the caller the phone screen only.
+        return emulator.crop_content(picture) if emulated else picture
     if mode!='visible':
+        # MuMu's device frame is the phone screen at native resolution, so window
+        # size, DPI scaling, chrome and occlusion no longer affect recognition.
+        if emulator.prefers_native_capture(title):
+            try:return device_image(target)
+            except (ImportError,OSError,RuntimeError) as error:
+                if mode=='background':raise
         try:
             from graphics_capture import capture
-            return capture(hwnd,pid,title)
+            return finish(capture(hwnd,pid,title))
         except (ImportError,OSError,RuntimeError,ValueError):pass
-        try:return client_image(hwnd,pid,title)
+        try:return finish(client_image(hwnd,pid,title))
         except RuntimeError:
-            if mode=='background':raise
-    return visible_client_image(hwnd,pid,title)
+            if mode=='background' and not emulated:raise
+        if emulated:
+            try:return device_image(target)
+            except (ImportError,OSError,RuntimeError) as error:
+                if mode=='background':raise
+    return finish(visible_client_image(hwnd,pid,title))
 
 def capture_game_window(window, timeout=6):
     """Capture only a user-selected known game window in a bounded worker."""
-    if window.get('title') not in {'第七史诗', 'Epic Seven', 'EPIC SEVEN'}:
-        raise ValueError('请选择第七史诗游戏窗口')
+    import emulator
+    if not emulator.is_game_window(window.get('title')):
+        raise ValueError('请选择第七史诗游戏窗口（PC 客户端或模拟器）')
     if type(window.get('hwnd')) is not int or type(window.get('pid')) is not int:
         raise ValueError('窗口标识缺失，请重新检测')
     from PIL import Image
