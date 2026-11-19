@@ -179,11 +179,11 @@ def device_image(target):
     picture.info['capture_backend']=f"{target.get('emulator') or '模拟器'}原生取图（支持遮挡/最小化）"
     return picture
 
-def capture_client(hwnd,pid,title,mode='auto'):
+def capture_client(hwnd,pid,title,mode='auto',process=''):
     if mode not in ('auto','background','visible'):raise ValueError('未知取图模式')
     import emulator
-    target={'hwnd':hwnd,'pid':pid,'title':title}
-    info=emulator.identify(title)
+    target={'hwnd':hwnd,'pid':pid,'title':title,'process':process}
+    info=emulator.identify(title,'',process)
     emulated=bool(info and info['kind']=='emulator')
     def finish(picture):
         # Emulator windows carry a tab bar / toolbar; hand the caller the phone screen only.
@@ -191,7 +191,7 @@ def capture_client(hwnd,pid,title,mode='auto'):
     if mode!='visible':
         # MuMu's device frame is the phone screen at native resolution, so window
         # size, DPI scaling, chrome and occlusion no longer affect recognition.
-        if emulator.prefers_native_capture(title):
+        if emulator.prefers_native_capture(title,'',process):
             try:return device_image(target)
             except (ImportError,OSError,RuntimeError) as error:
                 if mode=='background':raise
@@ -211,7 +211,8 @@ def capture_client(hwnd,pid,title,mode='auto'):
 def capture_game_window(window, timeout=6):
     """Capture only a user-selected known game window in a bounded worker."""
     import emulator
-    if not emulator.is_game_window(window.get('title')):
+    process=window.get('process') or ''
+    if not emulator.is_game_window(window.get('title'),'',process):
         raise ValueError('请选择第七史诗游戏窗口（PC 客户端或模拟器）')
     if type(window.get('hwnd')) is not int or type(window.get('pid')) is not int:
         raise ValueError('窗口标识缺失，请重新检测')
@@ -219,8 +220,9 @@ def capture_game_window(window, timeout=6):
     with tempfile.TemporaryDirectory(prefix='e7-window-') as directory:
         target = Path(directory)/'frame.png'
         try:
+            # argv: mode hwnd pid title out.png [process]
             result = subprocess.run([sys.executable, '-B', str(Path(__file__).resolve()),window.get('capture_mode','auto'),
-                                     str(window['hwnd']), str(window['pid']), window['title'], str(target)],
+                                     str(window['hwnd']), str(window['pid']), window['title'], str(target), process],
                                     capture_output=True, text=True, encoding='utf8', errors='replace',
                                     timeout=timeout, creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
         except subprocess.TimeoutExpired:
@@ -240,7 +242,8 @@ if __name__ == '__main__':
             except (AttributeError, OSError):
                 ctypes.windll.user32.SetProcessDPIAware()
         from PIL.PngImagePlugin import PngInfo
-        picture=capture_client(int(sys.argv[2]),int(sys.argv[3]),sys.argv[4],sys.argv[1])
+        process=sys.argv[6] if len(sys.argv)>6 else ''
+        picture=capture_client(int(sys.argv[2]),int(sys.argv[3]),sys.argv[4],sys.argv[1],process)
         metadata=PngInfo();metadata.add_text('capture_backend',picture.info.get('capture_backend','窗口取图'))
         picture.save(sys.argv[5],pnginfo=metadata)
     except Exception as error:

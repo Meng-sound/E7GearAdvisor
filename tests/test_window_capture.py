@@ -38,15 +38,27 @@ class WindowCaptureTests(unittest.TestCase):
     def test_valid_output_is_loaded_and_temp_removed(self):
         paths=[]
         def fake_worker(arguments,**kwargs):
-            paths.append(Path(arguments[-1]))
+            paths.append(Path(arguments[-2]))
             Image.new('RGB',(80,60),'red').save(paths[-1])
-            self.assertEqual(arguments[-4:-1],['123','456','Epic Seven'])
+            self.assertEqual(arguments[-5:-2],['123','456','Epic Seven'])
+            self.assertEqual(arguments[-1],'')
             self.assertEqual(kwargs['timeout'],6)
             return SimpleNamespace(returncode=0,stderr='')
         with patch('window_capture.subprocess.run',side_effect=fake_worker):
             image=capture_game_window(self.target)
         self.assertEqual(image.getpixel((0,0)),(255,0,0))
         self.assertFalse(paths[0].exists())
+
+    def test_emulator_process_is_forwarded_to_the_worker(self):
+        seen={}
+        def fake_worker(arguments,**kwargs):
+            seen['argv']=arguments
+            Image.new('RGB',(80,60),'red').save(arguments[-2])
+            return SimpleNamespace(returncode=0,stderr='')
+        target=dict(self.target,title='雷电模拟器',process='dnplayer.exe')
+        with patch('window_capture.subprocess.run',side_effect=fake_worker):
+            capture_game_window(target)
+        self.assertEqual(seen['argv'][-1],'dnplayer.exe')
 
 
 if __name__=='__main__':

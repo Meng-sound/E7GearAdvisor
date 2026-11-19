@@ -1,5 +1,7 @@
 """Emulator recognition, content geometry and touch dispatch (no emulator needed)."""
+import tempfile
 import unittest
+from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
@@ -210,6 +212,37 @@ class CapturePreferenceTests(unittest.TestCase):
         self.assertIs(result, window)
         wgc.assert_called_once()
         native.assert_not_called()
+
+
+class AdbDiscoveryTests(unittest.TestCase):
+    """LDPlayer/BlueStacks/Nox only reach the game through their own adb.exe."""
+
+    def test_process_name_beats_the_game_title(self):
+        self.assertEqual(emulator.identify('第七史诗', '', 'dnplayer.exe')['kind'], 'emulator')
+        self.assertEqual(emulator.identify('第七史诗')['kind'], 'pc')
+
+    def test_adb_is_found_next_to_the_player_executable(self):
+        with tempfile.TemporaryDirectory() as folder:
+            player = Path(folder) / 'dnplayer.exe'
+            player.write_bytes(b'')
+            adb = Path(folder) / 'adb.exe'
+            adb.write_bytes(b'')
+            with patch('emulator.mumu_root', return_value=None), \
+                    patch('emulator.process_path', return_value=str(player)):
+                self.assertEqual(emulator.adb_path(1234), adb)
+
+    def test_missing_adb_explains_what_to_enable(self):
+        with patch('emulator.adb_path', return_value=None):
+            with self.assertRaisesRegex(RuntimeError, 'ADB'):
+                emulator.open_input({'title': '雷电模拟器', 'pid': 1, 'hwnd': 1}, 'auto')
+
+    def test_emulator_input_is_created_for_a_game_titled_window(self):
+        fake = FakeBackend()
+        with patch('process_permissions.input_permission_error', return_value=None), \
+                patch('emulator.open_input', return_value=fake) as opener:
+            backend = WindowInput({'hwnd': 1, 'pid': 2, 'title': '第七史诗', 'process': 'dnplayer.exe'})
+        self.assertIs(backend.backend, fake)
+        opener.assert_called_once()
 
 
 if __name__ == '__main__':

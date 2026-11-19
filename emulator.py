@@ -57,13 +57,19 @@ def _norm(text):
 
 
 def identify(title='', class_name='', process=''):
-    """Classify a window: {'kind': 'pc'|'emulator', 'name': str} or None."""
+    """Classify a window: {'kind': 'pc'|'emulator', 'name': str} or None.
+
+    The process name wins over the title: some emulators put the running app's
+    name in the window title, which would otherwise look like the PC client.
+    """
     title_key, process_key = _norm(title), _norm(process)
+    for profile in EMULATORS:
+        if process_key in profile['processes']:
+            return {'kind': 'emulator', 'name': profile['name']}
     if title_key in PC_TITLES:
         return {'kind': 'pc', 'name': '第七史诗客户端'}
     for profile in EMULATORS:
-        if process_key in profile['processes'] or any(
-                all(keyword in title_key for keyword in group) for group in profile['titles']):
+        if any(all(keyword in title_key for keyword in group) for group in profile['titles']):
             return {'kind': 'emulator', 'name': profile['name']}
     return None
 
@@ -187,7 +193,11 @@ def mumu_root(pid=None):
 
 
 def adb_path(pid=None):
-    """Prefer the emulator's own adb (no version mismatch with its server)."""
+    """Prefer the emulator's own adb (no version mismatch with its server).
+
+    LDPlayer/BlueStacks/Nox ship adb.exe next to their player executable, and
+    users rarely add it to PATH, so the emulator's own folder is searched first.
+    """
     root = mumu_root(pid)
     if root:
         for relative in ('nx_main/adb.exe', 'nx_device/15.0/shell/adb.exe'):
@@ -197,6 +207,14 @@ def adb_path(pid=None):
         hits = sorted(root.glob('nx_device/*/shell/adb.exe'))
         if hits:
             return hits[0]
+    executable = process_path(pid) if pid else ''
+    if executable:
+        directory = Path(executable).parent
+        for base in (directory, directory.parent):
+            for relative in ('adb.exe', 'adb/adb.exe', 'shell/adb.exe'):
+                candidate = base / relative
+                if candidate.is_file():
+                    return candidate
     for name in ('adb.exe', 'adb'):
         for directory in os.environ.get('PATH', '').split(os.pathsep):
             candidate = Path(directory) / name
@@ -361,7 +379,8 @@ class AdbInput:
     def __init__(self, pid=None, serial=None, ports=None, timeout=6.0):
         self.executable = adb_path(pid)
         if not self.executable:
-            raise RuntimeError('未找到 adb。请开启模拟器的 ADB 调试，或把 adb.exe 加入 PATH')
+            raise RuntimeError('未找到 adb.exe。雷电/蓝叠/夜神等模拟器后台点击需要 ADB：'
+                               '请在模拟器设置里开启 ADB 调试，或把模拟器自带的 adb.exe 所在目录加入 PATH')
         self.timeout = timeout
         self.serial = serial or self._connect(ports)
 
@@ -371,21 +390,39 @@ class AdbInput:
                               timeout=timeout or self.timeout,
                               creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
 
+    def _devices(self):
+        """Serials currently in the `device` state."""
+        try:
+            listed = self._run('devices', timeout=4).stdout or ''
+        except (OSError, subprocess.TimeoutExpired):
+            return []
+        serials = []
+        for line in listed.splitlines()[1:]:
+            parts = line.split()
+            if len(parts) >= 2 and parts[1] == 'device':
+                serials.append(parts[0])
+        return serials
+
     def _connect(self, ports):
+        ready = self._devices()
+        # Never hijack a USB phone when an emulator is already attached.
+        emulated = [s for s in ready if s.startswith(('127.0.0.1:', 'emulator-'))]
+        if emulated:
+            return emulated[0]
+        tried = []
         for port in ports or (16384, 7555, 5555, 62001, 21503):
             serial = f'127.0.0.1:{port}'
+            tried.append(serial)
             try:
                 self._run('connect', serial, timeout=3)
             except (OSError, subprocess.TimeoutExpired):
                 continue
-            try:
-                listed = self._run('devices', timeout=4).stdout
-            except (OSError, subprocess.TimeoutExpired):
-                continue
-            for line in listed.splitlines():
-                if line.startswith(serial) and 'device' in line:
-                    return serial
-        raise RuntimeError('ADB 未连接到任何模拟器；请确认模拟器已开启 ADB 调试')
+            if serial in self._devices():
+                return serial
+        if ready:
+            return ready[0]
+        raise RuntimeError('ADB 未连接到模拟器（已尝试 ' + '、'.join(tried) +
+                           '）。请确认模拟器已启动并开启了 ADB 调试')
 
     @property
     def size(self):
@@ -480,9 +517,10 @@ def open_input(target, backend='auto', logger=None):
                 logger(f'MuMu 原生接口不可用（{error}），改用 ADB。')
     try:
         return AdbInput(pid=target.get('pid'), ports=profile.get('adb_ports'))
-    except (OSError, RuntimeError):
-        if backend == 'auto':
-            if logger:
-                logger('模拟器 ADB 不可用，回退到窗口消息；若点击无效请开启 ADB 调试。')
-            return None
-        raise
+    except (OSError, RuntimeError) as error:
+        # Surface the real reason: a silent fallback to window messages would
+        # "work" for capture but every click would be ignored by the emulator.
+        message = f"{info['name']} 后台点击需要 ADB，但 {error}"
+        if logger:
+            logger(message)
+        raise RuntimeError(message) from error

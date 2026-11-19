@@ -26,7 +26,7 @@ class WindowInput:
     def __init__(self,target,input_backend=None,logger=None):
         if os.name!='nt':raise RuntimeError('后台输入仅支持Windows')
         input_backend=input_backend or emulator.DEFAULT_INPUT
-        if not emulator.is_game_window(target.get('title')):
+        if not emulator.is_game_window(target.get('title'),target.get('class_name'),target.get('process')):
             raise ValueError('目标不是第七史诗（PC 客户端或模拟器）')
         if any(type(target.get(key)) is not int for key in ('hwnd','pid')):
             raise ValueError('目标窗口标识无效')
@@ -46,7 +46,7 @@ class WindowInput:
         self.user.GetAsyncKeyState.argtypes=[ctypes.c_int]
         self.user.GetAsyncKeyState.restype=ctypes.c_short
         # Emulator targets never use window messages: MuMu ignores them entirely.
-        info=emulator.identify(self.target.get('title'))
+        info=emulator.identify(self.target.get('title'),self.target.get('class_name'),self.target.get('process'))
         self.emulated=bool(info and info['kind']=='emulator')
         self.backend=None
         if self.emulated or input_backend in ('emulator','adb'):

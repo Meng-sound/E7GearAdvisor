@@ -25,7 +25,7 @@ class PilotRunner:
   try:
    from process_permissions import input_permission_error
    import emulator
-   emulated=bool((emulator.identify(self.target.get('title')) or {}).get('kind')=='emulator')
+   emulated=bool((emulator.identify(self.target.get('title'),self.target.get('class_name'),self.target.get('process')) or {}).get('kind')=='emulator')
    if not emulated:
     error=input_permission_error(self.target)
     if error:raise RuntimeError(error)
