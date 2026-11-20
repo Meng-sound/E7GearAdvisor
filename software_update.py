@@ -56,7 +56,7 @@ def check_release(repo,current=VERSION,reader=read_bytes):
   safe_url(url)
   if not isinstance(selected.get('size'),int) or not 0<selected['size']<=512*1024*1024:raise ValueError('更新文件大小无效或超过512MB')
  checksum=next((a for a in assets if a.get('name')=='SHA256SUMS.txt'),None)
- return {'tag':tag,'newer':newer,'notes':str(data.get('body') or '作者未填写更新说明')[:20000],'page':page,'asset':selected,'checksum':checksum,'repo':repo}
+ return {'tag':tag,'newer':newer,'notes':str(data.get('body') or '作者未填写更新说明')[:20000],'page':page,'asset':selected,'assets':assets,'checksum':checksum,'repo':repo}
 
 def expected_hash(release,reader=read_bytes):
  asset=release['asset'];digest=asset.get('digest','')

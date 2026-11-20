@@ -8,8 +8,10 @@ from unittest.mock import patch
 
 import auto_update
 
+ZIP_ASSET = {'name': 'E7GearAdvisor-Windows.zip', 'size': 10}
+EXE_ASSET = {'name': 'E7GearAdvisor.exe', 'size': 10}
 RELEASE = {'tag': 'v9.9.9', 'newer': True, 'page': 'https://example.invalid',
-           'asset': {'name': 'E7GearAdvisor-Windows.zip'},
+           'asset': ZIP_ASSET, 'assets': [ZIP_ASSET, EXE_ASSET],
            'notes': 'test'}
 
 
@@ -60,6 +62,26 @@ class PlanTests(unittest.TestCase):
             plan = auto_update.plan(RELEASE)
         self.assertTrue(plan['supported'])
         self.assertEqual(plan['kind'], 'exe')
+
+    def test_single_picks_the_exe_not_the_zip(self):
+        # The Release prefers the ZIP for portable users; a packed install must
+        # still download the EXE, otherwise the swap targets a .exe with a folder.
+        with patch('auto_update.install_mode', return_value='single'), \
+                patch('auto_update.launcher_exe', return_value=Path('C:/apps/E7GearAdvisor.exe')):
+            plan = auto_update.plan(RELEASE)
+        self.assertEqual(plan['asset']['name'], 'E7GearAdvisor.exe')
+
+    def test_portable_picks_the_zip(self):
+        with patch('auto_update.install_mode', return_value='portable'), \
+                patch('auto_update.install_dir', return_value=Path('C:/game')):
+            plan = auto_update.plan(RELEASE)
+        self.assertEqual(plan['asset']['name'], 'E7GearAdvisor-Windows.zip')
+
+    def test_single_without_an_exe_asset_is_refused(self):
+        release = dict(RELEASE, assets=[ZIP_ASSET], asset=ZIP_ASSET)
+        with patch('auto_update.install_mode', return_value='single'), \
+                patch('auto_update.launcher_exe', return_value=Path('C:/apps/E7GearAdvisor.exe')):
+            self.assertFalse(auto_update.plan(release)['supported'])
 
     def test_portable_replaces_the_folder(self):
         with patch('auto_update.install_mode', return_value='portable'), \
@@ -162,6 +184,45 @@ class ApplyTests(unittest.TestCase):
     def test_unsupported_plan_refuses(self):
         with self.assertRaisesRegex(RuntimeError, '不支持'):
             auto_update.apply({'kind': 'exe', 'path': Path('x')}, {'supported': False, 'reason': '不支持'})
+
+    def test_mismatched_artifact_is_refused_before_anything_changes(self):
+        # A ZIP cannot overwrite an .exe path; refuse instead of failing after exit.
+        with self.assertRaisesRegex(RuntimeError, '不匹配'):
+            auto_update.apply({'kind': 'zip', 'path': Path('unpacked')},
+                              {'supported': True, 'kind': 'exe', 'target': 'C:/app/E7GearAdvisor.exe'})
+
+
+class StageSelectionTests(unittest.TestCase):
+    def test_stage_downloads_the_asset_for_the_install_shape(self):
+        seen = {}
+
+        def fake_download(release, directory, progress):
+            seen['asset'] = release['asset']['name']
+            path = Path(directory) / 'E7GearAdvisor.exe'
+            path.write_bytes(b'MZ')
+            return str(path)
+
+        with tempfile.TemporaryDirectory() as folder, \
+                patch('auto_update.download_release', side_effect=fake_download):
+            staged = auto_update.stage(RELEASE, Path(folder), asset=EXE_ASSET)
+        self.assertEqual(seen['asset'], 'E7GearAdvisor.exe')
+        self.assertEqual(staged['kind'], 'exe')
+
+
+class HelperResilienceTests(unittest.TestCase):
+    def test_helper_logs_and_always_restarts(self):
+        with tempfile.TemporaryDirectory() as folder:
+            script = Path(folder) / 'apply.ps1'
+            auto_update.write_helper(script, {'kind': 'exe', 'target': r'C:\a\E7GearAdvisor.exe',
+                                              'new': r'C:\t\new.exe'}, 3, [r'C:\a\E7GearAdvisor.exe'])
+            text = script.read_text('utf-8-sig')
+        self.assertIn('update.log', text)
+        self.assertIn('function Log', text)
+        self.assertIn('replace failed', text)
+        self.assertIn('rolled back to the old exe', text)
+        self.assertIn('Log "restarted"', text)
+        # Restart happens after the try/catch, so a failed swap still relaunches.
+        self.assertGreater(text.index('Log "restarted"'), text.index('} catch {'))
 
 
 if __name__ == '__main__':

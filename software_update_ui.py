@@ -68,7 +68,8 @@ class _UpdateBase(tk.Toplevel):
             try:
                 staged = auto_update.stage(
                     self.release, self.app.user_dir / 'updates',
-                    lambda done, total: self.queue.put(('progress', (done, total))))
+                    lambda done, total: self.queue.put(('progress', (done, total))),
+                    asset=self.plan.get('asset'))
                 self.queue.put(('status', '正在替换程序文件…'))
                 auto_update.apply(staged, self.plan)
                 self.queue.put(('done', True))

@@ -77,28 +77,51 @@ def remember(config, **values):
     return config
 
 
+def choose_asset(release, mode):
+    """Pick the artifact that matches how this copy is installed.
+
+    A packed EXE must be replaced by the new EXE; the portable folder by the
+    Windows ZIP. Using the ZIP on a packed install asked robocopy to overwrite
+    an .exe path, which failed after the app had already exited.
+    """
+    assets = list((release or {}).get('assets') or [])
+    installed = (release or {}).get('asset')
+    if installed and all(a.get('name') != installed.get('name') for a in assets):
+        assets.insert(0, installed)
+    wanted = ('E7GearAdvisor.exe',) if mode == 'single' else ('E7GearAdvisor-Windows.zip',)
+    for name in wanted:
+        hit = next((a for a in assets if str(a.get('name')) == name), None)
+        if hit:
+            return hit
+    return None
+
+
 def plan(release):
     """What applying this release would do, without touching anything."""
     mode = install_mode()
-    asset = (release or {}).get('asset') or {}
-    name = str(asset.get('name') or '')
     if mode == 'source':
         return {'mode': mode, 'supported': False,
                 'reason': '当前是从源码目录运行，自动覆盖需要正式安装包。'}
-    if not name:
-        return {'mode': mode, 'supported': False, 'reason': '该 Release 没有可下载的 Windows 文件。'}
+    asset = choose_asset(release, mode)
+    if asset is None:
+        return {'mode': mode, 'supported': False,
+                'reason': '该 Release 没有适用于当前安装方式的文件（单文件版需要 EXE，文件夹版需要 Windows ZIP）。'}
+    kind = 'exe' if str(asset.get('name')).lower().endswith('.exe') else 'zip'
     if mode == 'single':
         target = launcher_exe()
         if target is None:
             return {'mode': mode, 'supported': False,
                     'reason': '检测不到启动器位置（旧版安装包）。请手动下载新版 EXE 覆盖一次，之后可自动更新。'}
-        return {'mode': mode, 'supported': True, 'kind': 'exe', 'target': str(target)}
-    return {'mode': mode, 'supported': True, 'kind': 'zip', 'target': str(install_dir())}
+        return {'mode': mode, 'supported': True, 'kind': kind, 'asset': asset, 'target': str(target)}
+    return {'mode': mode, 'supported': True, 'kind': kind, 'asset': asset, 'target': str(install_dir())}
 
 
-def stage(release, directory, progress=lambda done, total: None):
-    """Download + verify, then unpack into a scratch folder next to the app."""
-    path = Path(download_release(release, directory, progress))
+def stage(release, directory, progress=lambda done, total: None, asset=None):
+    """Download + verify the right artifact, then unpack it when it is a ZIP."""
+    chosen = asset or plan(release).get('asset') or (release or {}).get('asset')
+    if chosen is None:
+        raise RuntimeError('该 Release 没有适用于当前安装方式的文件')
+    path = Path(download_release(dict(release, asset=chosen), directory, progress))
     if path.suffix.lower() != '.zip':
         return {'kind': 'exe', 'path': path}
     scratch = Path(directory) / (path.stem + '-unpacked')
@@ -129,39 +152,60 @@ def _ps_string(value):
 
 
 def write_helper(script, payload, process_id, restart, extra_cleanup=()):
-    """A detached PowerShell script that finishes the swap after we exit."""
+    """A detached PowerShell script that finishes the swap after we exit.
+
+    It always writes %LOCALAPPDATA%\\E7GearAdvisor\\update.log and always tries to
+    start the app again, so a failed swap can never leave the user with "the
+    window closed and nothing happened".
+    """
+    log = Path(os.environ.get('LOCALAPPDATA') or tempfile.gettempdir()) / 'E7GearAdvisor' / 'update.log'
+    workdir = str(Path(restart[0]).parent) if payload['kind'] == 'exe' else str(install_dir())
+    start = ('Start-Process -FilePath ' + _ps_string(restart[0]) +
+             (' -ArgumentList ' + _ps_string(restart[1]) if len(restart) > 1 else '') +
+             ' -WorkingDirectory ' + _ps_string(workdir))
     lines = [
         "$ErrorActionPreference = 'Stop'",
+        f"$log = {_ps_string(log)}",
+        'New-Item -ItemType Directory -Force -Path (Split-Path -Parent $log) | Out-Null',
+        "function Log($m) { Add-Content -LiteralPath $log -Value ((Get-Date -Format 'yyyy-MM-dd HH:mm:ss') + '  ' + $m) -ErrorAction SilentlyContinue }",
+        'Log "==== update helper started ===="',
         # $pid is a read-only automatic variable in PowerShell; never assigning to it.
         f"$targetPid = {int(process_id)}",
         'while (Get-Process -Id $targetPid -ErrorAction SilentlyContinue) { Start-Sleep -Milliseconds 400 }',
         'Start-Sleep -Milliseconds 400',
+        'Log "app exited"',
     ]
     if payload['kind'] == 'exe':
-        target = _ps_string(payload['target'])
-        new = _ps_string(payload['new'])
         lines += [
-            f"$target = {target}",
-            f"$new = {new}",
+            f"$target = {_ps_string(payload['target'])}",
+            f"$new = {_ps_string(payload['new'])}",
             f"$old = $target + '.old'",
-            'if (Test-Path -LiteralPath $old) { Remove-Item -LiteralPath $old -Force -ErrorAction SilentlyContinue }',
-            'Move-Item -LiteralPath $target -Destination $old -Force',
-            'try { Move-Item -LiteralPath $new -Destination $target -Force }'
-            ' catch { Move-Item -LiteralPath $old -Destination $target -Force; throw }',
+            'try {',
+            '  if (Test-Path -LiteralPath $old) { Remove-Item -LiteralPath $old -Force -ErrorAction SilentlyContinue }',
+            '  Move-Item -LiteralPath $target -Destination $old -Force',
+            '  try { Move-Item -LiteralPath $new -Destination $target -Force }',
+            '  catch { Move-Item -LiteralPath $old -Destination $target -Force; throw }',
+            '  Log "exe replaced"',
+            '} catch {',
+            '  Log ("replace failed: " + $_.Exception.Message)',
+            '  if ((Test-Path -LiteralPath $old) -and -not (Test-Path -LiteralPath $target)) {',
+            '    Move-Item -LiteralPath $old -Destination $target -Force; Log "rolled back to the old exe"',
+            '  }',
+            '}',
         ]
     else:
-        source = _ps_string(payload['source'])
-        target = _ps_string(payload['target'])
         lines += [
-            f"$source = {source}",
-            f"$target = {target}",
-            '# /IS force-copies same-name files; /XD keeps the user profile inside the app folder.',
-            'robocopy $source $target /E /IS /XD (Join-Path $target "userdata") /R:1 /W:1 /NFL /NDL /NJH /NJS | Out-Null',
+            f"$source = {_ps_string(payload['source'])}",
+            f"$target = {_ps_string(payload['target'])}",
+            'try {',
+            '  # /IS force-copies same-name files; /XD keeps the user profile inside the app folder.',
+            '  robocopy $source $target /E /IS /XD (Join-Path $target "userdata") /R:1 /W:1 /NFL /NDL /NJH /NJS | Out-Null',
+            '  Log ("files copied, robocopy exit " + $LASTEXITCODE)',
+            '} catch {',
+            '  Log ("copy failed: " + $_.Exception.Message)',
+            '}',
         ]
-    workdir = str(Path(restart[0]).parent) if payload['kind'] == 'exe' else str(install_dir())
-    lines.append('Start-Process -FilePath ' + _ps_string(restart[0]) +
-                 (' -ArgumentList ' + _ps_string(restart[1]) if len(restart) > 1 else '') +
-                 ' -WorkingDirectory ' + _ps_string(workdir))
+    lines += [start, 'Log "restarted"']
     if payload['kind'] == 'exe':
         # Give the new EXE a moment to start, then drop the rollback copy.
         lines += ['Start-Sleep -Seconds 2',
@@ -177,6 +221,8 @@ def apply(staged, plan_entry, process_id=None):
     """Finish the update and restart; the caller must exit right afterwards."""
     if not plan_entry.get('supported'):
         raise RuntimeError(plan_entry.get('reason') or '当前安装方式不支持自动更新')
+    if staged.get('kind') != plan_entry.get('kind'):
+        raise RuntimeError('下载到的文件与安装方式不匹配，已取消更新（未改动任何文件）')
     process_id = os.getpid() if process_id is None else process_id
     directory = Path(tempfile.mkdtemp(prefix='e7-update-'))
     script = directory / 'apply-update.ps1'
