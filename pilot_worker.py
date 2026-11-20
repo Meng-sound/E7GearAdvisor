@@ -60,8 +60,8 @@ def run(request,check_only=False):
  def release():
   if state['held'] is not None:
    try:
-    if emulated:emulator_input.backend.press_end()
-    else:original_post(target['hwnd'],0x202,0,state['held'])
+    # Taps are atomic, so there is no held button left to release.
+    if not emulated:original_post(target['hwnd'],0x202,0,state['held'])
    finally:state['held']=None
  def guard():
   if state['stop']:raise TaskStopped()
@@ -75,9 +75,11 @@ def run(request,check_only=False):
   width,height=window_size(window)
   if msg in (0x200,0x201,0x202):
    px=(lparam&65535)*width/1819;py=((lparam>>16)&65535)*height/1023
-   if msg==0x201:emulator_input.backend.press_start(px,py);state['held']=lparam;state['actions']+=1
-   elif msg==0x202:
-    if state['held'] is not None:emulator_input.backend.press_end();state['held']=None
+   if msg==0x201:
+    # One real tap per press. ADB's `input` cannot hold a touch between calls,
+    # so deferring it to the up event silently dropped the click.
+    emulator_input.backend.tap(px,py);state['held']=lparam;state['actions']+=1
+   elif msg==0x202:state['held']=None
    if msg in (0x201,) or (msg==0x200 and wparam==1):state['epoch']+=1
    return True
   if msg==0x20A:

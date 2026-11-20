@@ -64,6 +64,8 @@ class ContentRectTests(unittest.TestCase):
 
 
 class FakeBackend:
+    holds_touch = True  # native touch: really stays down between start and end
+
     def __init__(self, size=(1920, 1080)):
         self._size = size
         self.taps, self.swipes, self.presses = [], [], []
@@ -83,6 +85,9 @@ class FakeBackend:
 
     def press_end(self):
         self.presses.append(('end',))
+
+    def long_press(self, x, y, seconds=1.0):
+        self.presses.append(('long', round(x), round(y)))
 
     def close(self):
         return None
@@ -243,6 +248,37 @@ class AdbDiscoveryTests(unittest.TestCase):
             backend = WindowInput({'hwnd': 1, 'pid': 2, 'title': '第七史诗', 'process': 'dnplayer.exe'})
         self.assertIs(backend.backend, fake)
         opener.assert_called_once()
+
+
+class AdbPressTests(unittest.TestCase):
+    """ADB cannot hold a touch; a down/up pair must still produce one click."""
+
+    def backend(self, calls):
+        backend = emulator.AdbInput.__new__(emulator.AdbInput)
+        backend.tap = lambda x, y, hold=.08: calls.append(('tap', x, y))
+        backend.long_press = lambda x, y, seconds=1.0: calls.append(('long', x, y, round(seconds, 1)))
+        return backend
+
+    def test_short_press_becomes_a_tap(self):
+        calls = []
+        backend = self.backend(calls)
+        backend.press_start(10, 20)
+        backend.press_end()
+        self.assertEqual(calls, [('tap', 10, 20)])
+
+    def test_held_press_becomes_a_long_press(self):
+        calls = []
+        backend = self.backend(calls)
+        with patch('emulator.time.monotonic', side_effect=[100.0, 100.6]):
+            backend.press_start(10, 20)
+            backend.press_end()
+        self.assertEqual(calls, [('long', 10, 20, 0.6)])
+
+    def test_release_without_press_does_nothing(self):
+        calls = []
+        backend = self.backend(calls)
+        backend.press_end()
+        self.assertEqual(calls, [])
 
 
 if __name__ == '__main__':

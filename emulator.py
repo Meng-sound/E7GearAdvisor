@@ -231,6 +231,8 @@ class MuMuIpc:
     BGRA, so skipping the flip or assuming BGRA swaps red and blue.
     """
 
+    holds_touch = True  # native down/up, so a long press can span captures
+
     def __init__(self, root=None, instance=0, timeout=5.0, pid=None):
         if os.name != 'nt':
             raise RuntimeError('MuMu 原生接口仅支持 Windows')
@@ -376,6 +378,8 @@ class MuMuIpc:
 class AdbInput:
     """`adb shell input` backend: any emulator, no window messages required."""
 
+    holds_touch = False  # `input` cannot keep a touch down across calls
+
     def __init__(self, pid=None, serial=None, ports=None, timeout=6.0):
         self.executable = adb_path(pid)
         if not self.executable:
@@ -457,28 +461,24 @@ class AdbInput:
         self._run('-s', self.serial, 'shell', 'input', 'swipe', str(int(x)), str(int(y)),
                   str(int(x)), str(int(y)), str(int(max(0.3, seconds) * 1000)))
 
-    def press_start(self, x, y, hold_ms=2500):
-        """Start a long press in the background so frames can be captured meanwhile."""
-        self._pressed = subprocess.Popen(
-            [str(self.executable), '-s', self.serial, 'shell', 'input', 'swipe',
-             str(int(x)), str(int(y)), str(int(x)), str(int(y)), str(int(hold_ms))],
-            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-            creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
-        time.sleep(.12)  # let the down event land before the caller reads the screen
+    def press_start(self, x, y):
+        # ADB's `input` has no hold/release pair, so the press is resolved on
+        # release: a short down/up becomes a tap, a long one a real long press.
+        # (Killing a background swipe left the touch stuck down on the device.)
+        self._press_point = (x, y)
+        self._press_time = time.monotonic()
 
     def press_end(self):
-        process = getattr(self, '_pressed', None)
-        self._pressed = None
-        if process is None:
+        point = getattr(self, '_press_point', None)
+        self._press_point = None
+        if point is None:
             return
-        try:
-            process.terminate()
-        except OSError:
-            pass
-        try:
-            process.wait(timeout=2)
-        except subprocess.TimeoutExpired:
-            process.kill()
+        now = time.monotonic()
+        seconds = now - getattr(self, '_press_time', now)
+        if seconds >= .35:
+            self.long_press(point[0], point[1], seconds)
+        else:
+            self.tap(point[0], point[1])
 
     def swipe(self, x1, y1, x2, y2, duration=.3):
         self._run('-s', self.serial, 'shell', 'input', 'swipe', str(int(x1)), str(int(y1)),

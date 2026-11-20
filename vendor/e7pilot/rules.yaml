@@ -249,6 +249,7 @@ rules:
       - "入场"
       - "Select Team"
     max_len: 8
+    exclude: ["奖励"]
     region: [0.50, 0.65, 1.0, 1.0]
     cooldown: 2.0
 

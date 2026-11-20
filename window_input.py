@@ -8,6 +8,7 @@ import ctypes
 from ctypes import wintypes
 import math
 import os
+import threading
 import time
 
 import emulator
@@ -138,6 +139,21 @@ class WindowInput:
         if not 0<x<1 or not 0<y<1:raise ValueError('详情坐标超出窗口')
         if self.backend is not None:
             self.check(size);px,py=self.points(x,y)
+            if not getattr(self.backend,'holds_touch',False):
+                # ADB cannot keep a touch down across calls, so run the long press
+                # in the background while the detail frames are captured.
+                worker=threading.Thread(target=self.backend.long_press,args=(px,py,.9),daemon=True)
+                worker.start()
+                try:
+                    time.sleep(.30)
+                    frames=[]
+                    for _ in range(2):
+                        if not allowed() or self.emergency_pressed():return []
+                        frame=capture()
+                        if frame.size!=tuple(size):raise RuntimeError('读取详情期间窗口尺寸改变')
+                        frames.append(frame);time.sleep(.15)
+                    return frames
+                finally:worker.join(timeout=2)
             self.backend.press_start(px,py)
             try:
                 for _ in range(9):
