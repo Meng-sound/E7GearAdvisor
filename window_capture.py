@@ -176,6 +176,12 @@ def device_image(target):
     finally:
         backend.close()
     picture=picture.convert('RGB')
+    # A wrong MuMu instance (multi-open) or a reconnecting renderer gives an
+    # all-black frame; treat it as a failed backend so window capture can run.
+    from PIL import ImageStat
+    stats=ImageStat.Stat(picture.resize((32,32)))
+    if max(stats.mean)<3 and max(stats.stddev)<1:
+        raise RuntimeError('模拟器原生取图返回黑屏（多开时请确认游戏所在实例）')
     picture.info['capture_backend']=f"{target.get('emulator') or '模拟器'}原生取图（支持遮挡/最小化）"
     return picture
 
@@ -208,7 +214,7 @@ def capture_client(hwnd,pid,title,mode='auto',process=''):
                 if mode=='background':raise
     return finish(visible_client_image(hwnd,pid,title))
 
-def capture_game_window(window, timeout=6):
+def capture_game_window(window, timeout=12):
     """Capture only a user-selected known game window in a bounded worker."""
     import emulator
     process=window.get('process') or ''
@@ -219,14 +225,23 @@ def capture_game_window(window, timeout=6):
     from PIL import Image
     with tempfile.TemporaryDirectory(prefix='e7-window-') as directory:
         target = Path(directory)/'frame.png'
-        try:
-            # argv: mode hwnd pid title out.png [process]
-            result = subprocess.run([sys.executable, '-B', str(Path(__file__).resolve()),window.get('capture_mode','auto'),
-                                     str(window['hwnd']), str(window['pid']), window['title'], str(target), process],
-                                    capture_output=True, text=True, encoding='utf8', errors='replace',
-                                    timeout=timeout, creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
-        except subprocess.TimeoutExpired:
-            raise RuntimeError('后台取图超时，已停止检测；未切换前台或点击游戏') from None
+        allowance=timeout
+        for attempt in range(2):
+            try:
+                # argv: mode hwnd pid title out.png [process]
+                result = subprocess.run([sys.executable, '-B', str(Path(__file__).resolve()),window.get('capture_mode','auto'),
+                                         str(window['hwnd']), str(window['pid']), window['title'], str(target), process],
+                                        capture_output=True, text=True, encoding='utf8', errors='replace',
+                                        timeout=allowance, creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
+                break
+            except subprocess.TimeoutExpired:
+                if attempt == 0:
+                    # A cold worker (large 4K frame, antivirus scan) can exceed the
+                    # first budget; the second run reuses the warm file cache.
+                    allowance=round(timeout*1.5)
+                    continue
+                raise RuntimeError(f'后台取图超时（已等待 {allowance} 秒）：窗口过大或显卡驱动响应慢。'
+                                   '请把游戏窗口缩小到 1920×1080 附近再试；未切换前台或点击游戏') from None
         if result.returncode or not target.is_file():
             raise RuntimeError(result.stderr.strip()[-500:] or '后台取图失败')
         with Image.open(target) as image:
@@ -245,7 +260,7 @@ if __name__ == '__main__':
         process=sys.argv[6] if len(sys.argv)>6 else ''
         picture=capture_client(int(sys.argv[2]),int(sys.argv[3]),sys.argv[4],sys.argv[1],process)
         metadata=PngInfo();metadata.add_text('capture_backend',picture.info.get('capture_backend','窗口取图'))
-        picture.save(sys.argv[5],pnginfo=metadata)
+        picture.save(sys.argv[5],pnginfo=metadata,compress_level=1)
     except Exception as error:
         sys.stderr.reconfigure(encoding='utf8')
         print(str(error), file=sys.stderr)

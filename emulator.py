@@ -233,7 +233,9 @@ class MuMuIpc:
 
     holds_touch = True  # native down/up, so a long press can span captures
 
-    def __init__(self, root=None, instance=0, timeout=5.0, pid=None):
+    def __init__(self, root=None, instance=0, timeout=2.0, pid=None):
+        # A failed connect must fall back to window capture quickly: retrying for
+        # five seconds here used to blow the whole capture budget.
         if os.name != 'nt':
             raise RuntimeError('MuMu 原生接口仅支持 Windows')
         self.root = Path(root) if root else mumu_root(pid)
