@@ -8,9 +8,12 @@ if __name__=='__main__':
   shell=ctypes.WinDLL('shell32',use_last_error=True)
   shell.ShellExecuteW.argtypes=[ctypes.c_void_p,ctypes.c_wchar_p,ctypes.c_wchar_p,ctypes.c_wchar_p,ctypes.c_wchar_p,ctypes.c_int]
   shell.ShellExecuteW.restype=ctypes.c_ssize_t
-  result=shell.ShellExecuteW(None,'runas',sys.executable,subprocess.list2cmdline([str(Path(__file__).resolve())]),str(root),0)
+  arguments=[str(Path(__file__).resolve()), *sys.argv[1:]]
+  result=shell.ShellExecuteW(None,'runas',sys.executable,subprocess.list2cmdline(arguments),str(root),0)
   if result<=32:ctypes.windll.user32.MessageBoxW(None,'未获得管理员权限，未启动后台任务。','管理员启动',0x30)
  else:
   sys.path.insert(0,str(root));os.chdir(root)
+  if '--local-test' in sys.argv[1:]:
+   os.environ['E7_ADVISOR_HOME']=str(root/'userdata-local-test')
   os.environ['TCL_LIBRARY']=str(root/'runtime/tcl/tcl8.6');os.environ['TK_LIBRARY']=str(root/'runtime/tcl/tk8.6')
   runpy.run_path(str(root/'pc_app.py'),run_name='__main__')

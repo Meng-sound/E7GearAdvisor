@@ -132,6 +132,9 @@ def stage(release, directory, progress=lambda done, total: None, asset=None):
         names = archive.namelist()
         if not any(name.startswith(root) for name in names):
             root = ''
+        if root + 'app/pc_app.py' in names:
+            root += 'app/'
+            names = [name for name in names if name.startswith(root)]
         for name in names:
             relative = name[len(root):] if root and name.startswith(root) else name
             if not relative or relative.endswith('/'):

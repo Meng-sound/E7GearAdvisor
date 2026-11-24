@@ -17,11 +17,12 @@ class MonitorInfo(ctypes.Structure):
 
 
 def resize_game(target, width, height):
-    """Center the visible outer window on its current monitor without activating it."""
+    """Resize the client area and center the visible window on its current monitor."""
     user = ctypes.WinDLL('user32', use_last_error=True)
     dwm = ctypes.WinDLL('dwmapi')
     user.GetWindowThreadProcessId.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.DWORD)]
     user.GetWindowRect.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.RECT)]
+    user.GetClientRect.argtypes = [wintypes.HWND, ctypes.POINTER(wintypes.RECT)]
     user.IsZoomed.argtypes = [wintypes.HWND]
     user.IsIconic.argtypes = [wintypes.HWND]
     user.MonitorFromWindow.argtypes = [wintypes.HWND, wintypes.DWORD]
@@ -42,20 +43,24 @@ def resize_game(target, width, height):
     info = MonitorInfo()
     info.size = ctypes.sizeof(info)
     outer = wintypes.RECT()
-    if not user.GetMonitorInfoW(monitor, ctypes.byref(info)) or not user.GetWindowRect(hwnd, ctypes.byref(outer)):
+    client = wintypes.RECT()
+    if (not user.GetMonitorInfoW(monitor, ctypes.byref(info))
+            or not user.GetWindowRect(hwnd, ctypes.byref(outer))
+            or not user.GetClientRect(hwnd, ctypes.byref(client))):
         raise ctypes.WinError(ctypes.get_last_error())
     work = info.work
     work_width, work_height = work.right - work.left, work.bottom - work.top
-    if width > work_width or height > work_height:
-        raise ValueError(f'当前屏幕可用区域为 {work_width}×{work_height}，请输入更小的尺寸。')
-
     visible = wintypes.RECT()
     if dwm.DwmGetWindowAttribute(hwnd, 9, ctypes.byref(visible), ctypes.sizeof(visible)) != 0:
         visible = outer
-    x = work.left + (work_width - width) // 2 + outer.left - visible.left
-    y = work.top + (work_height - height) // 2 + outer.top - visible.top
-    width += outer.right - outer.left - (visible.right - visible.left)
-    height += outer.bottom - outer.top - (visible.bottom - visible.top)
+    visible_width = width + visible.right - visible.left - client.right
+    visible_height = height + visible.bottom - visible.top - client.bottom
+    if visible_width > work_width or visible_height > work_height:
+        raise ValueError(f'含窗口边框需要 {visible_width}×{visible_height}，当前屏幕可用 {work_width}×{work_height}。请输入更小的尺寸。')
+    x = work.left + (work_width - visible_width) // 2 + outer.left - visible.left
+    y = work.top + (work_height - visible_height) // 2 + outer.top - visible.top
+    width += outer.right - outer.left - client.right
+    height += outer.bottom - outer.top - client.bottom
     if not user.SetWindowPos(hwnd, None, x, y, width, height, 0x0014):
         raise ctypes.WinError(ctypes.get_last_error())
 
@@ -129,11 +134,27 @@ class GameWindowControls(ttk.Frame):
             if target is None:
                 return
             resize_game(target, width, height)
-            if self.preview_target and self.preview_target['hwnd'] == target['hwnd']:
-                self.apply_preview(target)
-            self.app.status.set(f'已请求游戏窗口调整为 {width}×{height} 并居中。')
+            self.after(350, self.verify_size, target, width, height)
         except (OSError, ValueError) as error:
-            self.app.status.set(str(error))
+            if getattr(error, 'winerror', None) == 5:
+                self.app.status.set('Windows 拒绝调整游戏窗口。请关闭本工具，双击 Start-Local-Test.cmd 并确认管理员授权后重试。')
+            else:
+                self.app.status.set(str(error))
+
+    def verify_size(self, target, width, height):
+        current = next((row for row in find_game_windows()
+                        if row['hwnd'] == target['hwnd'] and row['pid'] == target['pid']), None)
+        if current is None:
+            self.app.status.set('游戏窗口已关闭或变化，请重新应用尺寸。')
+            return
+        actual_width, actual_height = current['client']
+        actual = f'{actual_width}×{actual_height}'
+        if (actual_width, actual_height) == (width, height):
+            self.app.status.set(f'游戏客户区已应用 {actual}。')
+        else:
+            self.app.status.set(f'请求 {width}×{height}，游戏实际客户区为 {actual}。请检查游戏内的窗口模式与分辨率。')
+        if self.preview_target and self.preview_target['hwnd'] == current['hwnd']:
+            self.apply_preview(current)
 
     def apply_preview(self, target=None):
         if not self.preview_enabled.get():

@@ -177,11 +177,26 @@ class ModernLayout:
         self.stats_section=tk.Frame(right_column,bg=BG);self.stats_section.pack(fill='x')
         tk.Label(self.stats_section,text='副属性',bg=BG,fg=TEXT,font=(FONT,10,'bold'),anchor='w').pack(fill='x',pady=(0,3))
         self.stat_points=[];self.stat_cards=[]
-        for key,value in zip(self.sub_keys,self.sub_values):
-            card=RoundedCard(self.stats_section,height=40,padding=6);card.pack(fill='x',pady=(0,2));self.stat_cards.append(card)
-            ttk.Combobox(card.inner,textvariable=key,values=['']+list(LABELS.values()),state='readonly',width=16,style='Compact.TCombobox').pack(side='left',fill='x',expand=True,padx=(0,7))
-            ttk.Entry(card.inner,textvariable=value,width=6,justify='center',style='Compact.TEntry').pack(side='left')
-            points=tk.Label(card.inner,text='— 分',bg=CARD,fg=ACCENT,font=(FONT,9,'bold'),width=7,anchor='e');points.pack(side='right',padx=(4,0));self.stat_points.append(points)
+        stats_grid = tk.Frame(self.stats_section, bg=BG)
+        stats_grid.pack(fill='x')
+        stats_grid.columnconfigure((0, 1), weight=1, uniform='substats')
+        for index, (key, value) in enumerate(zip(self.sub_keys, self.sub_values)):
+            row, column = divmod(index, 2)
+            card = RoundedCard(stats_grid, height=40, padding=5)
+            card.grid(row=row, column=column, sticky='ew',
+                      padx=(0, 3) if column == 0 else (3, 0), pady=(0, 2))
+            self.stat_cards.append(card)
+            card.inner.columnconfigure(0, weight=1)
+            card.inner.rowconfigure(0, weight=1)
+            ttk.Combobox(card.inner, textvariable=key, values=[''] + list(LABELS.values()),
+                         state='readonly', width=8, style='Compact.TCombobox').grid(
+                             row=0, column=0, sticky='ew', padx=(0, 4))
+            ttk.Entry(card.inner, textvariable=value, width=4, justify='center',
+                      style='Compact.TEntry').grid(row=0, column=1)
+            points = tk.Label(card.inner, text='— 分', bg=CARD, fg=ACCENT,
+                              font=(FONT, 9, 'bold'), anchor='e')
+            points.grid(row=0, column=2, sticky='e', padx=(4, 0))
+            self.stat_points.append(points)
         self.reforge_changes=tk.Label(self.stats_section,text='',bg=BG,fg=TEXT,font=(FONT,10),justify='left',anchor='w')
         self.main_calculations=tk.Label(right_column,text='读取后显示计算明细',bg=BG,fg=MUTED,font=(FONT,9),wraplength=390,justify='left',anchor='w')
         self.calculations_toggle=ttk.Button(right_column,text='计算明细 ▾',style='Compact.TButton',command=self.toggle_calculations);self.calculations_toggle.pack(fill='x',pady=(3,4))
