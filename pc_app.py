@@ -761,6 +761,7 @@ class PCCalculator(FeatureMixin,ModernLayout,tk.Tk):
     def close(self):
         task_window=getattr(self,'task_replay_window',None)
         if task_window is not None and task_window.winfo_exists():task_window.close()
+        self.game_window_controls.close_preview()
         self.sync_cancel.set()
         if hasattr(self,'reader') and hasattr(self.reader,'close'):self.reader.close()
         self._save_preferences()

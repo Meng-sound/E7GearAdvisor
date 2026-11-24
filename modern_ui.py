@@ -26,6 +26,7 @@ class ModernLayout:
         style.configure('.',font=(FONT,10),background=CARD,foreground=TEXT)
         style.configure('TFrame',background=BG);style.configure('Card.TFrame',background=CARD)
         style.configure('TLabel',background=BG,foreground=TEXT)
+        style.configure('Game.TLabel',background=CARD,foreground='#a5c6da',font=(FONT,9))
         style.configure('Compact.TEntry',padding=(4,3))
         style.configure('Compact.TCombobox',padding=(4,3))
         style.configure('TEntry',fieldbackground=FIELD,foreground=TEXT,insertcolor=ACCENT,padding=5,bordercolor=FIELD,lightcolor=FIELD,darkcolor=FIELD)
@@ -54,9 +55,22 @@ class ModernLayout:
         root=Path(__file__).parent
         self.iconbitmap(str(root/'data/diche.ico'));self._app_icon=tk.PhotoImage(file=str(root/'data/diche-icon.png'));self.iconphoto(True,self._app_icon)
         self.status_label=tk.Label(self,textvariable=self.status,bg=BG,fg=MUTED,font=(FONT,8),wraplength=402,anchor='w',justify='left');self.status_label.pack(side='bottom',fill='x',padx=12,pady=(3,7))
-        nav=tk.Frame(self,bg=BG);nav.pack(fill='x',padx=12,pady=(9,1))
+        from app_version import VERSION
+        from game_window_ui import GameWindowControls
+
+        header = tk.Frame(self, bg='#0e1b2c', highlightthickness=1, highlightbackground='#244862')
+        header.pack(fill='x', padx=12, pady=(10, 5))
+        self._brand_image = ImageTk.PhotoImage(Image.open(root/'data/diche-icon.png').resize((26, 26)), master=self)
+        tk.Label(header, image=self._brand_image, bg='#0e1b2c').pack(side='left', padx=(9, 5))
+        tk.Label(header, text='装备强化计算器', font=(FONT, 13, 'bold'),
+                 bg='#0e1b2c', fg=TEXT).pack(side='left', pady=7)
+        ttk.Button(header, text='检查更新', style='Compact.TButton',
+                   command=self.check_software_update).pack(side='right', padx=7)
+        tk.Label(header, text=VERSION, bg='#0e1b2c', fg='#79d8ec',
+                 font=('Consolas', 9)).pack(side='right')
+        nav=tk.Frame(self,bg=BG);nav.pack(fill='x',padx=12,pady=(0,3))
         self.main_navigation=nav
-        actions=[('装备识别',lambda:self.main_canvas.yview_moveto(0)),('角色总分计算',self.open_character_bs),('团战 GVG',self.open_guild_war),('制作 / 重铸',self.open_craft),('角色面板参考',self.choose_hero),('设置 / 数据',self.open_details)]
+        actions=[('装备识别',lambda:self.main_canvas.yview_moveto(0)),('角色总分计算',self.open_character_bs),('团战 GVG',self.open_guild_war),('制作 / 重铸',self.open_craft),('选择英雄',self.choose_hero),('设置 / 数据',self.open_details)]
         self.main_nav_buttons=[]
         for i,(label,command) in enumerate(actions):
             nav.columnconfigure(i%3,weight=1,uniform='nav')
@@ -67,6 +81,8 @@ class ModernLayout:
         for i,(mode,label) in enumerate([('shop','刷商店'),('story','推图'),('theater','月光剧场')]):
             button=ttk.Button(nav,text=label,style='Compact.TButton',command=lambda m=mode:open_task_replay(self,m))
             button.grid(row=2,column=i,sticky='ew',padx=2,pady=2);self.task_nav_buttons.append(button)
+        self.game_window_controls = GameWindowControls(self)
+        self.game_window_controls.pack(fill='x', padx=12, pady=(1, 3))
         self.main_area=tk.Frame(self,bg=BG);self.main_area.pack(fill='both',expand=True)
         self.candidate_sidebar=__import__('candidate_panel').CandidatePanel(self.main_area,root/'data',self.apply_hero)
         self.main_scroll=ttk.Scrollbar(self.main_area,orient='vertical');self.main_scroll.pack(side='right',fill='y')
@@ -85,10 +101,6 @@ class ModernLayout:
             if event.widget.winfo_toplevel()==self and outer.winfo_reqheight()>canvas.winfo_height():
                 canvas.yview_scroll(-int(event.delta/120),'units');return 'break'
         self.bind_all('<MouseWheel>',wheel,add='+')
-        head=tk.Frame(outer,bg=BG);head.pack(fill='x',pady=(0,4))
-        self._brand_image=ImageTk.PhotoImage(Image.open(root/'data/diche-icon.png').resize((26,26)),master=self)
-        tk.Label(head,image=self._brand_image,bg=BG).pack(side='left',padx=(0,7))
-        tk.Label(head,text='装备强化计算器',font=(FONT,14,'bold'),bg=BG,fg=TEXT).pack(side='left')
         toolbar=tk.Frame(outer,bg=BG);toolbar.pack(fill='x',pady=(0,4))
         toolbar.columnconfigure(0,weight=1,uniform='read-actions');toolbar.columnconfigure(1,weight=1,uniform='read-actions')
         ttk.Button(toolbar,text='读取装备 F8',style='Accent.TButton',command=self.read_screen).grid(row=0,column=0,sticky='nsew',padx=(0,3))

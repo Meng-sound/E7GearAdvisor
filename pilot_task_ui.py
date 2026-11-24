@@ -44,7 +44,10 @@ class NativeTaskWindow(tk.Toplevel):
    ttk.Label(self.form,text=f"剧场门票：{self.settings.get('theater_ticket_cost',500000):,}金币 / 张",foreground=MUTED).pack(anchor='w',pady=8)
   else:
    self.vars['combat_mode']=tk.StringVar(value='auto')
-   ttk.Label(self.form,text='使用系统AUTO自动战斗，自动推进关卡和剧情。',foreground=MUTED).pack(anchor='w',pady=6)
+   repeat=tk.BooleanVar(value=self.settings.get('story_repeat_stage') is True)
+   self.vars['story_repeat_stage']=repeat
+   ttk.Checkbutton(self.form,text='重新进行（刷同一关）',variable=repeat).pack(anchor='w',pady=4)
+   ttk.Label(self.form,text='使用游戏内 AUTO。开启「重新进行」后，识别到结算页按钮就继续刷当前关卡。',foreground=MUTED).pack(anchor='w',pady=6)
  def save(self):
   for key,var in self.vars.items():
    value=var.get()

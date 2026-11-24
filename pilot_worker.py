@@ -20,6 +20,18 @@ def setup_paths():
  sys.path.insert(0,str(root/'vendor/e7pilot'))
  return root,handles
 
+def configure_story_repeat(cfg):
+ """Enable same-stage replay only on the completion screen."""
+ if cfg['settings'].get('story_repeat_stage') is not True:
+  return
+ cfg['rules'].insert(0, {
+  'name':'重新进行', 'keywords':['重新进行','重新進行'], 'exact':True,
+  'region':[.84,.87,1,1], 'require_any':['大厅','大廳'],
+  'forbid':['战斗失败','戰鬥失敗','挑战失败','失败原因','DEFEAT','行动力不足','行動力不足'],
+  'cooldown':4.0,
+ })
+
+
 def run(request,check_only=False):
  root,dll_handles=setup_paths()
  import core as pilot
@@ -140,6 +152,18 @@ def run(request,check_only=False):
   rules=[story.Rule(**row) for row in cfg['rules']]
   action=story.analyze_frame(np.zeros((900,1600,3),dtype=np.uint8),items,rules,cfg.get('global_forbid',[]),8,enable_auto_check=False)
   assert action.get('rule') and action['rule'].name=='跳过剧情',action
+  replay_cfg={'settings':{'story_repeat_stage':True},'rules':list(cfg['rules'])}
+  configure_story_repeat(replay_cfg)
+  rules=[story.Rule(**row) for row in replay_cfg['rules']]
+  image=np.zeros((1023,1819,3),dtype=np.uint8)
+  replay=pilot.OcrItem('重新进行',.99,(1610,926,1740,957))
+  lobby=pilot.OcrItem('大厅',.99,(345,925,412,958))
+  def decision(items):
+   return story.analyze_frame(image,items,rules,cfg.get('global_forbid',[]),8,enable_auto_check=False)
+  assert decision([replay,lobby])['rule'].name=='重新进行'
+  assert decision([replay]).get('rule') is None
+  defeat=pilot.OcrItem('战斗失败',.99,(700,140,920,190))
+  assert decision([replay,lobby,defeat])['type']=='pause'
   assert theater.classify_state([], '购买剧场门票',False)=='buy_ticket'
   assert theater.classify_state([], '月光剧场进行观览',False)=='movie'
   assert theater.classify_state([], '使用剧场门票',False)=='use_ticket'
@@ -175,6 +199,7 @@ def run(request,check_only=False):
    from ocr_crop_cache import enable
    bot=shop.ShopBot(window,enable(pilot.Ocr(),epoch=lambda:state['epoch'],ignore_portrait=not cfg['settings'].get('gear_auto_buy',False)),int(cfg['settings'].get('stop_skystones',2000)))
   elif config['mode']=='story':
+   configure_story_repeat(cfg)
    bot=story.Bot(cfg,mode_override='auto');bot._pw_verified=True
   else:
    import theater

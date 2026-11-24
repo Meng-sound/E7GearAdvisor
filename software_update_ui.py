@@ -175,8 +175,8 @@ class UpdateWindow(_UpdateBase):
         row = ttk.Frame(frame)
         row.pack(fill='x', pady=4)
         ttk.Checkbutton(row, text='启动时检查，有新版弹窗一次', variable=self.auto).pack(side='left')
-        ttk.Button(row, text='保存并检查', command=self.check).pack(side='right')
-        self.status = tk.StringVar(value='点击“检查更新”读取最新 Release。')
+        ttk.Button(row, text='保存并检查', command=lambda: self.check(save_preferences=True)).pack(side='right')
+        self.status = tk.StringVar(value='正在准备检查更新…')
         ttk.Label(frame, textvariable=self.status, wraplength=590).pack(fill='x', pady=8)
         self.notes_box = self.build_notes(frame)
         self.notes_box.pack(fill='both', expand=True)
@@ -194,20 +194,22 @@ class UpdateWindow(_UpdateBase):
         if release and release.get('tag'):
             self.show_release(release)
 
-    def check(self):
+    def check(self, save_preferences=False):
         if self.busy:
             return
         try:
-            repo = repository(self.repo.get()) if self.repo.get().strip() else ''
-            if self.auto.get() and not repo:
+            raw_repo = self.repo.get() if save_preferences else load_config(self.app).get('repository') or DEFAULT_REPOSITORY
+            repo = repository(raw_repo) if raw_repo.strip() else ''
+            if save_preferences and self.auto.get() and not repo:
                 raise ValueError('开启启动检查前请填写仓库')
         except ValueError as error:
             self.status.set(str(error))
             return
-        self.config = auto_update.remember(self.config, repository=repo,
-                                           startup_check=self.auto.get(), skipped_version='')
-        save_config(self.app, self.config)
-        self.repo.set(repo)
+        if save_preferences:
+            self.config = auto_update.remember(self.config, repository=repo,
+                                               startup_check=self.auto.get(), skipped_version='')
+            save_config(self.app, self.config)
+            self.repo.set(repo)
         self.busy = True
         self.status.set('正在检查 GitHub Release…')
         result = queue.Queue()
@@ -259,9 +261,14 @@ def open_update(app, release=None):
         if release:
             existing.show_release(release)
         existing.lift()
+        if not release:
+            existing.check()
         return existing
-    app.software_update_window = UpdateWindow(app, release)
-    return app.software_update_window
+    window = UpdateWindow(app, release)
+    app.software_update_window = window
+    if not release:
+        window.check()
+    return window
 
 
 def startup_check(app):
@@ -285,7 +292,9 @@ def startup_check(app):
             app.after(250, poll)
             return
         if release and auto_update.should_prompt(release, load_config(app)):
-            UpdatePrompt(app, release)
+            existing = getattr(app, 'software_update_window', None)
+            if existing is None or not existing.winfo_exists():
+                UpdatePrompt(app, release)
 
     threading.Thread(target=worker, daemon=True).start()
     app.after(250, poll)

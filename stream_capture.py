@@ -74,7 +74,7 @@ def serve(target,directory):
   if dwm.DwmGetWindowAttribute(hwnd,9,ctypes.byref(extended),ctypes.sizeof(extended))!=0:extended=rect
   return (client.right,client.bottom,origin.x,origin.y),[(rect.left,rect.top,rect.right,rect.bottom),(extended.left,extended.top,extended.right,extended.bottom)]
  initial,_=bounds();condition=threading.Condition();latest=[None];generation=[0];closed=[False];updated=[0.0]
- session=WindowsCapture(cursor_capture=False,draw_border=False,minimum_update_interval=80,window_hwnd=target['hwnd'])
+ session=WindowsCapture(cursor_capture=False,draw_border=False,minimum_update_interval=target.get('capture_interval_ms',80),window_hwnd=target['hwnd'])
  @session.event
  def on_frame_arrived(frame,control):
   with condition:latest[0]=frame.frame_buffer[:,:,:3][:,:,::-1].copy();generation[0]+=1;updated[0]=time.monotonic();condition.notify_all()
@@ -100,9 +100,11 @@ def serve(target,directory):
     if min(left,top)<0 or left+width>picture.width or top+height>picture.height:raise RuntimeError('客户区边界不一致')
     picture=picture.crop((left,top,left+width,top+height))
    import emulator
-   if emulator.is_game_window(target.get('title')):
+   if target.get('source')=='emulator' or (not target.get('preview_only') and emulator.is_game_window(target.get('title'))):
     # Emulator windows carry a tab bar / toolbar; keep frames identical to the device frame.
     picture=emulator.crop_content(picture)
+   if target.get('preview_only'):
+    picture.thumbnail((target['preview_width'],target['preview_height']),Image.Resampling.BILINEAR)
    stat=ImageStat.Stat(picture.resize((64,64)))
    loading=max(stat.mean)<3
    picture.save(Path(directory)/'frame.png',compress_level=0);print(json.dumps({'ok':True,'loading':loading}),flush=True)
